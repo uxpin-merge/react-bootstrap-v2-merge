@@ -3,6 +3,6 @@ import OffcanvasHeader from '../OffcanvasHeader';
 
 export default (
   <OffcanvasHeader uxpId='offcanvasheader-1'>
-    {/* Insert children or other props here */}
+    Content here
   </OffcanvasHeader>
 );

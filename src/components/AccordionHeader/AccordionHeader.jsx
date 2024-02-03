@@ -5,14 +5,15 @@ import { AccordionHeader as AccordionHeaderM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionHeader
 * @uxpindescription TODO
+* @uxpinnamespace Accordion
 */
 
 
-const AccordionHeader = (props) => {
+const Header = (props) => {
   return <AccordionHeaderM {...props} />;
 };
 
-AccordionHeader.propTypes = {
+Header.propTypes = {
   children: PropTypes.node,
 /** Set a custom element for this component */
   as: PropTypes.string,
@@ -22,4 +23,4 @@ AccordionHeader.propTypes = {
   onClick: PropTypes.func,
 };
 
-export default AccordionHeader;
+export default Header;

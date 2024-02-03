@@ -5,14 +5,15 @@ import { AccordionBody as AccordionBodyM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionBody
 * @uxpindescription TODO
+* @uxpinnamespace Accordion
 */
 
 
-const AccordionBody = (props) => {
+const Body = (props) => {
   return <AccordionBodyM {...props} />;
 };
 
-AccordionBody.propTypes = {
+Body.propTypes = {
   children: PropTypes.node,
 /** Set a custom element for this component */
   as: PropTypes.string,
@@ -32,4 +33,4 @@ AccordionBody.propTypes = {
   onExited: PropTypes.func,
 };
 
-export default AccordionBody;
+export default Body;

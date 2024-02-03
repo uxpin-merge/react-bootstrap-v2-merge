@@ -3,6 +3,6 @@ import NavLink from '../NavLink';
 
 export default (
   <NavLink uxpId='navlink-1'>
-    {/* Insert children or other props here */}
+    Content here
   </NavLink>
 );

@@ -3,6 +3,6 @@ import ModalBody from '../ModalBody';
 
 export default (
   <ModalBody uxpId='modalbody-1'>
-    {/* Insert children or other props here */}
+    Content here
   </ModalBody>
 );

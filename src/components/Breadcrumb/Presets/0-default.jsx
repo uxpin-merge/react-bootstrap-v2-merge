@@ -3,6 +3,6 @@ import Breadcrumb from '../Breadcrumb';
 
 export default (
   <Breadcrumb uxpId='breadcrumb-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Breadcrumb>
 );

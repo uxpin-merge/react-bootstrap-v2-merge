@@ -3,6 +3,6 @@ import OverlayTrigger from '../OverlayTrigger';
 
 export default (
   <OverlayTrigger uxpId='overlaytrigger-1'>
-    {/* Insert children or other props here */}
+    Content here
   </OverlayTrigger>
 );

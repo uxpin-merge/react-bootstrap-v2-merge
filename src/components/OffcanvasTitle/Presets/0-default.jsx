@@ -3,6 +3,6 @@ import OffcanvasTitle from '../OffcanvasTitle';
 
 export default (
   <OffcanvasTitle uxpId='offcanvastitle-1'>
-    {/* Insert children or other props here */}
+    Content here
   </OffcanvasTitle>
 );

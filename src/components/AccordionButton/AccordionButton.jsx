@@ -5,14 +5,15 @@ import { AccordionButton as AccordionButtonM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionButton
 * @uxpindescription TODO
+* @uxpinnamespace Accordion
 */
 
 
-const AccordionButton = (props) => {
+const Button = (props) => {
   return <AccordionButtonM {...props} />;
 };
 
-AccordionButton.propTypes = {
+Button.propTypes = {
   children: PropTypes.node,
 /** Set a custom element for this component */
   as: PropTypes.string,
@@ -22,4 +23,4 @@ AccordionButton.propTypes = {
   onClick: PropTypes.func,
 };
 
-export default AccordionButton;
+export default Button;

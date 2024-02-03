@@ -3,6 +3,6 @@ import ToastFade from '../ToastFade';
 
 export default (
   <ToastFade uxpId='toastfade-1'>
-    {/* Insert children or other props here */}
+    Content here
   </ToastFade>
 );

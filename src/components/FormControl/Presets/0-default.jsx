@@ -3,6 +3,6 @@ import FormControl from '../FormControl';
 
 export default (
   <FormControl uxpId='formcontrol-1'>
-    {/* Insert children or other props here */}
+    Content here
   </FormControl>
 );

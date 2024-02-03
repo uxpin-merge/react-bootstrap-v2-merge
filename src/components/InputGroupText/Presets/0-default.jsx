@@ -3,6 +3,6 @@ import InputGroupText from '../InputGroupText';
 
 export default (
   <InputGroupText uxpId='inputgrouptext-1'>
-    {/* Insert children or other props here */}
+    Content here
   </InputGroupText>
 );

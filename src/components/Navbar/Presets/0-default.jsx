@@ -3,6 +3,6 @@ import Navbar from '../Navbar';
 
 export default (
   <Navbar uxpId='navbar-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Navbar>
 );

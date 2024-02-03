@@ -3,6 +3,6 @@ import FigureImage from '../FigureImage';
 
 export default (
   <FigureImage uxpId='figureimage-1'>
-    {/* Insert children or other props here */}
+    Content here
   </FigureImage>
 );

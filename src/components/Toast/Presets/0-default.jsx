@@ -3,6 +3,6 @@ import Toast from '../Toast';
 
 export default (
   <Toast uxpId='toast-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Toast>
 );

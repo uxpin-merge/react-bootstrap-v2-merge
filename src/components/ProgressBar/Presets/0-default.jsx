@@ -3,6 +3,6 @@ import ProgressBar from '../ProgressBar';
 
 export default (
   <ProgressBar uxpId='progressbar-1'>
-    {/* Insert children or other props here */}
+    Content here
   </ProgressBar>
 );

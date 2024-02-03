@@ -3,6 +3,6 @@ import DropdownToggle from '../DropdownToggle';
 
 export default (
   <DropdownToggle uxpId='dropdowntoggle-1'>
-    {/* Insert children or other props here */}
+    Content here
   </DropdownToggle>
 );

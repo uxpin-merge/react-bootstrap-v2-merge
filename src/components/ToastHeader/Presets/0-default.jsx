@@ -3,6 +3,6 @@ import ToastHeader from '../ToastHeader';
 
 export default (
   <ToastHeader uxpId='toastheader-1'>
-    {/* Insert children or other props here */}
+    Content here
   </ToastHeader>
 );

@@ -3,6 +3,6 @@ import Ratio from '../Ratio';
 
 export default (
   <Ratio uxpId='ratio-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Ratio>
 );

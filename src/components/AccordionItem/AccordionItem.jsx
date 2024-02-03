@@ -5,14 +5,15 @@ import { AccordionItem as AccordionItemM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionItem
 * @uxpindescription TODO
+* @uxpinnamespace Accordion
 */
 
 
-const AccordionItem = (props) => {
+const Item = (props) => {
   return <AccordionItemM {...props} />;
 };
 
-AccordionItem.propTypes = {
+Item.propTypes = {
   children: PropTypes.node,
 /** Set a custom element for this component */
   as: PropTypes.string,
@@ -22,4 +23,4 @@ AccordionItem.propTypes = {
   eventKey: PropTypes.string,
 };
 
-export default AccordionItem;
+export default Item;

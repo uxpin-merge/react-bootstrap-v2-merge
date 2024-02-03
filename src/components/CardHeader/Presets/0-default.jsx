@@ -3,6 +3,6 @@ import CardHeader from '../CardHeader';
 
 export default (
   <CardHeader uxpId='cardheader-1'>
-    {/* Insert children or other props here */}
+    Content here
   </CardHeader>
 );

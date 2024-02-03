@@ -3,6 +3,6 @@ import TabContainer from '../TabContainer';
 
 export default (
   <TabContainer uxpId='tabcontainer-1'>
-    {/* Insert children or other props here */}
+    Content here
   </TabContainer>
 );

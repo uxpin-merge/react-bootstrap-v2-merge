@@ -3,6 +3,6 @@ import Fade from '../Fade';
 
 export default (
   <Fade uxpId='fade-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Fade>
 );

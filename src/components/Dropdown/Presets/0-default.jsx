@@ -3,6 +3,6 @@ import Dropdown from '../Dropdown';
 
 export default (
   <Dropdown uxpId='dropdown-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Dropdown>
 );

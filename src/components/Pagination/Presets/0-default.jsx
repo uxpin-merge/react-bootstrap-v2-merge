@@ -3,6 +3,6 @@ import Pagination from '../Pagination';
 
 export default (
   <Pagination uxpId='pagination-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Pagination>
 );

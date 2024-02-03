@@ -5,14 +5,15 @@ import { AccordionCollapse as AccordionCollapseM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionCollapse
 * @uxpindescription TODO
+* @uxpinnamespace Accordion
 */
 
 
-const AccordionCollapse = (props) => {
+const Collapse = (props) => {
   return <AccordionCollapseM {...props} />;
 };
 
-AccordionCollapse.propTypes = {
+Collapse.propTypes = {
   children: PropTypes.node,
 /** Set a custom element for this component */
   as: PropTypes.string,
@@ -20,4 +21,4 @@ AccordionCollapse.propTypes = {
   eventKey: PropTypes.string,
 };
 
-export default AccordionCollapse;
+export default Collapse;

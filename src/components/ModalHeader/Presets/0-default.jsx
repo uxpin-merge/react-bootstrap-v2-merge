@@ -3,6 +3,6 @@ import ModalHeader from '../ModalHeader';
 
 export default (
   <ModalHeader uxpId='modalheader-1'>
-    {/* Insert children or other props here */}
+    Content here
   </ModalHeader>
 );

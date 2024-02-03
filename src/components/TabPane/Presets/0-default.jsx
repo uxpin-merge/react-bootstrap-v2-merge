@@ -3,6 +3,6 @@ import TabPane from '../TabPane';
 
 export default (
   <TabPane uxpId='tabpane-1'>
-    {/* Insert children or other props here */}
+    Content here
   </TabPane>
 );

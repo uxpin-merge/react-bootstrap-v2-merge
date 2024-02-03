@@ -3,6 +3,6 @@ import Card from '../Card';
 
 export default (
   <Card uxpId='card-1'>
-    {/* Insert children or other props here */}
+    Content here
   </Card>
 );
