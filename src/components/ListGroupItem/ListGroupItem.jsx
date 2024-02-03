@@ -17,7 +17,7 @@ ListGroupItem.propTypes = {
 /** @default 'list-group-item' */
   bsPrefix: PropTypes.string,
   /** Sets contextual classes for list item. */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
+  variant: PropTypes.string,
   /** Marks a ListGroupItem as actionable, applying additional hover, active and disabled stylesfor links and buttons. */
   action: PropTypes.bool,
   /** Sets list item as active. */

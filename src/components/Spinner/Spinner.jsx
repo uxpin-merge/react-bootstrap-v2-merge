@@ -21,9 +21,9 @@ Spinner.propTypes = {
   /** @default 'spinner' */
   bsPrefix: PropTypes.string,
   /** The visual color style of the spinner */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
+  variant: PropTypes.string,
   /** Component size variations. */
-  size: PropTypes.oneOf(['sm']),
+  size: PropTypes.string,
   /** An ARIA accessible role applied to the Menu component. This should generally be set to 'status' */
   role: PropTypes.string,
 };

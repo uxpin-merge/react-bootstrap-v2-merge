@@ -20,7 +20,7 @@ as: PropTypes.string,
   /** Changes the animation of the placeholder.@type ('glow'|'wave') */
   animation: PropTypes.string,
   /** Change the background color of the placeholder. */
-  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
+  bg: PropTypes.string,
   /** Component size variations.@type ('xs'|'sm'|'lg') */
   size: PropTypes.string,
 };

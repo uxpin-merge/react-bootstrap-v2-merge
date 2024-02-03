@@ -25,7 +25,7 @@ FormControl.propTypes = {
   /** The FormControl `ref` will be forwarded to the underlying input element,which means unless `as` is a composite component,it will be a DOM node, when resolved.@type {ReactRef}@alias ref */
   _ref: PropTypes.string,
   /** Input size variants */
-  size: PropTypes.oneOf(['sm', 'lg']),
+  size: PropTypes.string,
   /** The size attribute of the underlying HTML element.Specifies the visible width in characters if `as` is `'input'`. */
   htmlSize: PropTypes.number,
   /** Render the input as plain text. Generally used along side `readOnly`. */

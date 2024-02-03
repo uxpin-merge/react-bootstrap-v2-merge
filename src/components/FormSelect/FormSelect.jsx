@@ -21,7 +21,7 @@ FormSelect.propTypes = {
   /** @default {'form-select'} */
   bsPrefix: PropTypes.string,
   /** Size variants */
-  size: PropTypes.oneOf(['sm', 'lg']),
+  size: PropTypes.string,
   /** The size attribute of the underlying HTML element.Specifies the number of visible options. */
   htmlSize: PropTypes.number,
   /** Make the control disabled */

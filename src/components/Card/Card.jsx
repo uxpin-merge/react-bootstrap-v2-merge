@@ -20,11 +20,11 @@ Card.propTypes = {
   /** @default 'card' */
   bsPrefix: PropTypes.string,
   /** Sets card background */
-  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
+  bg: PropTypes.string,
   /** Sets card text color */
-  text: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'white', 'muted']),
+  text: PropTypes.string,
   /** Sets card border color */
-  border: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
+  border: PropTypes.string,
 };
 
 export default Card;

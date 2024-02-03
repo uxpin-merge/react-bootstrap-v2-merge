@@ -41,7 +41,7 @@ Toast.propTypes = {
   /** Transition onExited callback when animation is not `false` */
   onExited: PropTypes.func,
   /** Sets Toast background */
-  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
+  bg: PropTypes.string,
 };
 
 export default Toast;

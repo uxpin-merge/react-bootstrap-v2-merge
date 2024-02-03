@@ -19,7 +19,7 @@ bsPrefix: PropTypes.string,
   navbarBsPrefix: PropTypes.string,
   cardHeaderBsPrefix: PropTypes.string,
   /** Navigation style */
-  variant: PropTypes.oneOf(['tabs', 'pills', 'underline']),
+  variant: PropTypes.string,
   /** The default active key that is selected on start */
   defaultActiveKey: PropTypes.string,
   /** Have all `Tabs`s proportionately fill all available width. */

@@ -16,7 +16,7 @@ module.exports = {
           'src/components/Alert/Alert.jsx',
           'src/components/Badge/Badge.jsx',
 
-          "src/components/AbstractModalHeader/AbstractModalHeader.jsx",
+          // "src/components/AbstractModalHeader/AbstractModalHeader.jsx",
           "src/components/AlertLink/AlertLink.jsx",
           "src/components/AlertHeading/AlertHeading.jsx",
           "src/components/Breadcrumb/Breadcrumb.jsx",
@@ -49,7 +49,7 @@ module.exports = {
           "src/components/DropdownDivider/DropdownDivider.jsx",
           "src/components/DropdownMenu/DropdownMenu.jsx",
           "src/components/DropdownToggle/DropdownToggle.jsx",
-          "src/components/map/map.jsx",
+          // "src/components/map/map.jsx",
           "src/components/Fade/Fade.jsx",
           "src/components/Feedback/Feedback.jsx",
           "src/components/Figure/Figure.jsx",

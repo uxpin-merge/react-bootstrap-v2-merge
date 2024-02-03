@@ -21,7 +21,7 @@ Nav.propTypes = {
   /** @private */
   cardHeaderBsPrefix: PropTypes.string,
   /** The visual variant of the nav items. */
-  variant: PropTypes.oneOf(['tabs', 'pills', 'underline']),
+  variant: PropTypes.string,
   /** Marks the NavItem with a matching `eventKey` (or `href` if present) as active. */
   activeKey: PropTypes.string,
   /** The default active key that is selected on start. */

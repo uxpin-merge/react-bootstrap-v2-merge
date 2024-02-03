@@ -16,7 +16,7 @@ Feedback.propTypes = {
   children: PropTypes.node,
 as: PropTypes.string,
   /** Specify whether the feedback is for valid or invalid fields */
-  type: PropTypes.oneOf(['valid', 'invalid']),
+  type: PropTypes.string,
   /** Display feedback as a tooltip. */
   tooltip: PropTypes.bool,
 };

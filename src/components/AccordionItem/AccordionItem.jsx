@@ -3,16 +3,18 @@ import PropTypes from 'prop-types';
 import { AccordionItem as AccordionItemM } from 'react-bootstrap';
 
 /**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Accordion
+* @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionItem
 * @uxpindescription TODO
 */
+
 
 const AccordionItem = (props) => {
   return <AccordionItemM {...props} />;
 };
 
 AccordionItem.propTypes = {
-  /** Set a custom element for this component */
+  children: PropTypes.node,
+/** Set a custom element for this component */
   as: PropTypes.string,
   /** @default 'accordion-item' */
   bsPrefix: PropTypes.string,

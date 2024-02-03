@@ -18,7 +18,7 @@ as: PropTypes.string,
   /** @default 'input-group' */
   bsPrefix: PropTypes.string,
   /** Control the size of buttons and form elements from the top-level. */
-  size: PropTypes.oneOf(['sm', 'lg']),
+  size: PropTypes.string,
   /** Handles the input's rounded corners when using form validation.Use this when your input group contains both an input and feedback element. */
   hasValidation: PropTypes.bool,
 };

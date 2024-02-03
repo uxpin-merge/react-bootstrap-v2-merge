@@ -1,0 +1,8 @@
+import React from 'react';
+import FormCheck from '../FormCheck';
+
+export default (
+  <FormCheck uxpId='formcheck-1'>
+    {/* Insert children or other props here */}
+  </FormCheck>
+);
