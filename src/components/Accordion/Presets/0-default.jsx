@@ -7,7 +7,7 @@ import AccordionHeader from '../../AccordionHeader/AccordionHeader';
 import AccordionItem from '../../AccordionItem/AccordionItem';
 export default (
   <Accordion uxpId="accordion-1" defaultActiveKey="1">
-    <Accordion.Item eventKey="2" uxpId="accordionItem-1">
+    <Accordion.Item eventKey="1" uxpId="accordionItem-1">
       <Accordion.Header uxpId="accordionHeader-1">Accordion Item #1</Accordion.Header>
       <Accordion.Body uxpId="accordionBody-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
