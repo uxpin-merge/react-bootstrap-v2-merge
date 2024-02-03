@@ -9,7 +9,7 @@ const OverlayTrigger = (props) => {
 OverlayTrigger.propTypes = {
   children: PropTypes.node,
 /** Specify which action or actions trigger Overlay visibilityThe `click` trigger ignores the configured `delay`.@type {'hover' | 'click' |'focus' | Array<'hover' | 'click' |'focus'>} */
-  trigger: PropTypes.string,
+  trigger: PropTypes.oneOf([('hover' , 'click' ,'focus')]),
   /** A millisecond delay amount to show and hide the Overlay once triggered */
   delay: PropTypes.string,
   /** The visibility of the Overlay. `show` is a _controlled_ prop so should be pairedwith `onToggle` to avoid breaking user interactions.Manually toggling `show` does **not** wait for `delay` to change the visibility.@controllable onToggle */

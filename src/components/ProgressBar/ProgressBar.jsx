@@ -26,7 +26,7 @@ ProgressBar.propTypes = {
   /** Animate's the stripes from right to left */
   animated: PropTypes.bool,
   /** Sets the background class of the progress bar.@type ('success'|'danger'|'warning'|'info') */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['success','danger','warning','info']),
   /** @private */
   isChild: PropTypes.bool,
 };

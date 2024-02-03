@@ -27,9 +27,9 @@ Modal.propTypes = {
   /** @default 'modal' */
   bsPrefix: PropTypes.string,
   /** Render a large, extra large or small modal.When not provided, the modal is rendered with medium (default) size.@type ('sm'|'lg'|'xl') */
-  size: PropTypes.string,
+  size: PropTypes.oneOf([('default','sm','lg','xl')]),
   /** Renders a fullscreen modal. Specifying a breakpoint will render the modalas fullscreen __below__ the breakpoint size.@type (true|'sm-down'|'md-down'|'lg-down'|'xl-down'|'xxl-down') */
-  fullscreen: PropTypes.string,
+  fullscreen: PropTypes.oneOf([('sm-down','md-down','lg-down','xl-down','xxl-down')]),
   /** vertically center the Dialog in the window */
   centered: PropTypes.bool,
   /** Add an optional extra class name to .modal-backdropIt could end up looking like class="modal-backdrop foo-modal-backdrop in". */

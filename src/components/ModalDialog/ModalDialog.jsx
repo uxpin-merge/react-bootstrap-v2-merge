@@ -12,9 +12,9 @@ ModalDialog.propTypes = {
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** Render a large, extra large or small modal.@type ('sm'|'lg'|'xl') */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['sm','lg','xl']),
   /** Renders a fullscreen modal. Specifying a breakpoint will render the modalas fullscreen __below__ the breakpoint size.@type (true|'sm-down'|'md-down'|'lg-down'|'xl-down'|'xxl-down') */
-  fullscreen: PropTypes.string,
+  fullscreen: PropTypes.oneOf(['sm-down','md-down','lg-down','xl-down','xxl-down']),
   /** Specify whether the Component should be vertically centered */
   centered: PropTypes.bool,
   /** Allows scrolling the `<Modal.Body>` instead of the entire Modal when overflowing. */

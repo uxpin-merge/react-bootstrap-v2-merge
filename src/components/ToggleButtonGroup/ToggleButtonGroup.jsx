@@ -17,7 +17,7 @@ ToggleButtonGroup.propTypes = {
   /** The input `type` of the rendered buttons, determines the toggle behaviorof the buttons */
   type: PropTypes.string,
   /** Sets the size for all Buttons in the group.@type ('sm'|'lg') */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['default','sm','lg']),
   /** Make the set of Buttons appear vertically stacked. */
   vertical: PropTypes.bool,
 };
