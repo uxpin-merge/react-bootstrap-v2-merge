@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Alert as AlertM } from 'react-bootstrap';
+import AlertHeading from '../AlertHeading/AlertHeading';
+import AlertLink from '../AlertLink/AlertLink';
 
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/Alert
@@ -11,6 +13,9 @@ import { Alert as AlertM } from 'react-bootstrap';
 const Alert = (props) => {
   return <AlertM {...props} />;
 };
+
+Alert.Heading= AlertHeading;
+Alert.Link = AlertHeading;
 
 Alert.propTypes = {
   children: PropTypes.node,
@@ -31,5 +36,6 @@ Alert.propTypes = {
   /** Animate the alert dismissal. Defaults to using `<Fade>` animation or use`false` to disable. A custom `react-transition-group` Transition can alsobe provided. */
   transition: PropTypes.string,
 };
+
 
 export default Alert;

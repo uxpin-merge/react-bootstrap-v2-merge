@@ -1,10 +1,10 @@
 import React from 'react';
 import Accordion from '../Accordion';
-import AccordionBody from '../../AccordionBody/AccordionBody';
-import AccordionButton from '../../AccordionButton/AccordionButton';
-import AccordionCollapse from '../../AccordionCollapse/AccordionCollapse';
-import AccordionHeader from '../../AccordionHeader/AccordionHeader';
-import AccordionItem from '../../AccordionItem/AccordionItem';
+// import AccordionBody from '../../AccordionBody/AccordionBody';
+// import AccordionButton from '../../AccordionButton/AccordionButton';
+// import AccordionCollapse from '../../AccordionCollapse/AccordionCollapse';
+// import AccordionHeader from '../../AccordionHeader/AccordionHeader';
+// import AccordionItem from '../../AccordionItem/AccordionItem';
 export default (
   <Accordion uxpId="accordion-1" defaultActiveKey="1">
     <Accordion.Item eventKey="1" uxpId="accordionItem-1">

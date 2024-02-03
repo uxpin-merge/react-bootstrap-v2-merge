@@ -5,16 +5,17 @@ import { AlertHeading as AlertHeadingM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AlertHeading
 * @uxpindescription TODO
+* @uxpinnamespace Alert
 */
 
 
-const AlertHeading = (props) => {
+const Heading = (props) => {
   return <AlertHeadingM {...props} />;
 };
 
-AlertHeading.propTypes = {
+Heading.propTypes = {
   children: PropTypes.node,
 as: PropTypes.string,
 };
 
-export default AlertHeading;
+export default Heading;

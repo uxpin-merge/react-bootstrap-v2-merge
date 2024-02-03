@@ -3,6 +3,6 @@ import Alert from '../Alert';
 
 export default (
   <Alert uxpId='alert-1'>
-    Content here
+    This is a primary alert—check it out!
   </Alert>
 );
