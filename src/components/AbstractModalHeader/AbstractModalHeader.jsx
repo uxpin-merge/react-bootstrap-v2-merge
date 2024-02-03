@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { AbstractModalHeader as AbstractModalHeaderM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/AbstractModalHeader
-* @uxpindescription TODO
-*/
-
-
 const AbstractModalHeader = (props) => {
   return <AbstractModalHeaderM {...props} />;
 };

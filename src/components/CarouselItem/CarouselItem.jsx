@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CarouselItem as CarouselItemM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/CarouselItem
-* @uxpindescription TODO
-*/
-
-
 const CarouselItem = (props) => {
   return <CarouselItemM {...props} />;
 };

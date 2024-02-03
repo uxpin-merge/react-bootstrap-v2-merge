@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ModalDialog as ModalDialogM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ModalDialog
-* @uxpindescription TODO
-*/
-
-
 const ModalDialog = (props) => {
   return <ModalDialogM {...props} />;
 };

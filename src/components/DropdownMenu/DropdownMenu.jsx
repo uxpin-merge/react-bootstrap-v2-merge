@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { DropdownMenu as DropdownMenuM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/DropdownMenu
-* @uxpindescription TODO
-*/
-
-
 const DropdownMenu = (props) => {
   return <DropdownMenuM {...props} />;
 };

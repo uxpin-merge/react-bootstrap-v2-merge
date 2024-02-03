@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormCheckInput as FormCheckInputM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormCheckInput
-* @uxpindescription TODO
-*/
-
-
 const FormCheckInput = (props) => {
   return <FormCheckInputM {...props} />;
 };

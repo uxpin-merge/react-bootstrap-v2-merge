@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider as ThemeProviderM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ThemeProvider
-* @uxpindescription TODO
-*/
-
-
 const ThemeProvider = (props) => {
   return <ThemeProviderM {...props} />;
 };

@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ToggleButtonGroup as ToggleButtonGroupM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ToggleButtonGroup
-* @uxpindescription TODO
-*/
-
-
 const ToggleButtonGroup = (props) => {
   return <ToggleButtonGroupM {...props} />;
 };

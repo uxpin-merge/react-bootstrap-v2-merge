@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PlaceholderButton as PlaceholderButtonM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/PlaceholderButton
-* @uxpindescription TODO
-*/
-
-
 const PlaceholderButton = (props) => {
   return <PlaceholderButtonM {...props} />;
 };

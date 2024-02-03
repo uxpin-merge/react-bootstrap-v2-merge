@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormLabel as FormLabelM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormLabel
-* @uxpindescription TODO
-*/
-
-
 const FormLabel = (props) => {
   return <FormLabelM {...props} />;
 };

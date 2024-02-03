@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormControl as FormControlM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormControl
-* @uxpindescription TODO
-*/
-
-
 const FormControl = (props) => {
   return <FormControlM {...props} />;
 };
@@ -25,7 +19,7 @@ FormControl.propTypes = {
   /** The FormControl `ref` will be forwarded to the underlying input element,which means unless `as` is a composite component,it will be a DOM node, when resolved.@type {ReactRef}@alias ref */
   _ref: PropTypes.string,
   /** Input size variants */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'lg']),
   /** The size attribute of the underlying HTML element.Specifies the visible width in characters if `as` is `'input'`. */
   htmlSize: PropTypes.number,
   /** Render the input as plain text. Generally used along side `readOnly`. */

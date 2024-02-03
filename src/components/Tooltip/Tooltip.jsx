@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Tooltip as TooltipM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Tooltip
-* @uxpindescription TODO
-*/
-
-
 const Tooltip = (props) => {
   return <TooltipM {...props} />;
 };

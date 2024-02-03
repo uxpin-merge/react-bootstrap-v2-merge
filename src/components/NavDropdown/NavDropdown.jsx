@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavDropdown as NavDropdownM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/NavDropdown
-* @uxpindescription TODO
-*/
-
-
 const NavDropdown = (props) => {
   return <NavDropdownM {...props} />;
 };

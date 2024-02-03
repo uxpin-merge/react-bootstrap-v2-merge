@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Form as FormM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Form
-* @uxpindescription TODO
-*/
-
-
 const Form = (props) => {
   return <FormM {...props} />;
 };

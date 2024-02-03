@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Popover as PopoverM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Popover
-* @uxpindescription TODO
-*/
-
-
 const Popover = (props) => {
   return <PopoverM {...props} />;
 };

@@ -5,16 +5,17 @@ import { AlertLink as AlertLinkM } from 'react-bootstrap';
 /**
 * @uxpindocurl https://react-bootstrap.github.io/docs/components/AlertLink
 * @uxpindescription TODO
+* @uxpinnamespace Alert
 */
 
 
-const AlertLink = (props) => {
+const Link = (props) => {
   return <AlertLinkM {...props} />;
 };
 
-AlertLink.propTypes = {
+Link.propTypes = {
   children: PropTypes.node,
 as: PropTypes.string,
 };
 
-export default AlertLink;
+export default Link;

@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Toast as ToastM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Toast
-* @uxpindescription TODO
-*/
-
-
 const Toast = (props) => {
   return <ToastM {...props} />;
 };
@@ -41,7 +35,7 @@ Toast.propTypes = {
   /** Transition onExited callback when animation is not `false` */
   onExited: PropTypes.func,
   /** Sets Toast background */
-  bg: PropTypes.string,
+  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
 };
 
 export default Toast;

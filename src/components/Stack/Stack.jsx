@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Stack as StackM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Stack
-* @uxpindescription TODO
-*/
-
-
 const Stack = (props) => {
   return <StackM {...props} />;
 };

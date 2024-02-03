@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { DropdownButton as DropdownButtonM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/DropdownButton
-* @uxpindescription TODO
-*/
-
-
 const DropdownButton = (props) => {
   return <DropdownButtonM {...props} />;
 };

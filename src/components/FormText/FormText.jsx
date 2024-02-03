@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormText as FormTextM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormText
-* @uxpindescription TODO
-*/
-
-
 const FormText = (props) => {
   return <FormTextM {...props} />;
 };

@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { SplitButton as SplitButtonM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/SplitButton
-* @uxpindescription TODO
-*/
-
-
 const SplitButton = (props) => {
   return <SplitButtonM {...props} />;
 };

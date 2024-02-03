@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ButtonToolbar as ButtonToolbarM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ButtonToolbar
-* @uxpindescription TODO
-*/
-
-
 const ButtonToolbar = (props) => {
   return <ButtonToolbarM {...props} />;
 };

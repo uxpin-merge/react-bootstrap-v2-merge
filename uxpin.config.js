@@ -14,11 +14,12 @@ module.exports = {
 
 
           'src/components/Alert/Alert.jsx',
+          "src/components/AlertLink/AlertLink.jsx",
+          "src/components/AlertHeading/AlertHeading.jsx",
           'src/components/Badge/Badge.jsx',
 
           // "src/components/AbstractModalHeader/AbstractModalHeader.jsx",
-          "src/components/AlertLink/AlertLink.jsx",
-          "src/components/AlertHeading/AlertHeading.jsx",
+
           "src/components/Breadcrumb/Breadcrumb.jsx",
           "src/components/BreadcrumbItem/BreadcrumbItem.jsx",
           "src/components/ButtonGroup/ButtonGroup.jsx",

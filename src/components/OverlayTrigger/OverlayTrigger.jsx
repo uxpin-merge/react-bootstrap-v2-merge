@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { OverlayTrigger as OverlayTriggerM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/OverlayTrigger
-* @uxpindescription TODO
-*/
-
-
 const OverlayTrigger = (props) => {
   return <OverlayTriggerM {...props} />;
 };

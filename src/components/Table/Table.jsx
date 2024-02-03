@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Table as TableM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Table
-* @uxpindescription TODO
-*/
-
-
 const Table = (props) => {
   return <TableM {...props} />;
 };

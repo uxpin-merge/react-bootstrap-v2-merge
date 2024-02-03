@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container as ContainerM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Container
-* @uxpindescription TODO
-*/
-
-
 const Container = (props) => {
   return <ContainerM {...props} />;
 };

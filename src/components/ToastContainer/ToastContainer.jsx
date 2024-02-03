@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ToastContainer as ToastContainerM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ToastContainer
-* @uxpindescription TODO
-*/
-
-
 const ToastContainer = (props) => {
   return <ToastContainerM {...props} />;
 };

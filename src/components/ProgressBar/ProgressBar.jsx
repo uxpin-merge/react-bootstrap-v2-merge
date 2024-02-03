@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ProgressBar as ProgressBarM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ProgressBar
-* @uxpindescription TODO
-*/
-
-
 const ProgressBar = (props) => {
   return <ProgressBarM {...props} />;
 };

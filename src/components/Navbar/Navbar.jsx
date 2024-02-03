@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Navbar as NavbarM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Navbar
-* @uxpindescription TODO
-*/
-
-
 const Navbar = (props) => {
   return <NavbarM {...props} />;
 };
@@ -17,7 +11,7 @@ Navbar.propTypes = {
 /** @default 'navbar' */
   bsPrefix: PropTypes.string,
   /** The general visual variant a the Navbar.Use in combination with the `bg` prop, `background-color` utilities,or your own background styles. */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['light', 'dark']),
   /** The breakpoint, below which, the Navbar will collapse.When `true` the Navbar will always be expanded regardless of screen size. */
   expand: PropTypes.string,
   /** A convenience prop for adding `bg-*` utility classes since they are so commonly used here.`light` and `dark` are common choices but any `bg-*` class is supported, including any custom ones you might define.Pairs nicely with the `variant` prop. */

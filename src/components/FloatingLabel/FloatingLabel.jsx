@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FloatingLabel as FloatingLabelM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FloatingLabel
-* @uxpindescription TODO
-*/
-
-
 const FloatingLabel = (props) => {
   return <FloatingLabelM {...props} />;
 };

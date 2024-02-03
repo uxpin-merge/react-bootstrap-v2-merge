@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormRange as FormRangeM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormRange
-* @uxpindescription TODO
-*/
-
-
 const FormRange = (props) => {
   return <FormRangeM {...props} />;
 };

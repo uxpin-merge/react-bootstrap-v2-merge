@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Breadcrumb as BreadcrumbM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Breadcrumb
-* @uxpindescription TODO
-*/
-
-
 const Breadcrumb = (props) => {
   return <BreadcrumbM {...props} />;
 };

@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Collapse as CollapseM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Collapse
-* @uxpindescription TODO
-*/
-
-
 const Collapse = (props) => {
   return <CollapseM {...props} />;
 };

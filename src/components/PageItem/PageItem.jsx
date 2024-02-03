@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PageItem as PageItemM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/PageItem
-* @uxpindescription TODO
-*/
-
-
 const PageItem = (props) => {
   return <PageItemM {...props} />;
 };

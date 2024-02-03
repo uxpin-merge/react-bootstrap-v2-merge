@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TabContainer as TabContainerM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/TabContainer
-* @uxpindescription TODO
-*/
-
-
 const TabContainer = (props) => {
   return <TabContainerM {...props} />;
 };

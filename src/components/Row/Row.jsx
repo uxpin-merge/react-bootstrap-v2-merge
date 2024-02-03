@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row as RowM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Row
-* @uxpindescription TODO
-*/
-
-
 const Row = (props) => {
   return <RowM {...props} />;
 };

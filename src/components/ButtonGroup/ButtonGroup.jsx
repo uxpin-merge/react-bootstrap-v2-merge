@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ButtonGroup as ButtonGroupM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ButtonGroup
-* @uxpindescription TODO
-*/
-
-
 const ButtonGroup = (props) => {
   return <ButtonGroupM {...props} />;
 };

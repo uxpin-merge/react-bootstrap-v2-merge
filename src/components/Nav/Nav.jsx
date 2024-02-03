@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Nav as NavM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Nav
-* @uxpindescription TODO
-*/
-
-
 const Nav = (props) => {
   return <NavM {...props} />;
 };
@@ -21,7 +15,7 @@ Nav.propTypes = {
   /** @private */
   cardHeaderBsPrefix: PropTypes.string,
   /** The visual variant of the nav items. */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['tabs', 'pills', 'underline']),
   /** Marks the NavItem with a matching `eventKey` (or `href` if present) as active. */
   activeKey: PropTypes.string,
   /** The default active key that is selected on start. */

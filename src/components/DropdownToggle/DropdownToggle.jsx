@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { DropdownToggle as DropdownToggleM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/DropdownToggle
-* @uxpindescription TODO
-*/
-
-
 const DropdownToggle = (props) => {
   return <DropdownToggleM {...props} />;
 };

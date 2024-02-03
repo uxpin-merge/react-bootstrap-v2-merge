@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { OffcanvasHeader as OffcanvasHeaderM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/OffcanvasHeader
-* @uxpindescription TODO
-*/
-
-
 const OffcanvasHeader = (props) => {
   return <OffcanvasHeaderM {...props} />;
 };

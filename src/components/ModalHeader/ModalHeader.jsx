@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ModalHeader as ModalHeaderM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ModalHeader
-* @uxpindescription TODO
-*/
-
-
 const ModalHeader = (props) => {
   return <ModalHeaderM {...props} />;
 };

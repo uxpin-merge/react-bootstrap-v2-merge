@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Image as ImageM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Image
-* @uxpindescription TODO
-*/
-
-
 const Image = (props) => {
   return <ImageM {...props} />;
 };

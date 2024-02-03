@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CloseButton as CloseButtonM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/CloseButton
-* @uxpindescription TODO
-*/
-
-
 const CloseButton = (props) => {
   return <CloseButtonM {...props} />;
 };

@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ToastHeader as ToastHeaderM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/ToastHeader
-* @uxpindescription TODO
-*/
-
-
 const ToastHeader = (props) => {
   return <ToastHeaderM {...props} />;
 };

@@ -15,14 +15,14 @@ const Alert = (props) => {
 };
 
 Alert.Heading= AlertHeading;
-Alert.Link = AlertHeading;
+Alert.Link = AlertLink;
 
 Alert.propTypes = {
   children: PropTypes.node,
 /** @default 'alert' */
   bsPrefix: PropTypes.string,
   /** The Alert visual variant@type {'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark' | 'light'} */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
   /** Renders a properly aligned dismiss button, as well asadding extra horizontal padding to the Alert. */
   dismissible: PropTypes.bool,
   /** Controls the visual state of the Alert.@controllable onClose */

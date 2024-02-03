@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as CardM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Card
-* @uxpindescription TODO
-*/
-
-
 const Card = (props) => {
   return <CardM {...props} />;
 };
@@ -20,11 +14,11 @@ Card.propTypes = {
   /** @default 'card' */
   bsPrefix: PropTypes.string,
   /** Sets card background */
-  bg: PropTypes.string,
+  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
   /** Sets card text color */
-  text: PropTypes.string,
+  text: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'white', 'muted']),
   /** Sets card border color */
-  border: PropTypes.string,
+  border: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
 };
 
 export default Card;

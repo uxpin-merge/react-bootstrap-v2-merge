@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormCheck as FormCheckM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormCheck
-* @uxpindescription TODO
-*/
-
-
 const FormCheck = (props) => {
   return <FormCheckM {...props} />;
 };

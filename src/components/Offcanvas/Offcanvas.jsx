@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Offcanvas as OffcanvasM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Offcanvas
-* @uxpindescription TODO
-*/
-
-
 const Offcanvas = (props) => {
   return <OffcanvasM {...props} />;
 };
@@ -37,7 +31,7 @@ Offcanvas.propTypes = {
   /** Add an optional extra class name to .offcanvas-backdrop. */
   backdropClassName: PropTypes.string,
   /** Hide content outside the viewport from a specified breakpoint and down. */
-  responsive: PropTypes.string,
+  responsive: PropTypes.oneOf(['"sm"', '"md"', '"lg"', '"xl"', '"xxl"']),
   /** Options passed to focus function when `restoreFocus` is set to `true`@link  https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus#Parameters */
   restoreFocusOptions: PropTypes.shape,
   /** A callback fired when the offcanvas is opening. */

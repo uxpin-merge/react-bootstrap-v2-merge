@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormGroup as FormGroupM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/FormGroup
-* @uxpindescription TODO
-*/
-
-
 const FormGroup = (props) => {
   return <FormGroupM {...props} />;
 };

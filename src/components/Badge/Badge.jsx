@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Badge as BadgeM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Badge
-* @uxpindescription TODO
-*/
-
-
 const Badge = (props) => {
   return <BadgeM {...props} />;
 };
@@ -15,7 +9,7 @@ const Badge = (props) => {
 Badge.propTypes = {
   children: PropTypes.node,
 /** The visual style of the badge */
-  bg: PropTypes.string,
+  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
   /** Add the `pill` modifier to make badges more rounded withsome additional horizontal padding */
   pill: PropTypes.bool,
   /** @default span */
@@ -23,7 +17,7 @@ Badge.propTypes = {
   /** @default 'badge' */
   bsPrefix: PropTypes.string,
   /** Sets badge text color */
-  text: PropTypes.string,
+  text: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
 };
 
 export default Badge;

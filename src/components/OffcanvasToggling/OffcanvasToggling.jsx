@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { OffcanvasToggling as OffcanvasTogglingM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/OffcanvasToggling
-* @uxpindescription TODO
-*/
-
-
 const OffcanvasToggling = (props) => {
   return <OffcanvasTogglingM {...props} />;
 };

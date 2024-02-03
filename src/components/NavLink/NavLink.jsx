@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink as NavLinkM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/NavLink
-* @uxpindescription TODO
-*/
-
-
 const NavLink = (props) => {
   return <NavLinkM {...props} />;
 };

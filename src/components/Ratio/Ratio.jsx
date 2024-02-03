@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Ratio as RatioM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Ratio
-* @uxpindescription TODO
-*/
-
-
 const Ratio = (props) => {
   return <RatioM {...props} />;
 };

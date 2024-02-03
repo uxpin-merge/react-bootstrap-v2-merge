@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Tabs as TabsM } from 'react-bootstrap';
 
-/**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Tabs
-* @uxpindescription TODO
-*/
-
-
 const Tabs = (props) => {
   return <TabsM {...props} />;
 };
@@ -19,7 +13,7 @@ bsPrefix: PropTypes.string,
   navbarBsPrefix: PropTypes.string,
   cardHeaderBsPrefix: PropTypes.string,
   /** Navigation style */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['tabs', 'pills', 'underline']),
   /** The default active key that is selected on start */
   defaultActiveKey: PropTypes.string,
   /** Have all `Tabs`s proportionately fill all available width. */
