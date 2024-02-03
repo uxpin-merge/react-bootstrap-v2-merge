@@ -1,33 +1,35 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Alert as ANTComponent } from "antd";
+import { Alert as AlertM } from 'react-bootstrap';
 
 /**
- * @uxpindocurl https://ant.design/components/Alert/
- * @uxpindescription Alert component for feedback.
- */
+* @uxpindocurl https://react-bootstrap.github.io/docs/components/Alert
+* @uxpindescription TODO
+*/
+
 
 const Alert = (props) => {
-    // Component logic
-
-    return (
-        // Your component JSX
-        <ANTComponent {...props} />
-
-    );
+  return <AlertM {...props} />;
 };
 
 Alert.propTypes = {
-    /** The content of the component. */
-    children: PropTypes.node,
-
-    /** The style properties of the component */
-    style: PropTypes.object,
-
-    /** The action of Alert */ action: PropTypes.node, /** Called when close animation is finished */ afterClose: PropTypes.func, /** Whether to show as banner */ banner: PropTypes.bool, /** Custom close icon, >=5.7.0: close button will be hidden when setting to null or false */ closeIcon: PropTypes.oneOfType([PropTypes.bool, PropTypes.node]), /** Additional content of Alert */ description: PropTypes.node, /** Custom icon, effective when showIcon is true */ icon: PropTypes.node, /** Content of Alert */ message: PropTypes.node, /** Whether to show icon */ showIcon: PropTypes.bool, /** Type of Alert styles, options: success, info, warning, error */ type: PropTypes.string, /** Callback when Alert is closed */ onClose: PropTypes.func,
-
+  children: PropTypes.node,
+/** @default 'alert' */
+  bsPrefix: PropTypes.string,
+  /** The Alert visual variant@type {'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark' | 'light'} */
+  variant: PropTypes.string,
+  /** Renders a properly aligned dismiss button, as well asadding extra horizontal padding to the Alert. */
+  dismissible: PropTypes.bool,
+  /** Controls the visual state of the Alert.@controllable onClose */
+  show: PropTypes.bool,
+  /** Callback fired when alert is closed.@controllable show */
+  onClose: PropTypes.func,
+  /** Sets the text for alert close button. */
+  closeLabel: PropTypes.string,
+  /** Sets the variant for close button. */
+  closeVariant: PropTypes.string,
+  /** Animate the alert dismissal. Defaults to using `<Fade>` animation or use`false` to disable. A custom `react-transition-group` Transition can alsobe provided. */
+  transition: PropTypes.string,
 };
-
-Alert.defaultProps = {};
 
 export default Alert;

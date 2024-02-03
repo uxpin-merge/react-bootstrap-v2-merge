@@ -22,10 +22,10 @@ const config = {
         exclude: /node_modules/
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|css)$/,
         use: ['style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader',],
+          'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.svg$/,

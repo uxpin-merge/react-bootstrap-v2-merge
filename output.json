@@ -1,0 +1,166 @@
+{
+    "description": "@uxpindocurl https://react-bootstrap.github.io/docs/components/Card\n@uxpindescription TODO",
+    "displayName": "Card",
+    "methods": [],
+    "props": {
+        "children": {
+            "type": {
+                "name": "node"
+            },
+            "required": false,
+            "description": ""
+        },
+        "body": {
+            "type": {
+                "name": "bool"
+            },
+            "required": false,
+            "description": "When this prop is set, it creates a Card with a Card.Body insidepassing the children directly to it"
+        },
+        "as": {
+            "type": {
+                "name": "string"
+            },
+            "required": false,
+            "description": ""
+        },
+        "bsPrefix": {
+            "type": {
+                "name": "string"
+            },
+            "required": false,
+            "description": "@default 'card'"
+        },
+        "bg": {
+            "type": {
+                "name": "enum",
+                "value": [
+                    {
+                        "value": "'primary'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'secondary'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'success'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'danger'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'warning'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'info'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'dark'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'light'",
+                        "computed": false
+                    }
+                ]
+            },
+            "required": false,
+            "description": "Sets card background"
+        },
+        "text": {
+            "type": {
+                "name": "enum",
+                "value": [
+                    {
+                        "value": "'primary'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'secondary'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'success'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'danger'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'warning'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'info'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'dark'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'light'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'white'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'muted'",
+                        "computed": false
+                    }
+                ]
+            },
+            "required": false,
+            "description": "Sets card text color"
+        },
+        "border": {
+            "type": {
+                "name": "enum",
+                "value": [
+                    {
+                        "value": "'primary'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'secondary'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'success'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'danger'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'warning'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'info'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'dark'",
+                        "computed": false
+                    },
+                    {
+                        "value": "'light'",
+                        "computed": false
+                    }
+                ]
+            },
+            "required": false,
+            "description": "Sets card border color"
+        }
+    }
+}

@@ -1,9 +1,11 @@
-// eslint-disable-next-line no-unused-vars
+/** eslint-disable-next-line no-unused-vars */
+
 import React from 'react';
 import defaultTheme from './boilerplate-theme';
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
+import './index.scss'
 
-import { ConfigProvider } from 'antd';
-import './index.css'
+
 
 
 export const ThemeContext = React.createContext({});
@@ -55,9 +57,11 @@ export default function UXPinWrapper(props) {
 
   return (
     <ThemeContext.Provider value={[theme, setThemeOptions]}>
-      <ConfigProvider theme={themeOptions.theme} >
+      <ThemeProvider
+        theme={themeOptions.theme}
+      >
         {props.children}
-      </ConfigProvider>
+      </ThemeProvider>
     </ThemeContext.Provider>
   );
 }

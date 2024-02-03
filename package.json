@@ -1,5 +1,5 @@
 {
-  "name": "merge-material",
+  "name": "merge-react-bootstrap",
   "version": "1.0.17",
   "dependencies": {
     "@date-io/date-fns": "^2.16.0",
@@ -23,7 +23,10 @@
     "react-apexcharts": "^1.4.0",
     "react-bootstrap": "^2.10.0",
     "react-credit-cards": "^0.8.3",
+    "react-docgen": "^7.0.3",
     "react-dom": "^18.2.0",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
     "style-loader": "3.3.1",
     "svg-react-loader": "^0.4.6",
     "svg-url-loader": "^8.0.0",

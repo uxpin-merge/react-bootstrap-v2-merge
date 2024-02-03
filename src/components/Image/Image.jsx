@@ -1,47 +1,29 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Image as ANTComponent } from "antd";
+import { Image as ImageM } from 'react-bootstrap';
 
 /**
- * @uxpindocurl https://ant.design/components/Image/
- * @uxpindescription TODO
- */
+* @uxpindocurl https://react-bootstrap.github.io/docs/components/Image
+* @uxpindescription TODO
+*/
+
 
 const Image = (props) => {
-    // Component logic
-
-    return (
-        // Your component JSX
-        <ANTComponent {...props} />
-
-    );
+  return <ImageM {...props} />;
 };
 
 Image.propTypes = {
-    /** The content of the component. */
-    // children: PropTypes.node,
-
-    /** The style properties of the component */
-    style: PropTypes.object,
-
-    /** Image description */ alt: PropTypes.string,
-
- /** Load failure fault-tolerant src */ fallback: PropTypes.string,
-
- /** Image height */ height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-
- /** Load placeholder, use default placeholder when set true */ placeholder: PropTypes.node,
-
- /** Preview config, disabled when false */ preview: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
-
- /** Image path */ src: PropTypes.string,
-
- /** Image width */ width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-
- /** Load failed callback */ onError: PropTypes.func,
-
+  children: PropTypes.node,
+/** Sets image as fluid image. */
+  fluid: PropTypes.bool,
+  /** Sets image shape as rounded. */
+  rounded: PropTypes.bool,
+  /** Sets image shape as circle. */
+  roundedCircle: PropTypes.bool,
+  /** Sets image shape as thumbnail. */
+  thumbnail: PropTypes.bool,
+  /** @default 'img' */
+  bsPrefix: PropTypes.string,
 };
-
-Image.defaultProps = {};
 
 export default Image;

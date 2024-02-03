@@ -1,46 +1,26 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Breadcrumb as ANTComponent } from "antd";
-import Item from "./Item/Item";
+import { Breadcrumb as BreadcrumbM } from 'react-bootstrap';
 
 /**
- * @uxpindocurl https://ant.design/components/Breadcrumb/
- * @uxpindescription A breadcrumb displays the current location within a hierarchy. It allows going back to states higher up in the hierarchy.
- */
+* @uxpindocurl https://react-bootstrap.github.io/docs/components/Breadcrumb
+* @uxpindescription TODO
+*/
+
 
 const Breadcrumb = (props) => {
-    // Component logic
-
-    return (
-        // Your component JSX
-        <ANTComponent {...props} />
-
-    );
+  return <BreadcrumbM {...props} />;
 };
 
 Breadcrumb.propTypes = {
-    /** The content of the component. */
-    children: PropTypes.node,
-
-    /** Custom item renderer */
-    itemRender: PropTypes.func,
-
-    /** The routing stack information of router */
-    items: PropTypes.array,
-
-    /** Routing parameters */
-    params: PropTypes.object,
-
-    /** Custom separator */
-    separator: PropTypes.node,
-
-    /** The style properties of the component */
-    style: PropTypes.object,
-
+  children: PropTypes.node,
+/** Additional props passed as-is to the underlying `<ol>` element */
+  listProps: PropTypes.object,
+  /** ARIA label for the nav elementhttps://www.w3.org/TR/wai-aria-practices/#breadcrumb */
+  label: PropTypes.string,
+  as: PropTypes.string,
+  /** @default 'breadcrumb' */
+  bsPrefix: PropTypes.string,
 };
-
-Breadcrumb.defaultProps = {};
-
-Breadcrumb.Item = Item;
 
 export default Breadcrumb;

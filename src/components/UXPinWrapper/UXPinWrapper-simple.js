@@ -1,4 +1,5 @@
-// eslint-disable-next-line no-unused-vars
+/** eslint-disable-next-line no-unused-vars */
+
 import React from "react";
 import { theme } from './boilerplate-theme';
 import { ConfigProvider } from 'antd';

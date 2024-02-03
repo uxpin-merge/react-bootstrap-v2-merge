@@ -1,49 +1,34 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Row as ANTComponent } from "antd";
+import { Row as RowM } from 'react-bootstrap';
 
 /**
- * @uxpindocurl https://ant.design/components/grid/
- * @uxpindescription In the grid system, we define the frame outside the information area based on row and column, to ensure that every area can have stable arrangement.
- */
+* @uxpindocurl https://react-bootstrap.github.io/docs/components/Row
+* @uxpindescription TODO
+*/
+
 
 const Row = (props) => {
-    // Component logic
-
-    return (
-        // Your component JSX
-        <ANTComponent {...props} />
-    );
+  return <RowM {...props} />;
 };
 
 Row.propTypes = {
-    /** Vertical alignment of the flex layout */
-    align: PropTypes.oneOf(['top', 'middle', 'bottom', 'stretch']),
-
-    /** The content of the component. */
-    children: PropTypes.node,
-
-    /** Spacing between grids, could be a number or a object like { xs: 8, sm: 16, md: 24}. Or you can use array to make horizontal and vertical spacing work at the same time [horizontal, vertical]	 */
-    gutter: PropTypes.oneOfType([
-        PropTypes.number,
-        PropTypes.arrayOf(PropTypes.number),
-        PropTypes.object,
-    ]),
-
-    /** Horizontal alignment of the flex layout */
-    justify: PropTypes.oneOf(['start', 'end', 'center', 'space-around', 'space-between', 'space-evenly']),
-
-    /** Custom CSS class for the row */
-    className: PropTypes.string,
-
-    /** Whether to wrap grid items */
-    wrap: PropTypes.bool,
-
-    /** Custom style for the row */
-    style: PropTypes.object,
-
+  children: PropTypes.node,
+/** @default 'row' */
+  bsPrefix: PropTypes.string,
+  as: PropTypes.string,
+  /** The number of columns that will fit next to each other on extra small devices (<576px).Use `auto` to give columns their natural widths. */
+  xs: PropTypes.string,
+  /** The number of columns that will fit next to each other on small devices (≥576px).Use `auto` to give columns their natural widths. */
+  sm: PropTypes.string,
+  /** The number of columns that will fit next to each other on medium devices (≥768px).Use `auto` to give columns their natural widths. */
+  md: PropTypes.string,
+  /** The number of columns that will fit next to each other on large devices (≥992px).Use `auto` to give columns their natural widths. */
+  lg: PropTypes.string,
+  /** The number of columns that will fit next to each other on extra large devices (≥1200px).Use `auto` to give columns their natural widths. */
+  xl: PropTypes.string,
+  /** The number of columns that will fit next to each other on extra extra large devices (≥1400px).Use `auto` to give columns their natural widths. */
+  xxl: PropTypes.string,
 };
-
-Row.defaultProps = {};
 
 export default Row;

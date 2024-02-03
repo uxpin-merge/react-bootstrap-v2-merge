@@ -1,72 +1,61 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Carousel as ANTComponent } from "antd";
+import { Carousel as CarouselM } from 'react-bootstrap';
 
 /**
- * @uxpindocurl https://ant.design/components/carousel/
- * @uxpindescription A carousel component. Scales with its container.
- * @uxpinwrappers
- * SkipContainerWrapper, NonResizableWrapper
- */
+* @uxpindocurl https://react-bootstrap.github.io/docs/components/Carousel
+* @uxpindescription TODO
+*/
+
 
 const Carousel = (props) => {
-    // Component logic
-    const onChange = (currentSlide) => {
-        console.log(currentSlide);
-    };
-
-    return (
-        // Your component JSX
-        <ANTComponent {...props} afterChange={onChange} />
-
-    );
+  return <CarouselM {...props} />;
 };
 
 Carousel.propTypes = {
-
-    /** Callback function called after the current index changes */
-    afterChange: PropTypes.func,
-
-    /** Whether to scroll automatically */
-    autoplay: PropTypes.bool,
-
-    /** Delay between each auto scroll (in milliseconds) */
-    autoplaySpeed: PropTypes.number,
-
-    /** Callback function called before the current index changes */
-    beforeChange: PropTypes.func,
-
-    /** Set the component that will be rendered */
-    children: PropTypes.node,
-
-    /** Dot position: top, bottom, left, or right */
-    dotPosition: PropTypes.string,
-
-    /** Whether to show the dots at the bottom of the gallery, object for dotsClass and any others */
-    dots: PropTypes.bool,
-
-    /** Transition effect: scrollx or fade */
-    effect: PropTypes.oneOf(['scrollx', 'fade']),
-
-    /** Transition interpolation function name */
-    easing: PropTypes.string,
-
-    /** Whether to use fade transition */
-    fade: PropTypes.bool,
-
-    /** Infinitely wrap around contents */
-    infinite: PropTypes.bool,
-
-    /** Animation speed in milliseconds */
-    speed: PropTypes.number,
-
-    /** The style properties of the component */
-    style: PropTypes.object,
-
-    /** Whether to wait for the animation when switching */
-    waitForAnimate: PropTypes.bool,
+  children: PropTypes.node,
+defaultActiveIndex: PropTypes.string,
+  /** @default 'carousel' */
+  bsPrefix: PropTypes.string,
+  as: PropTypes.string,
+  /** Enables animation on the Carousel as it transitions between slides. */
+  slide: PropTypes.bool,
+  /** Animates slides with a crossfade animation instead of the default slide animation */
+  fade: PropTypes.bool,
+  /** Show the Carousel previous and next arrows for changing the current slide */
+  controls: PropTypes.bool,
+  /** Show a set of slide position indicators */
+  indicators: PropTypes.bool,
+  /** An array of labels for the indicators. Defaults to "Slide #" if not provided. */
+  indicatorLabels: PropTypes.array,
+  /** Controls the current visible slide@controllable onSelect */
+  activeIndex: PropTypes.number,
+  /** Callback fired when the active item changes. js(eventKey: number, event: Object | null) => void @controllable activeIndex */
+  onSelect: PropTypes.func,
+  /** Callback fired when a slide transition starts. js(eventKey: number, direction: 'left' | 'right') => void */
+  onSlide: PropTypes.func,
+  /** Callback fired when a slide transition ends. js(eventKey: number, direction: 'left' | 'right') => void */
+  onSlid: PropTypes.func,
+  /** The amount of time to delay between automatically cycling an item. If `null`, carousel will not automatically cycle. */
+  interval: PropTypes.string,
+  /** Whether the carousel should react to keyboard events. */
+  keyboard: PropTypes.bool,
+  /** If set to `"hover"`, pauses the cycling of the carousel on `mouseenter` and resumes the cycling of the carousel on `mouseleave`. If set to `false`, hovering over the carousel won't pause it.On touch-enabled devices, when set to `"hover"`, cycling will pause on `touchend` (once the user finished interacting with the carousel) for two intervals, before automatically resuming. Note that this is in addition to the above mouse behavior. */
+  pause: PropTypes.string,
+  /** Whether the carousel should cycle continuously or have hard stops. */
+  wrap: PropTypes.bool,
+  /** Whether the carousel should support left/right swipe interactions on touchscreen devices. */
+  touch: PropTypes.bool,
+  /** Override the default button icon for the "previous" control */
+  prevIcon: PropTypes.node,
+  /** Label shown to screen readers only, can be used to show the previous elementin the carousel.Set to null to deactivate. */
+  prevLabel: PropTypes.string,
+  /** Override the default button icon for the "next" control */
+  nextIcon: PropTypes.node,
+  /** Label shown to screen readers only, can be used to show the next elementin the carousel.Set to null to deactivate. */
+  nextLabel: PropTypes.string,
+  /** Color variant that controls the colors of the controls, indicatorsand captions. */
+  variant: PropTypes.string,
 };
-
-Carousel.defaultProps = {};
 
 export default Carousel;
