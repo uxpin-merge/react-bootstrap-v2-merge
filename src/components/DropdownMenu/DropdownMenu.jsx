@@ -12,8 +12,12 @@ DropdownMenu.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Have the dropdown switch to it's opposite placement when necessary to stay on screen. */
   flip: PropTypes.bool,
   /** Control the rendering of the DropdownMenu. All non-menu props(listed here) are passed through to the `as` Component.If providing a custom, non DOM, component. the `show`, `close` and `align` propsare also injected and should be handled appropriately. */

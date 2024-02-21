@@ -12,8 +12,12 @@ ToggleButton.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'btn-check' */
   bsPrefix: PropTypes.string,
   /** The `<input>` element `type` */

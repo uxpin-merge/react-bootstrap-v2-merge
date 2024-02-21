@@ -12,8 +12,12 @@ ListGroupItem.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'list-group-item' */
   bsPrefix: PropTypes.string,
   /** Sets contextual classes for list item. */

@@ -12,8 +12,12 @@ NavDropdown.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** The content of the non-toggle Button. */
   title: PropTypes.node,
   /** Disables the toggle NavLink */

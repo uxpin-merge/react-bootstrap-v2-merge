@@ -12,8 +12,12 @@ Fade.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Applies additional specified classes during the transition. Takes an objectwhere the keys correspond to the Transition status */
   transitionClasses: PropTypes.object,
   /** Show the component; triggers the fade in or fade out animation */

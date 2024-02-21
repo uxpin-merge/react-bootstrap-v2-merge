@@ -12,8 +12,12 @@ NavbarBrand.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'navbar' */
   bsPrefix: PropTypes.string,
   /** An href, when provided the Brand will render as an `<a>` element (unless `as` is provided). */

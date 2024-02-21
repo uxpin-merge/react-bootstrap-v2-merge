@@ -12,8 +12,12 @@ Col.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'col' */
   bsPrefix: PropTypes.string,
   as: PropTypes.string,

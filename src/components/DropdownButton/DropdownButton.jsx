@@ -12,8 +12,12 @@ DropdownButton.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** An html id attribute for the Toggle button, necessary for assistive technologies, such as screen readers.@type {string} */
   id: PropTypes.string,
   /** An `href` passed to the Toggle component */

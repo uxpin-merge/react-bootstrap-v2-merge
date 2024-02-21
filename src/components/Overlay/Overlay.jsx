@@ -12,8 +12,12 @@ Overlay.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Animate the entering and exiting of the Overlay. `true` will use the `<Fade>` transition,or a custom react-transition-group `<Transition>` component can be provided. */
   transition: PropTypes.string,
   /** A set of popper options and props passed directly to Popper. */

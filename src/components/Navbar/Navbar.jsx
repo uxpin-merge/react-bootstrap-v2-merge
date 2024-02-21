@@ -12,8 +12,12 @@ Navbar.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'navbar' */
   bsPrefix: PropTypes.string,
   /** The general visual variant a the Navbar.Use in combination with the `bg` prop, `background-color` utilities,or your own background styles. */

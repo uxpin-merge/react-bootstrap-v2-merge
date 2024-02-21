@@ -12,8 +12,12 @@ NavLink.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'a' */
   as: PropTypes.string,
   /** The disabled state of the NavItem item. */

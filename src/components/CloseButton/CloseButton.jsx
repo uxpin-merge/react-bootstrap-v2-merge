@@ -12,8 +12,12 @@ CloseButton.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** An accessible label indicating the relevant information about the Close Button. */
   'aria-label': PropTypes.string,
   /** A callback fired after the Close Button is clicked. */

@@ -12,8 +12,12 @@ Tabs.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   navbarBsPrefix: PropTypes.string,

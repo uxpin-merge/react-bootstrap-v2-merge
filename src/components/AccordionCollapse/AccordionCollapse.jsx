@@ -18,8 +18,12 @@ Collapse.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Set a custom element for this component */
   as: PropTypes.string,
   /** A key that corresponds to the toggler that triggers this collapse's expand or collapse. */

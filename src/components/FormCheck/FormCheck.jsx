@@ -12,8 +12,12 @@ FormCheck.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Groups controls horizontally with other `FormCheck`s. */
   inline: PropTypes.bool,
   /** Put your checkboxes, radios, and switches on the opposite side. */

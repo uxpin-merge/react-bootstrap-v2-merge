@@ -12,8 +12,12 @@ OffcanvasHeader.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Provides an accessible label for the closebutton. It is used for Assistive Technology when the label text is notreadable. */
   closeLabel: PropTypes.string,
   /** Specify whether the Component should contain a close button */

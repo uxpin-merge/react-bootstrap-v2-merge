@@ -12,8 +12,12 @@ Stack.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   as: PropTypes.string,
   /** Change the underlying component CSS base class name and modifier class names prefix.**This is an escape hatch** for working with heavily customized bootstrap css.Defaults to `hstack` if direction is `horizontal` or `vstack` if directionis `vertical`.@default 'hstack | vstack' */
   bsPrefix: PropTypes.string,

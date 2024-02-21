@@ -12,8 +12,12 @@ ButtonGroup.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Make the set of Buttons appear vertically stacked. */
   vertical: PropTypes.bool,
   /** An ARIA role describing the button group. Usually the default"group" role is fine. An `aria-label` or `aria-labelledby`prop is also recommended. */

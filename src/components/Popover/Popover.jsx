@@ -12,8 +12,12 @@ Popover.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Sets the direction the Popover is positioned towards.> This is generally provided by the `Overlay` component positioning the popover */
   placement: PropTypes.string,
   /** @default 'popover' */

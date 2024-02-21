@@ -12,8 +12,12 @@ ToastHeader.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   bsPrefix: PropTypes.string,
   /** Provides an accessible label for the closebutton. It is used for Assistive Technology when the label text is notreadable. */
   closeLabel: PropTypes.string,

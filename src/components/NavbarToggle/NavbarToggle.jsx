@@ -12,8 +12,12 @@ NavbarToggle.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** An accessible ARIA label for the toggler button. */
   label: PropTypes.string,
   as: PropTypes.string,

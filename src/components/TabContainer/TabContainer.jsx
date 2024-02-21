@@ -12,8 +12,12 @@ TabContainer.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Sets a default animation strategy for all children `<TabPane>`s.Defaults to `<Fade>` animation; else, use `false` to disable, or acustom react-transition-group `<Transition/>` component.@type {{Transition | false}}@default {Fade} */
   transition: PropTypes.string,
   /** HTML id attribute, required if no `generateChildId` propis specified.@type {string} */

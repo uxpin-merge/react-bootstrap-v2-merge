@@ -12,8 +12,12 @@ Toast.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** A `react-transition-group` Transition component used to animate the Toast on dismissal. */
   transition: PropTypes.string,
   /** When `true` The toast will show itself. */

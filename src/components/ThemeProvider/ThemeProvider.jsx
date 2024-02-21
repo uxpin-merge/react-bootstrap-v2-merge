@@ -12,8 +12,12 @@ ThemeProvider.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** An object mapping of Bootstrap component classes thatmap to a custom class.**Note: Changing prefixes is an escape hatch and generallyshouldn't be used.**For more information, see [here](/getting-started/theming/#prefixing-components). */
   prefixes: PropTypes.object,
   /** An array of breakpoints that your application supports.Defaults to the standard Bootstrap breakpoints. */

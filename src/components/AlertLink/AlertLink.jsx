@@ -17,8 +17,12 @@ Link.propTypes = {
   children: PropTypes.node,
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** The url to link to */
   href: PropTypes.string,
   as: PropTypes.string,

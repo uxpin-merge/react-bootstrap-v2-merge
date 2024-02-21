@@ -12,8 +12,12 @@ FormCheckInput.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** The type of checkable. */
   type: PropTypes.string,
   /** Manually style the input as valid */

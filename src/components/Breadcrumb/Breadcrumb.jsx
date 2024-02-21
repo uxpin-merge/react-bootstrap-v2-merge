@@ -12,8 +12,12 @@ Breadcrumb.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Additional props passed as-is to the underlying `<ol>` element */
   listProps: PropTypes.object,
   /** ARIA label for the nav elementhttps://www.w3.org/TR/wai-aria-practices/#breadcrumb */

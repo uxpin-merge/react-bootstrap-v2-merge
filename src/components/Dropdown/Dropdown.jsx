@@ -12,8 +12,12 @@ Dropdown.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'dropdown' */
   bsPrefix: PropTypes.string,
   /** Determines the direction and location of the Menu in relation to it's Toggle. */

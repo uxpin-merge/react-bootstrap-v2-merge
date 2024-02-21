@@ -12,8 +12,12 @@ PlaceholderButton.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'placeholder' */
   bsPrefix: PropTypes.string,
   /** Changes the animation of the placeholder. */

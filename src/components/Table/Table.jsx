@@ -12,8 +12,12 @@ Table.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'table' */
   bsPrefix: PropTypes.string,
   /** Adds zebra-striping to any table row within the `<tbody>`.Use `columns` to add zebra-striping to any table column. */

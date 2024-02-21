@@ -12,8 +12,12 @@ FormSelect.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Add "valid" validation styles to the control */
   isValid: PropTypes.bool,
   /** Add "invalid" validation styles to the control and accompanying label */

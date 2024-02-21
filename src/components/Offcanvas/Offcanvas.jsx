@@ -12,8 +12,12 @@ Offcanvas.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Which side of the viewport the offcanvas will appear from. */
   placement: PropTypes.string,
   /** When `true` The offcanvas will show itself. */

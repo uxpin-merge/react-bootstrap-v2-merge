@@ -12,8 +12,12 @@ Carousel.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   defaultActiveIndex: PropTypes.string,
   /** @default 'carousel' */
   bsPrefix: PropTypes.string,

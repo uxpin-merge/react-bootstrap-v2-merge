@@ -12,8 +12,12 @@ Form.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   as: PropTypes.string,
   /** The Form `ref` will be forwarded to the underlying element,which means, unless it's rendered `as` a composite component,it will be a DOM node, when resolved.@type {ReactRef}@alias ref */
   _ref: PropTypes.string,

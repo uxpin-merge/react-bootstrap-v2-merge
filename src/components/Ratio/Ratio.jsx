@@ -12,8 +12,12 @@ Ratio.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Set the aspect ratio of the embed. A fraction or a percentage can alsobe used to create custom aspect ratios. */
   aspectRatio: PropTypes.string,
   /** @default 'ratio' */

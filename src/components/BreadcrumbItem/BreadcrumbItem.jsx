@@ -12,8 +12,12 @@ BreadcrumbItem.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Adds a visual "active" state to a BreadcrumbItem and disables the link. */
   active: PropTypes.bool,
   as: PropTypes.string,

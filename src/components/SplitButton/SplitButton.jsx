@@ -12,8 +12,12 @@ SplitButton.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** A `type` passed to the non-toggle Button */
   type: PropTypes.string,
   /** Accessible label for the toggle; the value of `title` if not specified. */

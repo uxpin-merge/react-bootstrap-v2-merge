@@ -12,8 +12,12 @@ Collapse.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** The dimension used when collapsing, or a function that returns thedimension */
   dimension: PropTypes.string,
   /** Show the component; triggers the expand or collapse animation */

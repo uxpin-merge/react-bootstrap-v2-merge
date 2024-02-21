@@ -12,8 +12,12 @@ ToggleButtonGroup.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** An HTML `<input>` name for each child button.__Required if `type` is set to `'radio'`__ */
   name: PropTypes.string,
   /** The value, or array of values, of the active (pressed) buttons@controllable onChange */

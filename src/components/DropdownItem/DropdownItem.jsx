@@ -12,8 +12,12 @@ DropdownItem.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Disable the menu item, making it unselectable. */
   disabled: PropTypes.bool,
   as: PropTypes.string,

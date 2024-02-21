@@ -12,8 +12,12 @@ Nav.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** @default 'nav' */
   bsPrefix: PropTypes.string,
   /** @private */

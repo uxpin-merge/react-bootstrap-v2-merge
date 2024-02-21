@@ -25,8 +25,12 @@ Card.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** When this prop is set, it creates a Card with a Card.Body insidepassing the children directly to it */
   body: PropTypes.bool,
   as: PropTypes.string,

@@ -12,8 +12,12 @@ OffcanvasToggling.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Show the component; triggers the fade in or fade out animation */
   in: PropTypes.bool,
   /** Wait until the first "enter" transition to mount the component (add it to the DOM) */

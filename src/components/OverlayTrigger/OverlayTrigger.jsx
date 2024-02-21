@@ -12,8 +12,12 @@ OverlayTrigger.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Specify which action or actions trigger Overlay visibilityThe `click` trigger ignores the configured `delay`.@type {'hover' | 'click' |'focus' | Array<'hover' | 'click' |'focus'>} */
   trigger: PropTypes.oneOf([('hover', 'click', 'focus')]),
   /** A millisecond delay amount to show and hide the Overlay once triggered */

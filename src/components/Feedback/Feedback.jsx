@@ -12,8 +12,12 @@ Feedback.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   as: PropTypes.string,
   /** Specify whether the feedback is for valid or invalid fields */
   type: PropTypes.oneOf(['valid', 'invalid']),

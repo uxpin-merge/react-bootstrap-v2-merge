@@ -12,8 +12,12 @@ Spinner.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Changes the animation style of the spinner.@default true */
   animation: PropTypes.string,
   /** @default div */

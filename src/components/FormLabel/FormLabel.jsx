@@ -12,8 +12,12 @@ FormLabel.propTypes = {
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
+  /** Add Bootstrap classes */
+  className: PropTypes.object,
+
   /** Override styles */
   style: PropTypes.object,
+
   /** Set a custom element for this component */
   as: PropTypes.string,
   /** Renders the FormLabel as a `<Col>` component (accepting all the same props),as well as adding additional styling for horizontal forms. */
