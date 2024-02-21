@@ -1,9 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Badge as BadgeM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/badge
+ * @uxpindescription Documentation and examples for badges, our small count and labeling component.
+ */
 
 const Badge = (props) => {
-  return <BadgeM {...props} />
+  return (
+    <div style={{ display: 'inline-block' }}>
+      <BadgeM {...props} />
+    </div>
+  )
 }
 
 Badge.propTypes = {
