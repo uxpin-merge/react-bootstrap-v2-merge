@@ -4,6 +4,8 @@ module.exports = {
       {
         name: 'General',
         include: [
+          'src/components/h1/h1.jsx',
+          'src/components/Heading/Heading.jsx',
           'src/components/Accordion/Accordion.jsx',
           'src/components/AccordionBody/AccordionBody.jsx',
 
