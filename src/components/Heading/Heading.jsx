@@ -1,27 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Typography = (props) => {
-  // The Component variable will dynamically determine which HTML tag to use
-  // return (
-  //   <Component className={className} style={style}>
-  //     {children}
-  //   </Component>
-  // )
-
+const Heading = (props) => {
   return (
     <>
-      <props.as>test</props.as>
+      <props.as {...props}>Heading</props.as>
     </>
   )
 }
 
-Typography.propTypes = {
+Heading.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
 
   /** Add Bootstrap classes */
-  className: PropTypes.string, // Class names are typically strings
+  className: PropTypes.string,
 
   /** Override styles */
   style: PropTypes.object,
@@ -30,4 +23,4 @@ Typography.propTypes = {
   as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
 }
 
-export default Typography
+export default Heading
