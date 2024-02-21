@@ -13,7 +13,7 @@ ModalFooter.propTypes = {
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
   /** Add Bootstrap classes */
-  className: PropTypes.object,
+  className: PropTypes.string,
 
   /** Override styles */
   style: PropTypes.object,
