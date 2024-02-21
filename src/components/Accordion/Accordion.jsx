@@ -9,7 +9,7 @@ import AccordionItem from '../AccordionItem/AccordionItem'
 
 /**
  * @uxpindocurl https://react-bootstrap.github.io/docs/components/Accordion
- * @uxpindescription TODO
+ * @uxpindescription Build vertically collapsing accordions in combination with the Collapse component
  */
 
 const Accordion = (props) => {

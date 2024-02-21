@@ -4,7 +4,7 @@ import { AccordionItem as AccordionItemM } from 'react-bootstrap'
 
 /**
  * @uxpindocurl https://react-bootstrap.github.io/docs/components/AccordionItem
- * @uxpindescription TODO
+ * @uxpindescription Build vertically collapsing accordions in combination with the Collapse component
  * @uxpinnamespace Accordion
  */
 
