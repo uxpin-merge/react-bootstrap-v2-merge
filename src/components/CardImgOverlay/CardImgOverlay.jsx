@@ -1,14 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { CardImgOverlay as CardImgOverlayM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Card as CardM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/Card
+ * @uxpindescription TODO
+ * @uxpinnamespace Card
+ */
+const ImgOverlay = (props) => {
+  return <CardM.ImgOverlay {...props} />
+}
 
-const CardImgOverlay = (props) => {
-  return <CardImgOverlayM {...props} />;
-};
-
-CardImgOverlay.propTypes = {
+ImgOverlay.propTypes = {
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  as: PropTypes.string,
+}
 
-export default CardImgOverlay;
+export default ImgOverlay

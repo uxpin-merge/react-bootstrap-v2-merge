@@ -1,18 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { CardImg as CardImgM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Card as CardM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/Card
+ * @uxpindescription TODO
+ * @uxpinnamespace Card
+ */
 
-const CardImg = (props) => {
-  return <CardImgM {...props} />;
-};
+const Img = (props) => {
+  return <CardM.Img {...props} />
+}
 
-CardImg.propTypes = {
+Img.propTypes = {
   children: PropTypes.node,
-/** @default 'card-img' */
+  /** @default 'card-img' */
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** Defines image position insidethe card. */
   variant: PropTypes.string,
-};
+}
 
-export default CardImg;
+export default Img

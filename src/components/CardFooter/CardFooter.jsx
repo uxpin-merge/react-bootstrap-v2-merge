@@ -1,14 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { CardFooter as CardFooterM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Card as CardM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/Card
+ * @uxpindescription TODO
+ * @uxpinnamespace Card
+ */
+const Footer = (props) => {
+  return <CardM.Footer {...props} />
+}
 
-const CardFooter = (props) => {
-  return <CardFooterM {...props} />;
-};
-
-CardFooter.propTypes = {
+Footer.propTypes = {
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  as: PropTypes.string,
+}
 
-export default CardFooter;
+export default Footer
