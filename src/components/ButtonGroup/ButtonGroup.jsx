@@ -26,7 +26,7 @@ ButtonGroup.propTypes = {
   /** @default 'btn-group' */
   bsPrefix: PropTypes.string,
   /** Sets the size for all Buttons in the group.@type ('sm'|'lg') */
-  size: PropTypes.oneOf([('default', 'sm', 'lg')]),
+  size: PropTypes.oneOf(['default', 'sm', 'lg']),
 }
 
 export default ButtonGroup
