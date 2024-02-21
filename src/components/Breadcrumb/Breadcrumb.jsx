@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Breadcrumb as BreadcrumbM } from 'react-bootstrap'
+import Item from '../BreadcrumbItem/BreadcrumbItem'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/Breadcrumb
+ * @uxpindescription Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
+ */
 
 const Breadcrumb = (props) => {
   return <BreadcrumbM {...props} />
@@ -26,5 +31,7 @@ Breadcrumb.propTypes = {
   /** @default 'breadcrumb' */
   bsPrefix: PropTypes.string,
 }
+
+Breadcrumb.Item = Item
 
 export default Breadcrumb
