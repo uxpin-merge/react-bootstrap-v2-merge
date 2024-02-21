@@ -1,21 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { AlertLink as AlertLinkM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { AlertLink as AlertLinkM } from 'react-bootstrap'
 
 /**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/AlertLink
-* @uxpindescription TODO
-* @uxpinnamespace Alert
-*/
-
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/AlertLink
+ * @uxpindescription TODO
+ * @uxpinnamespace Alert
+ */
 
 const Link = (props) => {
-  return <AlertLinkM {...props} />;
-};
+  return <AlertLinkM {...props} />
+}
 
 Link.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default Link;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default Link

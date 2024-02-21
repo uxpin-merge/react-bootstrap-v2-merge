@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { DropdownButton as DropdownButtonM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { DropdownButton as DropdownButtonM } from 'react-bootstrap'
 
 const DropdownButton = (props) => {
-  return <DropdownButtonM {...props} />;
-};
+  return <DropdownButtonM {...props} />
+}
 
 DropdownButton.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** An html id attribute for the Toggle button, necessary for assistive technologies, such as screen readers.@type {string} */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** An html id attribute for the Toggle button, necessary for assistive technologies, such as screen readers.@type {string} */
   id: PropTypes.string,
   /** An `href` passed to the Toggle component */
   href: PropTypes.string,
@@ -19,7 +25,7 @@ DropdownButton.propTypes = {
   /** Disables both Buttons */
   disabled: PropTypes.bool,
   /** Aligns the dropdown menu._see [DropdownMenu](#dropdown-menu-props) for more details_@type {"start"|"end"|{ sm: "start"|"end" }|{ md: "start"|"end" }|{ lg: "start"|"end" }|{ xl: "start"|"end"}|{ xxl: "start"|"end"} } */
-  align: PropTypes.oneOf([('start','end')]),
+  align: PropTypes.oneOf([('start', 'end')]),
   /** An ARIA accessible role applied to the Menu component. When set to 'menu', The dropdown */
   menuRole: PropTypes.string,
   /** Whether to render the dropdown menu in the DOM before the first time it is shown */
@@ -36,6 +42,6 @@ DropdownButton.propTypes = {
   variant: PropTypes.string,
   /** @ignore */
   size: PropTypes.string,
-};
+}
 
-export default DropdownButton;
+export default DropdownButton

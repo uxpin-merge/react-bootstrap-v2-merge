@@ -11,20 +11,14 @@ const Text = (props) => {
 }
 
 Text.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
   as: PropTypes.string,
-  // text: PropTypes.oneOf([
-  //   'primary',
-  //   'secondary',
-  //   'success',
-  //   'danger',
-  //   'warning',
-  //   'info',
-  //   'dark',
-  //   'light',
-  //   'white',
-  //   'muted',
-  // ]),
 }
 
 export default Text

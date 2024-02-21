@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Nav as NavM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Nav as NavM } from 'react-bootstrap'
 
 const Nav = (props) => {
-  return <NavM {...props} />;
-};
+  return <NavM {...props} />
+}
 
 Nav.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'nav' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'nav' */
   bsPrefix: PropTypes.string,
   /** @private */
   navbarBsPrefix: PropTypes.string,
@@ -35,6 +41,6 @@ Nav.propTypes = {
   as: PropTypes.string,
   /** @private */
   onKeyDown: PropTypes.func,
-};
+}
 
-export default Nav;
+export default Nav

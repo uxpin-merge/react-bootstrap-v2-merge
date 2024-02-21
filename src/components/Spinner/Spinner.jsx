@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Spinner as SpinnerM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Spinner as SpinnerM } from 'react-bootstrap'
 
 const Spinner = (props) => {
-  return <SpinnerM {...props} />;
-};
+  return <SpinnerM {...props} />
+}
 
 Spinner.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Changes the animation style of the spinner.@default true */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Changes the animation style of the spinner.@default true */
   animation: PropTypes.string,
   /** @default div */
   as: PropTypes.string,
@@ -20,6 +26,6 @@ Spinner.propTypes = {
   size: PropTypes.oneOf(['sm']),
   /** An ARIA accessible role applied to the Menu component. This should generally be set to 'status' */
   role: PropTypes.string,
-};
+}
 
-export default Spinner;
+export default Spinner

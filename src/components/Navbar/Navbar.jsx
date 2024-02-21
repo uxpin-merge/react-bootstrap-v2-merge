@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Navbar as NavbarM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Navbar as NavbarM } from 'react-bootstrap'
 
 const Navbar = (props) => {
-  return <NavbarM {...props} />;
-};
+  return <NavbarM {...props} />
+}
 
 Navbar.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'navbar' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'navbar' */
   bsPrefix: PropTypes.string,
   /** The general visual variant a the Navbar.Use in combination with the `bg` prop, `background-color` utilities,or your own background styles. */
   variant: PropTypes.oneOf(['light', 'dark']),
@@ -32,6 +38,6 @@ Navbar.propTypes = {
   expanded: PropTypes.bool,
   /** The ARIA role for the navbar, will default to 'navigation' forNavbars whose `as` is something other than `<nav>`.@default 'navigation' */
   role: PropTypes.string,
-};
+}
 
-export default Navbar;
+export default Navbar

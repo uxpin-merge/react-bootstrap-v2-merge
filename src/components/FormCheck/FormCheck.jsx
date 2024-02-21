@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FormCheck as FormCheckM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { FormCheck as FormCheckM } from 'react-bootstrap'
 
 const FormCheck = (props) => {
-  return <FormCheckM {...props} />;
-};
+  return <FormCheckM {...props} />
+}
 
 FormCheck.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Groups controls horizontally with other `FormCheck`s. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Groups controls horizontally with other `FormCheck`s. */
   inline: PropTypes.bool,
   /** Put your checkboxes, radios, and switches on the opposite side. */
   reverse: PropTypes.bool,
@@ -40,6 +46,6 @@ FormCheck.propTypes = {
   feedback: PropTypes.node,
   /** Specify whether the feedback is for valid or invalid fields */
   feedbackType: PropTypes.string,
-};
+}
 
-export default FormCheck;
+export default FormCheck

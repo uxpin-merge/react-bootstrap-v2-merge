@@ -1,17 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Pagination as PaginationM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Pagination as PaginationM } from 'react-bootstrap'
 
 const Pagination = (props) => {
-  return <PaginationM {...props} />;
-};
+  return <PaginationM {...props} />
+}
 
 Pagination.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'pagination' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'pagination' */
   bsPrefix: PropTypes.string,
   /** Sets the size of all PageItems. */
   size: PropTypes.string,
-};
+}
 
-export default Pagination;
+export default Pagination

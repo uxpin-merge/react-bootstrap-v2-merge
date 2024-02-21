@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ListGroupItem as ListGroupItemM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ListGroupItem as ListGroupItemM } from 'react-bootstrap'
 
 const ListGroupItem = (props) => {
-  return <ListGroupItemM {...props} />;
-};
+  return <ListGroupItemM {...props} />
+}
 
 ListGroupItem.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'list-group-item' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'list-group-item' */
   bsPrefix: PropTypes.string,
   /** Sets contextual classes for list item. */
   variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
@@ -25,6 +31,6 @@ ListGroupItem.propTypes = {
   href: PropTypes.string,
   /** You can use a custom element type for this component. For none `action` items, items render as `li`.For actions the default is an anchor or button element depending on whether a `href` is provided.@default {'div' | 'a' | 'button'} */
   as: PropTypes.string,
-};
+}
 
-export default ListGroupItem;
+export default ListGroupItem

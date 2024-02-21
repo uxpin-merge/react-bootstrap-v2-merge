@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { SplitButton as SplitButtonM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { SplitButton as SplitButtonM } from 'react-bootstrap'
 
 const SplitButton = (props) => {
-  return <SplitButtonM {...props} />;
-};
+  return <SplitButtonM {...props} />
+}
 
 SplitButton.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** A `type` passed to the non-toggle Button */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** A `type` passed to the non-toggle Button */
   type: PropTypes.string,
   /** Accessible label for the toggle; the value of `title` if not specified. */
   toggleLabel: PropTypes.string,
@@ -25,7 +31,7 @@ SplitButton.propTypes = {
   /** Disables both Buttons */
   disabled: PropTypes.bool,
   /** Aligns the dropdown menu._see [DropdownMenu](#dropdown-menu-props) for more details_@type {"start"|"end"|{ sm: "start"|"end" }|{ md: "start"|"end" }|{ lg: "start"|"end" }|{ xl: "start"|"end"}|{ xxl: "start"|"end"} } */
-  align: PropTypes.oneOf(['start','end']),
+  align: PropTypes.oneOf(['start', 'end']),
   /** An ARIA accessible role applied to the Menu component. When set to 'menu', The dropdown */
   menuRole: PropTypes.string,
   /** Whether to render the dropdown menu in the DOM before the first time it is shown */
@@ -40,6 +46,6 @@ SplitButton.propTypes = {
   variant: PropTypes.string,
   /** @ignore */
   size: PropTypes.string,
-};
+}
 
-export default SplitButton;
+export default SplitButton

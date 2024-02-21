@@ -1,15 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { DropdownDivider as DropdownDividerM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { DropdownDivider as DropdownDividerM } from 'react-bootstrap'
 
 const DropdownDivider = (props) => {
-  return <DropdownDividerM {...props} />;
-};
+  return <DropdownDividerM {...props} />
+}
 
 DropdownDivider.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-  role: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default DropdownDivider;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+  role: PropTypes.string,
+}
+
+export default DropdownDivider

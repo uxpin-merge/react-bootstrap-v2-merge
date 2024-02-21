@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Offcanvas as OffcanvasM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Offcanvas as OffcanvasM } from 'react-bootstrap'
 
 const Offcanvas = (props) => {
-  return <OffcanvasM {...props} />;
-};
+  return <OffcanvasM {...props} />
+}
 
 Offcanvas.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Which side of the viewport the offcanvas will appear from. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Which side of the viewport the offcanvas will appear from. */
   placement: PropTypes.string,
   /** When `true` The offcanvas will show itself. */
   show: PropTypes.bool,
@@ -54,7 +60,7 @@ Offcanvas.propTypes = {
   onExited: PropTypes.func,
   /** @private */
   container: PropTypes.string,
-  "aria-labelledby": PropTypes.string,
-};
+  'aria-labelledby': PropTypes.string,
+}
 
-export default Offcanvas;
+export default Offcanvas

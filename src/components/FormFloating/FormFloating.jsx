@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FormFloating as FormFloatingM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { FormFloating as FormFloatingM } from 'react-bootstrap'
 
 const FormFloating = (props) => {
-  return <FormFloatingM {...props} />;
-};
+  return <FormFloatingM {...props} />
+}
 
 FormFloating.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default FormFloating;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default FormFloating

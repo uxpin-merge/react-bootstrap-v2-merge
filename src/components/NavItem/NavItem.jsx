@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { NavItem as NavItemM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { NavItem as NavItemM } from 'react-bootstrap'
 
 const NavItem = (props) => {
-  return <NavItemM {...props} />;
-};
+  return <NavItemM {...props} />
+}
 
 NavItem.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default NavItem;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default NavItem

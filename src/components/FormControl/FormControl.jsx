@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FormControl as FormControlM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { FormControl as FormControlM } from 'react-bootstrap'
 
 const FormControl = (props) => {
-  return <FormControlM {...props} />;
-};
+  return <FormControlM {...props} />
+}
 
 FormControl.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Add "valid" validation styles to the control */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Add "valid" validation styles to the control */
   isValid: PropTypes.bool,
   /** Add "invalid" validation styles to the control and accompanying label */
   isInvalid: PropTypes.bool,
@@ -36,6 +42,6 @@ FormControl.propTypes = {
   type: PropTypes.string,
   /** Uses `controlId` from `<FormGroup>` if not explicitly specified. */
   id: PropTypes.string,
-};
+}
 
-export default FormControl;
+export default FormControl

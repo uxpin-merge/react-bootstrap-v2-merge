@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ModalTitle as ModalTitleM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ModalTitle as ModalTitleM } from 'react-bootstrap'
 
 const ModalTitle = (props) => {
-  return <ModalTitleM {...props} />;
-};
+  return <ModalTitleM {...props} />
+}
 
 ModalTitle.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default ModalTitle;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default ModalTitle

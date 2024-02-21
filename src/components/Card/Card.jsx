@@ -21,7 +21,13 @@ const Card = (props) => {
 }
 
 Card.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
   /** When this prop is set, it creates a Card with a Card.Body insidepassing the children directly to it */
   body: PropTypes.bool,
   as: PropTypes.string,
@@ -44,9 +50,6 @@ Card.propTypes = {
   ]),
   /** Sets card border color */
   border: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
-
-  /** Sets the color mode */
-  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 }
 
 Card.Body = Body

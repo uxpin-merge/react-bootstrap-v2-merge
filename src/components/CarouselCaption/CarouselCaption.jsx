@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { CarouselCaption as CarouselCaptionM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { CarouselCaption as CarouselCaptionM } from 'react-bootstrap'
 
 const CarouselCaption = (props) => {
-  return <CarouselCaptionM {...props} />;
-};
+  return <CarouselCaptionM {...props} />
+}
 
 CarouselCaption.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default CarouselCaption;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default CarouselCaption

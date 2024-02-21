@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { DropdownItem as DropdownItemM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { DropdownItem as DropdownItemM } from 'react-bootstrap'
 
 const DropdownItem = (props) => {
-  return <DropdownItemM {...props} />;
-};
+  return <DropdownItemM {...props} />
+}
 
 DropdownItem.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Disable the menu item, making it unselectable. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Disable the menu item, making it unselectable. */
   disabled: PropTypes.bool,
   as: PropTypes.string,
   /** @default 'dropdown-item' */
@@ -21,6 +27,6 @@ DropdownItem.propTypes = {
   href: PropTypes.string,
   /** Callback fired when the menu item is clicked. */
   onClick: PropTypes.func,
-};
+}
 
-export default DropdownItem;
+export default DropdownItem

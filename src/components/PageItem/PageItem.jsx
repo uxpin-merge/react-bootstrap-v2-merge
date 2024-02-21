@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { PageItem as PageItemM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { PageItem as PageItemM } from 'react-bootstrap'
 
 const PageItem = (props) => {
-  return <PageItemM {...props} />;
-};
+  return <PageItemM {...props} />
+}
 
 PageItem.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-bsPrefix: PropTypes.string,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** Disables the PageItem */
   disabled: PropTypes.bool,
@@ -24,6 +30,6 @@ bsPrefix: PropTypes.string,
   linkClassName: PropTypes.string,
   /** A callback function for when this component is clicked. */
   onClick: PropTypes.func,
-};
+}
 
-export default PageItem;
+export default PageItem

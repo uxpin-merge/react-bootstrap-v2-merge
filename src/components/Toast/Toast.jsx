@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Toast as ToastM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Toast as ToastM } from 'react-bootstrap'
 
 const Toast = (props) => {
-  return <ToastM {...props} />;
-};
+  return <ToastM {...props} />
+}
 
 Toast.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** A `react-transition-group` Transition component used to animate the Toast on dismissal. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** A `react-transition-group` Transition component used to animate the Toast on dismissal. */
   transition: PropTypes.string,
   /** When `true` The toast will show itself. */
   show: PropTypes.bool,
@@ -36,6 +42,6 @@ Toast.propTypes = {
   onExited: PropTypes.func,
   /** Sets Toast background */
   bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
-};
+}
 
-export default Toast;
+export default Toast

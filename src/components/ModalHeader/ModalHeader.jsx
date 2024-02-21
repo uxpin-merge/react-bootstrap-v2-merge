@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ModalHeader as ModalHeaderM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ModalHeader as ModalHeaderM } from 'react-bootstrap'
 
 const ModalHeader = (props) => {
-  return <ModalHeaderM {...props} />;
-};
+  return <ModalHeaderM {...props} />
+}
 
 ModalHeader.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Provides an accessible label for the closebutton. It is used for Assistive Technology when the label text is notreadable. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Provides an accessible label for the closebutton. It is used for Assistive Technology when the label text is notreadable. */
   closeLabel: PropTypes.string,
   /** Specify whether the Component should contain a close button */
   closeButton: PropTypes.bool,
@@ -18,6 +24,6 @@ ModalHeader.propTypes = {
   closeVariant: PropTypes.string,
   /** A Callback fired when the close button is clicked. If used directly insidea Modal component, the onHide will automatically be propagated up to theparent Modal `onHide`. */
   onHide: PropTypes.func,
-};
+}
 
-export default ModalHeader;
+export default ModalHeader

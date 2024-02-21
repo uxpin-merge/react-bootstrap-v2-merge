@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Carousel as CarouselM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Carousel as CarouselM } from 'react-bootstrap'
 
 const Carousel = (props) => {
-  return <CarouselM {...props} />;
-};
+  return <CarouselM {...props} />
+}
 
 Carousel.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-defaultActiveIndex: PropTypes.string,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  defaultActiveIndex: PropTypes.string,
   /** @default 'carousel' */
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
@@ -50,6 +56,6 @@ defaultActiveIndex: PropTypes.string,
   nextLabel: PropTypes.string,
   /** Color variant that controls the colors of the controls, indicatorsand captions. */
   variant: PropTypes.string,
-};
+}
 
-export default Carousel;
+export default Carousel

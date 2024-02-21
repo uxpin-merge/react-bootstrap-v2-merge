@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Collapse as CollapseM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Collapse as CollapseM } from 'react-bootstrap'
 
 const Collapse = (props) => {
-  return <CollapseM {...props} />;
-};
+  return <CollapseM {...props} />
+}
 
 Collapse.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** The dimension used when collapsing, or a function that returns thedimension */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** The dimension used when collapsing, or a function that returns thedimension */
   dimension: PropTypes.string,
   /** Show the component; triggers the expand or collapse animation */
   in: PropTypes.bool,
@@ -36,6 +42,6 @@ Collapse.propTypes = {
   onExited: PropTypes.func,
   /** ARIA role of collapsible element */
   role: PropTypes.string,
-};
+}
 
-export default Collapse;
+export default Collapse

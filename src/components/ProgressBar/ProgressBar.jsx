@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ProgressBar as ProgressBarM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ProgressBar as ProgressBarM } from 'react-bootstrap'
 
 const ProgressBar = (props) => {
-  return <ProgressBarM {...props} />;
-};
+  return <ProgressBarM {...props} />
+}
 
 ProgressBar.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @private@default 'progress-bar' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @private@default 'progress-bar' */
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** Minimum value progress can begin from */
@@ -26,9 +32,9 @@ ProgressBar.propTypes = {
   /** Animate's the stripes from right to left */
   animated: PropTypes.bool,
   /** Sets the background class of the progress bar.@type ('success'|'danger'|'warning'|'info') */
-  variant: PropTypes.oneOf(['success','danger','warning','info']),
+  variant: PropTypes.oneOf(['success', 'danger', 'warning', 'info']),
   /** @private */
   isChild: PropTypes.bool,
-};
+}
 
-export default ProgressBar;
+export default ProgressBar

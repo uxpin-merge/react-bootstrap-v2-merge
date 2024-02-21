@@ -1,20 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Dropdown as DropdownM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Dropdown as DropdownM } from 'react-bootstrap'
 
 const Dropdown = (props) => {
-  return <DropdownM {...props} />;
-};
+  return <DropdownM {...props} />
+}
 
 Dropdown.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'dropdown' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'dropdown' */
   bsPrefix: PropTypes.string,
   /** Determines the direction and location of the Menu in relation to it's Toggle. */
   drop: PropTypes.string,
   as: PropTypes.string,
   /** Aligns the dropdown menu to the specified side of the Dropdown toggle. You canalso align the menu responsively for breakpoints starting at `sm` and up.The alignment direction will affect the specified breakpoint or larger.*Note: Using responsive alignment will disable Popper usage for positioning.*@type {"start"|"end"|{ sm: "start"|"end" }|{ md: "start"|"end" }|{ lg: "start"|"end" }|{ xl: "start"|"end"}|{ xxl: "start"|"end"} } */
-  align: PropTypes.oneOf([('start','end')]),
+  align: PropTypes.oneOf([('start', 'end')]),
   /** Whether or not the Dropdown is visible.@controllable onToggle */
   show: PropTypes.bool,
   /** A callback fired when the Dropdown wishes to change visibility. Called with the requested`show` value, the DOM event, and the source that fired it: `'click'`,`'keydown'`,`'rootClose'`, or `'select'`. jsfunction(  nextShow: boolean,  meta: ToggleMetadata,): void @controllable show */
@@ -27,6 +33,6 @@ Dropdown.propTypes = {
   navbar: PropTypes.bool,
   /** Controls the auto close behaviour of the dropdown when clicking outside ofthe button or the list. */
   autoClose: PropTypes.string,
-};
+}
 
-export default Dropdown;
+export default Dropdown

@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Fade as FadeM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Fade as FadeM } from 'react-bootstrap'
 
 const Fade = (props) => {
-  return <FadeM {...props} />;
-};
+  return <FadeM {...props} />
+}
 
 Fade.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Applies additional specified classes during the transition. Takes an objectwhere the keys correspond to the Transition status */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Applies additional specified classes during the transition. Takes an objectwhere the keys correspond to the Transition status */
   transitionClasses: PropTypes.object,
   /** Show the component; triggers the fade in or fade out animation */
   in: PropTypes.bool,
@@ -32,6 +38,6 @@ Fade.propTypes = {
   onExiting: PropTypes.func,
   /** Callback fired after the component has faded out */
   onExited: PropTypes.func,
-};
+}
 
-export default Fade;
+export default Fade

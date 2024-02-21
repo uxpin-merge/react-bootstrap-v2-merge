@@ -17,9 +17,13 @@ Alert.Heading = AlertHeading
 Alert.Link = AlertLink
 
 Alert.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
   /** @default 'alert' */
   bsPrefix: PropTypes.string,
   /** The Alert visual variant@type {'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark' | 'light'} */

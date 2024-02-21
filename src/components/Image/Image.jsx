@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Image as ImageM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Image as ImageM } from 'react-bootstrap'
 
 const Image = (props) => {
-  return <ImageM {...props} />;
-};
+  return <ImageM {...props} />
+}
 
 Image.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Sets image as fluid image. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Sets image as fluid image. */
   fluid: PropTypes.bool,
   /** Sets image shape as rounded. */
   rounded: PropTypes.bool,
@@ -18,6 +24,6 @@ Image.propTypes = {
   thumbnail: PropTypes.bool,
   /** @default 'img' */
   bsPrefix: PropTypes.string,
-};
+}
 
-export default Image;
+export default Image

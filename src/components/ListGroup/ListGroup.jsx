@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ListGroup as ListGroupM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ListGroup as ListGroupM } from 'react-bootstrap'
 
 const ListGroup = (props) => {
-  return <ListGroupM {...props} />;
-};
+  return <ListGroupM {...props} />
+}
 
 ListGroup.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'list-group' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'list-group' */
   bsPrefix: PropTypes.string,
   /** Adds a variant to the list-group */
   variant: PropTypes.string,
@@ -18,6 +24,6 @@ ListGroup.propTypes = {
   numbered: PropTypes.bool,
   /** You can use a custom element type for this component. */
   as: PropTypes.string,
-};
+}
 
-export default ListGroup;
+export default ListGroup

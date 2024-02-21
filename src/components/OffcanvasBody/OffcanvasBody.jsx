@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { OffcanvasBody as OffcanvasBodyM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { OffcanvasBody as OffcanvasBodyM } from 'react-bootstrap'
 
 const OffcanvasBody = (props) => {
-  return <OffcanvasBodyM {...props} />;
-};
+  return <OffcanvasBodyM {...props} />
+}
 
 OffcanvasBody.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default OffcanvasBody;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default OffcanvasBody

@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { TabContainer as TabContainerM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { TabContainer as TabContainerM } from 'react-bootstrap'
 
 const TabContainer = (props) => {
-  return <TabContainerM {...props} />;
-};
+  return <TabContainerM {...props} />
+}
 
 TabContainer.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Sets a default animation strategy for all children `<TabPane>`s.Defaults to `<Fade>` animation; else, use `false` to disable, or acustom react-transition-group `<Transition/>` component.@type {{Transition | false}}@default {Fade} */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Sets a default animation strategy for all children `<TabPane>`s.Defaults to `<Fade>` animation; else, use `false` to disable, or acustom react-transition-group `<Transition/>` component.@type {{Transition | false}}@default {Fade} */
   transition: PropTypes.string,
   /** HTML id attribute, required if no `generateChildId` propis specified.@type {string} */
   id: PropTypes.string,
@@ -22,6 +28,6 @@ TabContainer.propTypes = {
   onSelect: PropTypes.func,
   /** The `eventKey` of the currently active tab.@controllable onSelect */
   activeKey: PropTypes.string,
-};
+}
 
-export default TabContainer;
+export default TabContainer

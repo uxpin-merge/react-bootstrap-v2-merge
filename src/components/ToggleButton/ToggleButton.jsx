@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ToggleButton as ToggleButtonM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ToggleButton as ToggleButtonM } from 'react-bootstrap'
 
 const ToggleButton = (props) => {
-  return <ToggleButtonM {...props} />;
-};
+  return <ToggleButtonM {...props} />
+}
 
 ToggleButton.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'btn-check' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'btn-check' */
   bsPrefix: PropTypes.string,
   /** The `<input>` element `type` */
   type: PropTypes.string,
@@ -26,6 +32,6 @@ ToggleButton.propTypes = {
   value: PropTypes.string,
   /** A ref attached to the `<input>` element@type {ReactRef} */
   inputRef: PropTypes.string,
-};
+}
 
-export default ToggleButton;
+export default ToggleButton

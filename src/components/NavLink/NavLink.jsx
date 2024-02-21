@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { NavLink as NavLinkM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { NavLink as NavLinkM } from 'react-bootstrap'
 
 const NavLink = (props) => {
-  return <NavLinkM {...props} />;
-};
+  return <NavLinkM {...props} />
+}
 
 NavLink.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'a' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'a' */
   as: PropTypes.string,
   /** The disabled state of the NavItem item. */
   disabled: PropTypes.bool,
@@ -22,6 +28,6 @@ NavLink.propTypes = {
   href: PropTypes.string,
   /** Uniquely identifies the `NavItem` amongst its siblings,used to determine and control the active state of the parent `Nav` */
   eventKey: PropTypes.string,
-};
+}
 
-export default NavLink;
+export default NavLink

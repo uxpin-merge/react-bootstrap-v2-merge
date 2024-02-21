@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { DropdownToggle as DropdownToggleM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { DropdownToggle as DropdownToggleM } from 'react-bootstrap'
 
 const DropdownToggle = (props) => {
-  return <DropdownToggleM {...props} />;
-};
+  return <DropdownToggleM {...props} />
+}
 
 DropdownToggle.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
   split: PropTypes.bool,
   /** to passthrough to the underlying button or whatever from DropdownButton@private */
   childBsPrefix: PropTypes.string,
@@ -16,6 +22,6 @@ as: PropTypes.string,
   bsPrefix: PropTypes.string,
   /** An html id attribute, necessary for assistive technologies, such as screen readers.@type {string|number} */
   id: PropTypes.string,
-};
+}
 
-export default DropdownToggle;
+export default DropdownToggle

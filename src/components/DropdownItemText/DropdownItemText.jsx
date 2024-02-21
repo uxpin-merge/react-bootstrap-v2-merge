@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { DropdownItemText as DropdownItemTextM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { DropdownItemText as DropdownItemTextM } from 'react-bootstrap'
 
 const DropdownItemText = (props) => {
-  return <DropdownItemTextM {...props} />;
-};
+  return <DropdownItemTextM {...props} />
+}
 
 DropdownItemText.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default DropdownItemText;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default DropdownItemText

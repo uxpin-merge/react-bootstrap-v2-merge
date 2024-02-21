@@ -1,17 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FormCheckLabel as FormCheckLabelM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { FormCheckLabel as FormCheckLabelM } from 'react-bootstrap'
 
 const FormCheckLabel = (props) => {
-  return <FormCheckLabelM {...props} />;
-};
+  return <FormCheckLabelM {...props} />
+}
 
 FormCheckLabel.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'form-check-label' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'form-check-label' */
   bsPrefix: PropTypes.string,
   /** The HTML for attribute for associating the label with an input */
   htmlFor: PropTypes.string,
-};
+}
 
-export default FormCheckLabel;
+export default FormCheckLabel

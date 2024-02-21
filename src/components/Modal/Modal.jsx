@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Modal as ModalM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Modal as ModalM } from 'react-bootstrap'
 
 const Modal = (props) => {
-  return <ModalM {...props} />;
-};
+  return <ModalM {...props} />
+}
 
 Modal.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** A Component type that provides the modal content Markup. This is a usefulprop when you want to use your own styles and markup to create a custommodal component. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** A Component type that provides the modal content Markup. This is a usefulprop when you want to use your own styles and markup to create a custommodal component. */
   dialogAs: PropTypes.string,
   /** When `true` The modal will show itself. */
   show: PropTypes.bool,
@@ -27,9 +33,9 @@ Modal.propTypes = {
   /** @default 'modal' */
   bsPrefix: PropTypes.string,
   /** Render a large, extra large or small modal.When not provided, the modal is rendered with medium (default) size.@type ('sm'|'lg'|'xl') */
-  size: PropTypes.oneOf([('default','sm','lg','xl')]),
+  size: PropTypes.oneOf([('default', 'sm', 'lg', 'xl')]),
   /** Renders a fullscreen modal. Specifying a breakpoint will render the modalas fullscreen __below__ the breakpoint size.@type (true|'sm-down'|'md-down'|'lg-down'|'xl-down'|'xxl-down') */
-  fullscreen: PropTypes.oneOf([('sm-down','md-down','lg-down','xl-down','xxl-down')]),
+  fullscreen: PropTypes.oneOf([('sm-down', 'md-down', 'lg-down', 'xl-down', 'xxl-down')]),
   /** vertically center the Dialog in the window */
   centered: PropTypes.bool,
   /** Add an optional extra class name to .modal-backdropIt could end up looking like class="modal-backdrop foo-modal-backdrop in". */
@@ -64,10 +70,10 @@ Modal.propTypes = {
   manager: PropTypes.object,
   /** @private */
   container: PropTypes.string,
-  "data-bs-theme": PropTypes.string,
-  "aria-labelledby": PropTypes.string,
-  "aria-describedby": PropTypes.string,
-  "aria-label": PropTypes.string,
-};
+  'data-bs-theme': PropTypes.string,
+  'aria-labelledby': PropTypes.string,
+  'aria-describedby': PropTypes.string,
+  'aria-label': PropTypes.string,
+}
 
-export default Modal;
+export default Modal

@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { PopoverBody as PopoverBodyM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { PopoverBody as PopoverBodyM } from 'react-bootstrap'
 
 const PopoverBody = (props) => {
-  return <PopoverBodyM {...props} />;
-};
+  return <PopoverBodyM {...props} />
+}
 
 PopoverBody.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default PopoverBody;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default PopoverBody

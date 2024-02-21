@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { TabPane as TabPaneM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { TabPane as TabPaneM } from 'react-bootstrap'
 
 const TabPane = (props) => {
-  return <TabPaneM {...props} />;
-};
+  return <TabPaneM {...props} />
+}
 
 TabPane.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'tab-pane' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'tab-pane' */
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** A key that associates the `TabPane` with it's controlling `NavLink`. */
@@ -36,7 +42,7 @@ TabPane.propTypes = {
   /** @ignore * */
   id: PropTypes.string,
   /** @ignore * */
-  "aria-labelledby": PropTypes.string,
-};
+  'aria-labelledby': PropTypes.string,
+}
 
-export default TabPane;
+export default TabPane

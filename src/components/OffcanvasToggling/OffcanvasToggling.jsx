@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { OffcanvasToggling as OffcanvasTogglingM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { OffcanvasToggling as OffcanvasTogglingM } from 'react-bootstrap'
 
 const OffcanvasToggling = (props) => {
-  return <OffcanvasTogglingM {...props} />;
-};
+  return <OffcanvasTogglingM {...props} />
+}
 
 OffcanvasToggling.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Show the component; triggers the fade in or fade out animation */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Show the component; triggers the fade in or fade out animation */
   in: PropTypes.bool,
   /** Wait until the first "enter" transition to mount the component (add it to the DOM) */
   mountOnEnter: PropTypes.bool,
@@ -30,6 +36,6 @@ OffcanvasToggling.propTypes = {
   onExiting: PropTypes.func,
   /** Callback fired after the component has faded out */
   onExited: PropTypes.func,
-};
+}
 
-export default OffcanvasToggling;
+export default OffcanvasToggling

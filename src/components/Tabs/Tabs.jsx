@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Tabs as TabsM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Tabs as TabsM } from 'react-bootstrap'
 
 const Tabs = (props) => {
-  return <TabsM {...props} />;
-};
+  return <TabsM {...props} />
+}
 
 Tabs.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-bsPrefix: PropTypes.string,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  bsPrefix: PropTypes.string,
   as: PropTypes.string,
   navbarBsPrefix: PropTypes.string,
   cardHeaderBsPrefix: PropTypes.string,
@@ -34,6 +40,6 @@ bsPrefix: PropTypes.string,
   mountOnEnter: PropTypes.bool,
   /** Unmount tabs (remove it from the DOM) when it is no longer visible */
   unmountOnExit: PropTypes.bool,
-};
+}
 
-export default Tabs;
+export default Tabs

@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Table as TableM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Table as TableM } from 'react-bootstrap'
 
 const Table = (props) => {
-  return <TableM {...props} />;
-};
+  return <TableM {...props} />
+}
 
 Table.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'table' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'table' */
   bsPrefix: PropTypes.string,
   /** Adds zebra-striping to any table row within the `<tbody>`.Use `columns` to add zebra-striping to any table column. */
   striped: PropTypes.string,
@@ -24,6 +30,6 @@ Table.propTypes = {
   variant: PropTypes.string,
   /** Responsive tables allow tables to be scrolled horizontally with ease.Across every breakpoint, use `responsive` for horizontallyscrolling tables. Responsive tables are wrapped automatically in a `div`.Use `responsive="sm"`, `responsive="md"`, `responsive="lg"`, or`responsive="xl"` as needed to create responsive tables up toa particular breakpoint. From that breakpoint and up, the table willbehave normally and not scroll horizontally. */
   responsive: PropTypes.string,
-};
+}
 
-export default Table;
+export default Table

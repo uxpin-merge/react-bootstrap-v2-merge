@@ -11,7 +11,13 @@ const Header = (props) => {
 }
 
 Header.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
   as: PropTypes.string,
   /** @default 'card-header' */
   bsPrefix: PropTypes.string,

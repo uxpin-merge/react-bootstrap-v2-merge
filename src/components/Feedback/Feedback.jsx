@@ -1,18 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Feedback as FeedbackM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Feedback as FeedbackM } from 'react-bootstrap'
 
 const Feedback = (props) => {
-  return <FeedbackM {...props} />;
-};
+  return <FeedbackM {...props} />
+}
 
 Feedback.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
   /** Specify whether the feedback is for valid or invalid fields */
   type: PropTypes.oneOf(['valid', 'invalid']),
   /** Display feedback as a tooltip. */
   tooltip: PropTypes.bool,
-};
+}
 
-export default Feedback;
+export default Feedback

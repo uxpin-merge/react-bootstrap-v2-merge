@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { InputGroupText as InputGroupTextM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { InputGroupText as InputGroupTextM } from 'react-bootstrap'
 
 const InputGroupText = (props) => {
-  return <InputGroupTextM {...props} />;
-};
+  return <InputGroupTextM {...props} />
+}
 
 InputGroupText.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-as: PropTypes.string,
-};
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
-export default InputGroupText;
+  /** Override styles */
+  style: PropTypes.object,
+  as: PropTypes.string,
+}
+
+export default InputGroupText

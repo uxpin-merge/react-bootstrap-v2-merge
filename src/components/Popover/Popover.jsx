@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Popover as PopoverM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Popover as PopoverM } from 'react-bootstrap'
 
 const Popover = (props) => {
-  return <PopoverM {...props} />;
-};
+  return <PopoverM {...props} />
+}
 
 Popover.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** Sets the direction the Popover is positioned towards.> This is generally provided by the `Overlay` component positioning the popover */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** Sets the direction the Popover is positioned towards.> This is generally provided by the `Overlay` component positioning the popover */
   placement: PropTypes.string,
   /** @default 'popover' */
   bsPrefix: PropTypes.string,
@@ -24,6 +30,6 @@ Popover.propTypes = {
   popper: PropTypes.object,
   /** @private */
   show: PropTypes.bool,
-};
+}
 
-export default Popover;
+export default Popover

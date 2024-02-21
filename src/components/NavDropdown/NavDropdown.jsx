@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { NavDropdown as NavDropdownM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { NavDropdown as NavDropdownM } from 'react-bootstrap'
 
 const NavDropdown = (props) => {
-  return <NavDropdownM {...props} />;
-};
+  return <NavDropdownM {...props} />
+}
 
 NavDropdown.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** The content of the non-toggle Button. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** The content of the non-toggle Button. */
   title: PropTypes.node,
   /** Disables the toggle NavLink */
   disabled: PropTypes.bool,
@@ -28,6 +34,6 @@ NavDropdown.propTypes = {
   onClick: PropTypes.func,
   /** @ignore */
   bsPrefix: PropTypes.string,
-};
+}
 
-export default NavDropdown;
+export default NavDropdown

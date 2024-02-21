@@ -1,17 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { ButtonToolbar as ButtonToolbarM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ButtonToolbar as ButtonToolbarM } from 'react-bootstrap'
 
 const ButtonToolbar = (props) => {
-  return <ButtonToolbarM {...props} />;
-};
+  return <ButtonToolbarM {...props} />
+}
 
 ButtonToolbar.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** The ARIA role describing the button toolbar. Generally the default"toolbar" role is correct. An `aria-label` or `aria-labelledby`prop is also recommended. */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** The ARIA role describing the button toolbar. Generally the default"toolbar" role is correct. An `aria-label` or `aria-labelledby`prop is also recommended. */
   role: PropTypes.string,
   /** @default 'btn-toolbar' */
   bsPrefix: PropTypes.string,
-};
+}
 
-export default ButtonToolbar;
+export default ButtonToolbar

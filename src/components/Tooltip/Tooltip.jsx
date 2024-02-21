@@ -1,14 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Tooltip as TooltipM } from 'react-bootstrap';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Tooltip as TooltipM } from 'react-bootstrap'
 
 const Tooltip = (props) => {
-  return <TooltipM {...props} />;
-};
+  return <TooltipM {...props} />
+}
 
 Tooltip.propTypes = {
+  /** Content of the component */
   children: PropTypes.node,
-/** @default 'tooltip' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+
+  /** Override styles */
+  style: PropTypes.object,
+  /** @default 'tooltip' */
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** Sets the direction the Tooltip is positioned towards.> This is generally provided by the `Overlay` component positioning the tooltip */
@@ -23,6 +29,6 @@ Tooltip.propTypes = {
   hasDoneInitialMeasure: PropTypes.bool,
   /** An html id attribute, necessary for accessibility@type {string}@required */
   id: PropTypes.string,
-};
+}
 
-export default Tooltip;
+export default Tooltip
