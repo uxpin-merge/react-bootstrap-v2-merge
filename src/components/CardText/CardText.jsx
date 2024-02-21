@@ -13,18 +13,18 @@ const Text = (props) => {
 Text.propTypes = {
   children: PropTypes.node,
   as: PropTypes.string,
-  text: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'success',
-    'danger',
-    'warning',
-    'info',
-    'dark',
-    'light',
-    'white',
-    'muted',
-  ]),
+  // text: PropTypes.oneOf([
+  //   'primary',
+  //   'secondary',
+  //   'success',
+  //   'danger',
+  //   'warning',
+  //   'info',
+  //   'dark',
+  //   'light',
+  //   'white',
+  //   'muted',
+  // ]),
 }
 
 export default Text

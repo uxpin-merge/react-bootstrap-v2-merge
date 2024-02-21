@@ -44,6 +44,9 @@ Card.propTypes = {
   ]),
   /** Sets card border color */
   border: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
+
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 }
 
 Card.Body = Body
