@@ -21,16 +21,11 @@ export default (
       <Text uxpId="card-text">
         Some quick example text to build on the card title and make up the bulk of the crad content.
       </Text>
-      <Button variant="primary">Go somewhere</Button>
     </Body>
-
-    <Footer uxpId="card-body-2">
-      <Link href="#" uxpId="card-link-1">
-        Card Link
-      </Link>
-      <Link href="#" uxpId="card-link-2">
-        Another Link
-      </Link>
-    </Footer>
+    <Body uxpId="card-body-2">
+      <Button variant="primary" uxpId="card-button">
+        Go somewhere
+      </Button>
+    </Body>
   </Card>
 )
