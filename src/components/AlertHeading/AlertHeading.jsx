@@ -4,7 +4,7 @@ import { AlertHeading as AlertHeadingM } from 'react-bootstrap'
 
 /**
  * @uxpindocurl https://react-bootstrap.github.io/docs/components/AlertHeading
- * @uxpindescription TODO
+ * @uxpindescription Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
  * @uxpinnamespace Alert
  */
 

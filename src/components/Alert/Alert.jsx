@@ -6,7 +6,7 @@ import AlertLink from '../AlertLink/AlertLink'
 
 /**
  * @uxpindocurl https://react-bootstrap.github.io/docs/components/Alert
- * @uxpindescription TODO
+ * @uxpindescription Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
  */
 
 const Alert = (props) => {
