@@ -1,12 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Typography = ({ as: Component = 'h1', children, className, style }) => {
+const Typography = (props) => {
   // The Component variable will dynamically determine which HTML tag to use
+  // return (
+  //   <Component className={className} style={style}>
+  //     {children}
+  //   </Component>
+  // )
+
   return (
-    <Component className={className} style={style}>
-      {children}
-    </Component>
+    <>
+      <props.as>test</props.as>
+    </>
   )
 }
 
