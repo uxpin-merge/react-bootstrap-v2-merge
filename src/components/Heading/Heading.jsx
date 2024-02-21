@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Heading = (props) => {
   return (
     <>
-      <props.as {...props}>Heading</props.as>
+      <props.as {...props} />
     </>
   )
 }
