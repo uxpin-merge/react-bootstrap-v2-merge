@@ -19,7 +19,7 @@ export default (
     <Body uxpId="card-body">
       <Title uxpId="card-title">Card Title</Title>
       <Text uxpId="card-text">
-        Some quick example text to build on the card title and make up the bulk of the crad content.
+        Some quick example text to build on the card title and make up the bulk of the card content.
       </Text>
     </Body>
     <Body uxpId="card-body-2">
