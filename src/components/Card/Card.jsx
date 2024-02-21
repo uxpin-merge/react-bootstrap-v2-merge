@@ -14,7 +14,7 @@ import ImgOverlay from '../CardImgOverlay/CardImgOverlay'
 
 /**
  * @uxpindocurl https://react-bootstrap.github.io/docs/components/Card
- * @uxpindescription TODO
+ * @uxpindescription Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.
  */
 const Card = (props) => {
   return <CardM {...props} />

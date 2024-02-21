@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../Card'
-
+import Button from '../../Button/Button'
 import Body from '../../CardBody/CardBody'
 import Img from '../../CardImg/CardImg'
 import Title from '../../CardTitle/CardTitle'
@@ -21,6 +21,7 @@ export default (
       <Text uxpId="card-text">
         Some quick example text to build on the card title and make up the bulk of the crad content.
       </Text>
+      <Button variant="primary">Go somewhere</Button>
     </Body>
 
     <Footer uxpId="card-body-2">
