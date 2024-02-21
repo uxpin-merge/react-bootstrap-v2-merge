@@ -1,25 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Alert as AlertM } from 'react-bootstrap';
-import AlertHeading from '../AlertHeading/AlertHeading';
-import AlertLink from '../AlertLink/AlertLink';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Alert as AlertM } from 'react-bootstrap'
+import AlertHeading from '../AlertHeading/AlertHeading'
+import AlertLink from '../AlertLink/AlertLink'
 
 /**
-* @uxpindocurl https://react-bootstrap.github.io/docs/components/Alert
-* @uxpindescription TODO
-*/
-
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/Alert
+ * @uxpindescription TODO
+ */
 
 const Alert = (props) => {
-  return <AlertM {...props} />;
-};
+  return <AlertM {...props} />
+}
 
-Alert.Heading= AlertHeading;
-Alert.Link = AlertLink;
+Alert.Heading = AlertHeading
+Alert.Link = AlertLink
 
 Alert.propTypes = {
   children: PropTypes.node,
-/** @default 'alert' */
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+  /** @default 'alert' */
   bsPrefix: PropTypes.string,
   /** The Alert visual variant@type {'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark' | 'light'} */
   variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
@@ -35,7 +36,6 @@ Alert.propTypes = {
   closeVariant: PropTypes.string,
   /** Animate the alert dismissal. Defaults to using `<Fade>` animation or use`false` to disable. A custom `react-transition-group` Transition can alsobe provided. */
   transition: PropTypes.string,
-};
+}
 
-
-export default Alert;
+export default Alert
