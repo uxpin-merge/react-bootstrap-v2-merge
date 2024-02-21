@@ -14,7 +14,7 @@ import ImgOverlay from '../../CardImgOverlay/CardImgOverlay'
 
 export default (
   <Card uxpId="card">
-    <Img variant="top" src="https://picsum.photos/id/237/536/354" uxpId="card-img" />
+    <Img src="https://picsum.photos/id/237/536/354" uxpId="card-img" />
 
     <Body uxpId="card-body">
       <Title uxpId="card-title">Card Title</Title>
