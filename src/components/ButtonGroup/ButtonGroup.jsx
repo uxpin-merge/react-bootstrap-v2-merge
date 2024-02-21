@@ -10,7 +10,7 @@ ButtonGroup.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
-  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+  // 'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
   /** Add Bootstrap classes */
   className: PropTypes.string,
