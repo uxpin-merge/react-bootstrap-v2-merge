@@ -8,7 +8,6 @@ import Subtitle from '../CardSubtitle/CardSubtitle'
 import Text from '../CardText/CardText'
 import Link from '../CardLink/CardLink'
 import Footer from '../CardFooter/CardFooter'
-import Group from '../CardGroup/CardGroup'
 import Header from '../CardHeader/CardHeader'
 import ImgOverlay from '../CardImgOverlay/CardImgOverlay'
 
@@ -54,7 +53,6 @@ Card.propTypes = {
 
 Card.Body = Body
 Card.Footer = Footer
-Card.Group = Group
 Card.Header = Header
 Card.Img = Img
 Card.ImgOverlay = ImgOverlay
