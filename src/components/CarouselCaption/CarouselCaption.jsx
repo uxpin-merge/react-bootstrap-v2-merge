@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CarouselCaption as CarouselCaptionM } from 'react-bootstrap'
-
-const CarouselCaption = (props) => {
-  return <CarouselCaptionM {...props} />
+import { Carousel as CarouselM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/carousel
+ * @uxpindescription A slideshow component for cycling through elements—images or slides of text—like a carousel.
+ * @uxpinnamespace Carousel
+ */
+const Caption = (props) => {
+  return <CarouselM.Caption {...props} />
 }
 
-CarouselCaption.propTypes = {
+Caption.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -21,4 +25,4 @@ CarouselCaption.propTypes = {
   as: PropTypes.string,
 }
 
-export default CarouselCaption
+export default Caption

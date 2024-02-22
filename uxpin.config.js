@@ -41,6 +41,9 @@ module.exports = {
 
           "src/components/Spinner/Spinner.jsx",
 
+          "src/components/Carousel/Carousel.jsx",
+          "src/components/CarouselCaption/CarouselCaption.jsx",
+          "src/components/CarouselItem/CarouselItem.jsx",
 
 
         ]
@@ -81,9 +84,9 @@ module.exports = {
           // "src/components/CardSubtitle/CardSubtitle.jsx",
           // "src/components/CardTitle/CardTitle.jsx",
           // "src/components/CardText/CardText.jsx",
-          "src/components/Carousel/Carousel.jsx",
-          "src/components/CarouselCaption/CarouselCaption.jsx",
-          "src/components/CarouselItem/CarouselItem.jsx",
+          // "src/components/Carousel/Carousel.jsx",
+          // "src/components/CarouselCaption/CarouselCaption.jsx",
+          // "src/components/CarouselItem/CarouselItem.jsx",
           "src/components/CloseButton/CloseButton.jsx",
           "src/components/Col/Col.jsx",
           "src/components/Collapse/Collapse.jsx",
