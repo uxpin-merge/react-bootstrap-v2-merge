@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { DropdownItemText as DropdownItemTextM } from 'react-bootstrap'
-
-const DropdownItemText = (props) => {
-  return <DropdownItemTextM {...props} />
+import { Dropdown as DropdownM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/dropdowns
+ * @uxpindescription Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+ * @uxpinnamespace Dropdown
+ */
+const ItemText = (props) => {
+  return <DropdownM.ItemText {...props} />
 }
 
-DropdownItemText.propTypes = {
+ItemText.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -21,4 +25,4 @@ DropdownItemText.propTypes = {
   as: PropTypes.string,
 }
 
-export default DropdownItemText
+export default ItemText

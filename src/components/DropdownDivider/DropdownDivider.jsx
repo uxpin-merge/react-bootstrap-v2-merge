@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { DropdownDivider as DropdownDividerM } from 'react-bootstrap'
-
-const DropdownDivider = (props) => {
-  return <DropdownDividerM {...props} />
+import { Dropdown as DropdownM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/dropdowns
+ * @uxpindescription Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+ * @uxpinnamespace Dropdown
+ */
+const Divider = (props) => {
+  return <DropdownM.Divider {...props} />
 }
 
-DropdownDivider.propTypes = {
+Divider.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -22,4 +26,4 @@ DropdownDivider.propTypes = {
   role: PropTypes.string,
 }
 
-export default DropdownDivider
+export default Divider

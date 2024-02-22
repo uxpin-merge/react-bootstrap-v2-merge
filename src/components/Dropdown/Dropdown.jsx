@@ -1,10 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Dropdown as DropdownM } from 'react-bootstrap'
+import Item from '../DropdownItem/DropdownItem'
+import Button from '../DropdownButton/DropdownButton'
+import Divider from '../DropdownDivider/DropdownDivider'
+import Header from '../DropdownHeader/DropdownHeader'
+import ItemText from '../DropdownItemText/DropdownItemText'
+import Menu from '../DropdownMenu/DropdownMenu'
+import Toggle from '../DropdownToggle/DropdownToggle'
 
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/dropdowns
+ * @uxpindescription Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+ */
 const Dropdown = (props) => {
   return <DropdownM {...props} />
 }
+
+Dropdown.Item = Item
+Dropdown.Button = Button
+Dropdown.Divider = Divider
+Dropdown.Header = Header
+Dropdown.ItemText = ItemText
+Dropdown.Menu = Menu
+Dropdown.Toggle = Toggle
 
 Dropdown.propTypes = {
   /** Content of the component */
@@ -20,6 +39,7 @@ Dropdown.propTypes = {
 
   /** @default 'dropdown' */
   bsPrefix: PropTypes.string,
+
   /** Determines the direction and location of the Menu in relation to it's Toggle. */
   drop: PropTypes.string,
   as: PropTypes.string,
