@@ -17,7 +17,7 @@ Stack.propTypes = {
 
   /** Override styles */
   style: PropTypes.object,
-
+  direction: PropTypes.oneOf(['horizontal', 'vertical']),
   as: PropTypes.string,
   /** Change the underlying component CSS base class name and modifier class names prefix.**This is an escape hatch** for working with heavily customized bootstrap css.Defaults to `hstack` if direction is `horizontal` or `vstack` if directionis `vertical`.@default 'hstack | vstack' */
   bsPrefix: PropTypes.string,
