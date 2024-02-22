@@ -2,9 +2,8 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'General',
+        name: 'Completed',
         include: [
-          // 'src/components/h1/h1.jsx',
           'src/components/Heading/Heading.jsx',
           'src/components/Accordion/Accordion.jsx',
           'src/components/AccordionBody/AccordionBody.jsx',
@@ -14,18 +13,18 @@ module.exports = {
           'src/components/AccordionHeader/AccordionHeader.jsx',
           'src/components/AccordionItem/AccordionItem.jsx',
 
-
           'src/components/Alert/Alert.jsx',
           "src/components/AlertLink/AlertLink.jsx",
           "src/components/AlertHeading/AlertHeading.jsx",
           'src/components/Badge/Badge.jsx',
 
-          // "src/components/AbstractModalHeader/AbstractModalHeader.jsx",
-
           "src/components/Breadcrumb/Breadcrumb.jsx",
           "src/components/BreadcrumbItem/BreadcrumbItem.jsx",
+
+          "src/components/Button/Button.jsx",
           "src/components/ButtonGroup/ButtonGroup.jsx",
           "src/components/ButtonToolbar/ButtonToolbar.jsx",
+
           "src/components/Card/Card.jsx",
           "src/components/CardBody/CardBody.jsx",
           "src/components/CardFooter/CardFooter.jsx",
@@ -37,6 +36,48 @@ module.exports = {
           "src/components/CardSubtitle/CardSubtitle.jsx",
           "src/components/CardTitle/CardTitle.jsx",
           "src/components/CardText/CardText.jsx",
+
+          "src/components/Image/Image.jsx",
+
+
+        ]
+      },
+      {
+        name: 'General',
+        include: [
+          // 'src/components/h1/h1.jsx',
+          // 'src/components/Heading/Heading.jsx',
+          // 'src/components/Accordion/Accordion.jsx',
+          // 'src/components/AccordionBody/AccordionBody.jsx',
+
+          // 'src/components/AccordionButton/AccordionButton.jsx',
+          // 'src/components/AccordionCollapse/AccordionCollapse.jsx',
+          // 'src/components/AccordionHeader/AccordionHeader.jsx',
+          // 'src/components/AccordionItem/AccordionItem.jsx',
+
+
+          // 'src/components/Alert/Alert.jsx',
+          // "src/components/AlertLink/AlertLink.jsx",
+          // "src/components/AlertHeading/AlertHeading.jsx",
+          // 'src/components/Badge/Badge.jsx',
+
+          // // "src/components/AbstractModalHeader/AbstractModalHeader.jsx",
+
+          // "src/components/Breadcrumb/Breadcrumb.jsx",
+          // "src/components/BreadcrumbItem/BreadcrumbItem.jsx",
+          // "src/components/ButtonGroup/ButtonGroup.jsx",
+          // "src/components/ButtonToolbar/ButtonToolbar.jsx",
+          // "src/components/Card/Card.jsx",
+          // "src/components/CardBody/CardBody.jsx",
+          // "src/components/CardFooter/CardFooter.jsx",
+          // "src/components/CardGroup/CardGroup.jsx",
+          // "src/components/CardHeader/CardHeader.jsx",
+          // "src/components/CardImg/CardImg.jsx",
+          // "src/components/CardImgOverlay/CardImgOverlay.jsx",
+          // "src/components/CardLink/CardLink.jsx",
+          // "src/components/CardSubtitle/CardSubtitle.jsx",
+          // "src/components/CardTitle/CardTitle.jsx",
+          // "src/components/CardText/CardText.jsx",
           "src/components/Carousel/Carousel.jsx",
           "src/components/CarouselCaption/CarouselCaption.jsx",
           "src/components/CarouselItem/CarouselItem.jsx",
@@ -69,13 +110,12 @@ module.exports = {
           "src/components/FormLabel/FormLabel.jsx",
           "src/components/FormRange/FormRange.jsx",
           "src/components/FormText/FormText.jsx",
-          "src/components/Image/Image.jsx",
+          // "src/components/Image/Image.jsx",
           "src/components/FormSelect/FormSelect.jsx",
           "src/components/InputGroup/InputGroup.jsx",
           "src/components/InputGroupText/InputGroupText.jsx",
           "src/components/ListGroup/ListGroup.jsx",
           "src/components/ListGroupItem/ListGroupItem.jsx",
-          "src/components/Button/Button.jsx",
           "src/components/ModalBody/ModalBody.jsx",
           "src/components/Modal/Modal.jsx",
           "src/components/ModalDialog/ModalDialog.jsx",
