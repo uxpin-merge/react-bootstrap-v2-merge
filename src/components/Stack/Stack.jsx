@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Stack as StackM } from 'react-bootstrap'
 
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/layout/stack
+ * @uxpindescription Shorthand helpers that build on top of our flexbox utilities to make component layout faster and easier than ever.
+ */
 const Stack = (props) => {
   return <StackM {...props} />
 }
