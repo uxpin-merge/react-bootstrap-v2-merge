@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ListGroupItem as ListGroupItemM } from 'react-bootstrap'
-
-const ListGroupItem = (props) => {
-  return <ListGroupItemM {...props} />
+import { ListGroup as ListGroupM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/list-group
+ * @uxpindescription List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
+ * @uxpinnamespace ListGroup
+ */
+const Item = (props) => {
+  return <ListGroupM.Item {...props} />
 }
 
-ListGroupItem.propTypes = {
+Item.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -37,4 +41,4 @@ ListGroupItem.propTypes = {
   as: PropTypes.string,
 }
 
-export default ListGroupItem
+export default Item

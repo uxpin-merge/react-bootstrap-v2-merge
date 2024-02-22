@@ -56,6 +56,11 @@ module.exports = {
           "src/components/DropdownDivider/DropdownDivider.jsx",
           "src/components/DropdownMenu/DropdownMenu.jsx",
           "src/components/DropdownToggle/DropdownToggle.jsx",
+
+          "src/components/ListGroup/ListGroup.jsx",
+          "src/components/ListGroupItem/ListGroupItem.jsx",
+
+
         ]
       },
       {
@@ -130,8 +135,8 @@ module.exports = {
           "src/components/FormSelect/FormSelect.jsx",
           "src/components/InputGroup/InputGroup.jsx",
           "src/components/InputGroupText/InputGroupText.jsx",
-          "src/components/ListGroup/ListGroup.jsx",
-          "src/components/ListGroupItem/ListGroupItem.jsx",
+          // "src/components/ListGroup/ListGroup.jsx",
+          // "src/components/ListGroupItem/ListGroupItem.jsx",
           "src/components/ModalBody/ModalBody.jsx",
           "src/components/Modal/Modal.jsx",
           "src/components/ModalDialog/ModalDialog.jsx",
