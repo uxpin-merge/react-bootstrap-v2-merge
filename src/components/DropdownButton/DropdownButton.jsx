@@ -34,6 +34,8 @@ DropdownButton.propTypes = {
   /** Aligns the dropdown menu._see [DropdownMenu](#dropdown-menu-props) for more details_@type {"start"|"end"|{ sm: "start"|"end" }|{ md: "start"|"end" }|{ lg: "start"|"end" }|{ xl: "start"|"end"}|{ xxl: "start"|"end"} } */
   align: PropTypes.oneOf(['start', 'end']),
   /** An ARIA accessible role applied to the Menu component. When set to 'menu', The dropdown */
+  /** Determines the direction and location of the Menu in relation to it's Toggle. */
+  drop: PropTypes.oneOf(['up', 'up-centered', 'down', 'down-centered', 'start', 'end']),
   menuRole: PropTypes.string,
   /** Whether to render the dropdown menu in the DOM before the first time it is shown */
   renderMenuOnMount: PropTypes.bool,
