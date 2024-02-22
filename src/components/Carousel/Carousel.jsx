@@ -66,7 +66,7 @@ Carousel.propTypes = {
   /** Label shown to screen readers only, can be used to show the next elementin the carousel.Set to null to deactivate. */
   nextLabel: PropTypes.string,
   /** Color variant that controls the colors of the controls, indicatorsand captions. */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['dark']),
 }
 
 export default Carousel
