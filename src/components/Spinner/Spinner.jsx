@@ -15,7 +15,7 @@ const Spinner = (props) => {
 
 Spinner.propTypes = {
   /** Content of the component */
-  children: PropTypes.node,
+  // children: PropTypes.node,
   /** Sets the color mode */
   // 'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
@@ -26,7 +26,7 @@ Spinner.propTypes = {
   style: PropTypes.object,
 
   /** Changes the animation style of the spinner.@default true */
-  animation: PropTypes.string,
+  animation: PropTypes.oneOf(['border', 'grow', false]),
   /** @default div */
   as: PropTypes.string,
   /** @default 'spinner' */
@@ -34,7 +34,7 @@ Spinner.propTypes = {
   /** The visual color style of the spinner */
   variant: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']),
   /** Component size variations. */
-  size: PropTypes.oneOf(['sm']),
+  size: PropTypes.oneOf(['default', 'sm']),
   /** An ARIA accessible role applied to the Menu component. This should generally be set to 'status' */
   role: PropTypes.string,
 }
