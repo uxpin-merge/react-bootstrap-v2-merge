@@ -51,7 +51,7 @@ Button.propTypes = {
   /** Providing a `href` will render an `<a>` element, _styled_ as a button. */
   href: PropTypes.string,
   /** Defines HTML button type attribute.@default 'button' */
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['button', 'submit', 'Reset']),
   as: PropTypes.string,
 }
 
