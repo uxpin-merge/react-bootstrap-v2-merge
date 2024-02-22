@@ -45,6 +45,9 @@ module.exports = {
           "src/components/CarouselCaption/CarouselCaption.jsx",
           "src/components/CarouselItem/CarouselItem.jsx",
 
+          "src/components/DropdownButton/DropdownButton.jsx",
+          "src/components/SplitButton/SplitButton.jsx",
+
           "src/components/Dropdown/Dropdown.jsx",
           "src/components/DropdownHeader/DropdownHeader.jsx",
           "src/components/DropdownButton/DropdownButton.jsx",
@@ -163,7 +166,7 @@ module.exports = {
           "src/components/ProgressBar/ProgressBar.jsx",
           "src/components/Row/Row.jsx",
           // "src/components/Spinner/Spinner.jsx",
-          "src/components/SplitButton/SplitButton.jsx",
+          // "src/components/SplitButton/SplitButton.jsx",
           "src/components/Switch/Switch.jsx",
           "src/components/Stack/Stack.jsx",
           "src/components/TabContent/TabContent.jsx",

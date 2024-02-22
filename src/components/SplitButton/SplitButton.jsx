@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { SplitButton as SplitButtonM } from 'react-bootstrap'
 
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/dropdowns#dropdownbutton
+ * @uxpindescription A convenience component for simple or general use split button dropdowns.
+ */
 const SplitButton = (props) => {
   return <SplitButtonM {...props} />
 }
@@ -10,7 +14,7 @@ SplitButton.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
-  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+  // 'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
   /** Add Bootstrap classes */
   className: PropTypes.string,
@@ -46,10 +50,28 @@ SplitButton.propTypes = {
   flip: PropTypes.bool,
   /** @ignore */
   bsPrefix: PropTypes.string,
-  /** @ignore */
-  variant: PropTypes.string,
-  /** @ignore */
-  size: PropTypes.string,
+  /** May be one of a variety of visual variants such as:`'primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'link'`as well as "outline" versions (prefixed by 'outline-*')`'outline-primary', 'outline-secondary', 'outline-success', 'outline-danger', 'outline-warning', 'outline-info', 'outline-dark', 'outline-light'` */
+  variant: PropTypes.oneOf([
+    'primary',
+    'secondary',
+    'success',
+    'danger',
+    'warning',
+    'info',
+    'dark',
+    'light',
+    'link',
+    'outline-primary',
+    'outline-secondary',
+    'outline-success',
+    'outline-danger',
+    'outline-warning',
+    'outline-info',
+    'outline-dark',
+    'outline-light',
+  ]),
+  /** Specifies a large or small button.@type ('sm'|'lg') */
+  size: PropTypes.oneOf(['default', 'sm', 'lg']),
 }
 
 export default SplitButton
