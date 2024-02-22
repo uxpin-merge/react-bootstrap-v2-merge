@@ -44,6 +44,8 @@ SplitButton.propTypes = {
   drop: PropTypes.oneOf(['up', 'up-centered', 'down', 'down-centered', 'start', 'end']),
   /** An ARIA accessible role applied to the Menu component. When set to 'menu', The dropdown */
   menuRole: PropTypes.string,
+  /** Menu color variant.Omitting this will use the default light color. */
+  menuVariant: PropTypes.oneOf(['light', 'dark']),
   /** Whether to render the dropdown menu in the DOM before the first time it is shown */
   renderMenuOnMount: PropTypes.bool,
   /** Which event when fired outside the component will cause it to be closed._see [DropdownMenu](#dropdown-menu-props) for more details_ */
