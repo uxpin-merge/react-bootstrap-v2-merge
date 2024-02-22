@@ -13,7 +13,7 @@ DropdownButton.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
-  // 'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
   /** Add Bootstrap classes */
   className: PropTypes.string,
@@ -42,7 +42,7 @@ DropdownButton.propTypes = {
   /** Which event when fired outside the component will cause it to be closed._see [DropdownMenu](#dropdown-menu-props) for more details_ */
   rootCloseEvent: PropTypes.string,
   /** Menu color variant.Omitting this will use the default light color. */
-  menuVariant: PropTypes.oneOf(['light', 'dark']),
+  // menuVariant: PropTypes.oneOf(['light', 'dark']),
   /** Allow Dropdown to flip in case of an overlapping on the reference element. For more information refer toPopper.js's flip [docs](https://popper.js.org/docs/v2/modifiers/flip/). */
   flip: PropTypes.bool,
   /** @ignore */
