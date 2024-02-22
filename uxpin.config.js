@@ -39,6 +39,9 @@ module.exports = {
 
           "src/components/Image/Image.jsx",
 
+          "src/components/Spinner/Spinner.jsx",
+
+
 
         ]
       },
@@ -149,7 +152,7 @@ module.exports = {
           "src/components/Ratio/Ratio.jsx",
           "src/components/ProgressBar/ProgressBar.jsx",
           "src/components/Row/Row.jsx",
-          "src/components/Spinner/Spinner.jsx",
+          // "src/components/Spinner/Spinner.jsx",
           "src/components/SplitButton/SplitButton.jsx",
           "src/components/Switch/Switch.jsx",
           "src/components/Stack/Stack.jsx",

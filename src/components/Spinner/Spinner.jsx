@@ -1,16 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Spinner as SpinnerM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/spinner
+ * @uxpindescription Spinners can be used to show the loading state in your projects.
+ */
 const Spinner = (props) => {
-  return <SpinnerM {...props} />
+  return (
+    <div style={{ display: 'inline-block' }}>
+      <SpinnerM {...props} />
+    </div>
+  )
 }
 
 Spinner.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
-  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
+  // 'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
   /** Add Bootstrap classes */
   className: PropTypes.string,
