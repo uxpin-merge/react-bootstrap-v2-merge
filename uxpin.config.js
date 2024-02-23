@@ -2,6 +2,15 @@ module.exports = {
   components: {
     categories: [
       {
+        name: 'Layout',
+        include: [
+          "src/components/Container/Container.jsx",
+          "src/components/Row/Row.jsx",
+          "src/components/Col/Col.jsx",
+          "src/components/Stack/Stack.jsx",
+        ]
+      },
+      {
         name: 'Completed',
         include: [
           'src/components/Heading/Heading.jsx',
@@ -24,6 +33,9 @@ module.exports = {
           "src/components/Button/Button.jsx",
           "src/components/ButtonGroup/ButtonGroup.jsx",
           "src/components/ButtonToolbar/ButtonToolbar.jsx",
+
+          "src/components/ToggleButton/ToggleButton.jsx",
+          "src/components/ToggleButtonGroup/ToggleButtonGroup.jsx",
 
           "src/components/Card/Card.jsx",
           "src/components/CardBody/CardBody.jsx",
@@ -79,6 +91,8 @@ module.exports = {
           "src/components/NavbarOffcanvas/NavbarOffcanvas.jsx",
           "src/components/NavbarToggle/NavbarToggle.jsx",
 
+
+
         ]
       },
       {
@@ -121,9 +135,9 @@ module.exports = {
           // "src/components/CarouselCaption/CarouselCaption.jsx",
           // "src/components/CarouselItem/CarouselItem.jsx",
           "src/components/CloseButton/CloseButton.jsx",
-          "src/components/Col/Col.jsx",
           "src/components/Collapse/Collapse.jsx",
-          "src/components/Container/Container.jsx",
+          // "src/components/Col/Col.jsx",
+          // "src/components/Container/Container.jsx",
           // "src/components/DropdownHeader/DropdownHeader.jsx",
           // "src/components/DropdownButton/DropdownButton.jsx",
           // "src/components/Dropdown/Dropdown.jsx",
@@ -187,11 +201,11 @@ module.exports = {
           "src/components/PopoverHeader/PopoverHeader.jsx",
           "src/components/Ratio/Ratio.jsx",
           "src/components/ProgressBar/ProgressBar.jsx",
-          "src/components/Row/Row.jsx",
+          // "src/components/Row/Row.jsx",
           // "src/components/Spinner/Spinner.jsx",
           // "src/components/SplitButton/SplitButton.jsx",
           "src/components/Switch/Switch.jsx",
-          "src/components/Stack/Stack.jsx",
+          // "src/components/Stack/Stack.jsx",
           "src/components/TabContent/TabContent.jsx",
           "src/components/TabPane/TabPane.jsx",
           "src/components/TabContainer/TabContainer.jsx",
@@ -204,8 +218,8 @@ module.exports = {
           "src/components/ToastFade/ToastFade.jsx",
           "src/components/ToastHeader/ToastHeader.jsx",
           "src/components/Tooltip/Tooltip.jsx",
-          "src/components/ToggleButton/ToggleButton.jsx",
-          "src/components/ToggleButtonGroup/ToggleButtonGroup.jsx",
+          // "src/components/ToggleButton/ToggleButton.jsx",
+          // "src/components/ToggleButtonGroup/ToggleButtonGroup.jsx",
           "src/components/TransitionWrapper/TransitionWrapper.jsx"
 
 
