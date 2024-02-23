@@ -1,8 +1,4 @@
-import React from 'react';
-import FormCheck from '../FormCheck';
+import React from 'react'
+import Check from '../FormCheck'
 
-export default (
-  <FormCheck uxpId='formcheck-1'>
-    Content here
-  </FormCheck>
-);
+export default <Check label="Checkbox Label" uxpId="formcheck-1" />

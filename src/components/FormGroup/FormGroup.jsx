@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormGroup as FormGroupM } from 'react-bootstrap'
-
-const FormGroup = (props) => {
-  return <FormGroupM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/overview
+ * @uxpindescription The <FormGroup> component wraps a form control with proper spacing, along with support for a label, help text, and validation state.
+ * @uxpinnamespace Form
+ */
+const Group = (props) => {
+  return <FormM.Group {...props} />
 }
 
-FormGroup.propTypes = {
+Group.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -25,4 +29,4 @@ FormGroup.propTypes = {
   _ref: PropTypes.string,
 }
 
-export default FormGroup
+export default Group

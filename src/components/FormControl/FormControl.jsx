@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormControl as FormControlM } from 'react-bootstrap'
-
-const FormControl = (props) => {
-  return <FormControlM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/form-control
+ * @uxpindescription Give textual form controls like <input>s and <textarea>s an upgrade with custom styles, sizing, focus states, and more.
+ * @uxpinnamespace Form
+ */
+const Control = (props) => {
+  return <FormM.Control {...props} />
 }
 
-FormControl.propTypes = {
+Control.propTypes = {
   /** Content of the component */
-  children: PropTypes.node,
+  // children: PropTypes.node,
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
@@ -17,19 +21,24 @@ FormControl.propTypes = {
 
   /** Override styles */
   style: PropTypes.object,
-
+  /** Placeholder text for the Input */
+  placeholder: PropTypes.string,
   /** Add "valid" validation styles to the control */
   isValid: PropTypes.bool,
   /** Add "invalid" validation styles to the control and accompanying label */
   isInvalid: PropTypes.bool,
-  /** The underlying HTML element to use when rendering the FormControl. */
-  as: PropTypes.string,
+  /** The underlying HTML element to use when rendering the FormControl.
+   * @uxpinpropname  as textarea
+   */
+  as: PropTypes.oneOf(['textarea']),
+  /**  Specifies the visible number of lines in a text area */
+  rows: PropTypes.number,
   /** @default {'form-control'} */
   bsPrefix: PropTypes.string,
   /** The FormControl `ref` will be forwarded to the underlying input element,which means unless `as` is a composite component,it will be a DOM node, when resolved.@type {ReactRef}@alias ref */
   _ref: PropTypes.string,
   /** Input size variants */
-  size: PropTypes.oneOf(['sm', 'lg']),
+  size: PropTypes.oneOf(['sm', 'default', 'lg']),
   /** The size attribute of the underlying HTML element.Specifies the visible width in characters if `as` is `'input'`. */
   htmlSize: PropTypes.number,
   /** Render the input as plain text. Generally used along side `readOnly`. */
@@ -42,10 +51,14 @@ FormControl.propTypes = {
   value: PropTypes.string,
   /** A callback fired when the `value` prop changes */
   onChange: PropTypes.func,
-  /** The HTML input `type`, which is only relevant if `as` is `'input'` (the default). */
-  type: PropTypes.string,
+  /**  Type of the `input` element */
+  type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'date']),
+
+  /**  Specifies that a text area is required/must be filled out */
+  required: PropTypes.bool,
+
   /** Uses `controlId` from `<FormGroup>` if not explicitly specified. */
   id: PropTypes.string,
 }
 
-export default FormControl
+export default Control

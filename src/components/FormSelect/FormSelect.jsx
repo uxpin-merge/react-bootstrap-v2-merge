@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormSelect as FormSelectM } from 'react-bootstrap'
-
-const FormSelect = (props) => {
-  return <FormSelectM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/select
+ * @uxpindescription Customize the native <select> with custom CSS that changes the element’s initial appearance.
+ * @uxpinnamespace Form
+ */
+const Select = (props) => {
+  return <FormM.Select {...props} />
 }
 
-FormSelect.propTypes = {
+Select.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -36,4 +40,4 @@ FormSelect.propTypes = {
   onChange: PropTypes.func,
 }
 
-export default FormSelect
+export default Select

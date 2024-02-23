@@ -1,10 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Form as FormM } from 'react-bootstrap'
+import Check from '../FormCheck/FormCheck'
+import Control from '../FormControl/FormControl'
+import Group from '../FormGroup/FormGroup'
+import Label from '../FormLabel/FormLabel'
+import Range from '../FormRange/FormRange'
+import Select from '../FormSelect/FormSelect'
+import Text from '../FormText/FormText'
+import Floating from '../FormFloating/FormFloating'
 
 const Form = (props) => {
   return <FormM {...props} />
 }
+
+Form.Control = Control
+Form.Group = Group
+Form.Label = Label
+Form.Range = Range
+Form.Select = Select
+Form.Text = Text
+Form.Floating = Floating
+Form.Check = Check
 
 Form.propTypes = {
   /** Content of the component */

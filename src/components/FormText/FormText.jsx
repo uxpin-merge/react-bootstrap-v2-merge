@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormText as FormTextM } from 'react-bootstrap'
-
-const FormText = (props) => {
-  return <FormTextM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/form-text
+ * @uxpindescription Create block-level or inline-level form text.
+ * @uxpinnamespace Form
+ */
+const Text = (props) => {
+  return <FormM.Text {...props} />
 }
 
-FormText.propTypes = {
+Text.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -27,4 +31,4 @@ FormText.propTypes = {
   muted: PropTypes.bool,
 }
 
-export default FormText
+export default Text

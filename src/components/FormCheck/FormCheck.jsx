@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormCheck as FormCheckM } from 'react-bootstrap'
-
-const FormCheck = (props) => {
-  return <FormCheckM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/checks-radios
+ * @uxpindescription Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.
+ * @uxpinnamespace Form
+ */
+const Check = (props) => {
+  return <FormM.Check {...props} />
 }
 
-FormCheck.propTypes = {
+Check.propTypes = {
   /** Content of the component */
-  children: PropTypes.node,
+  // children: PropTypes.node,
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
@@ -33,7 +37,7 @@ FormCheck.propTypes = {
   /** `title` attribute for the underlying `FormCheckLabel`. */
   title: PropTypes.string,
   /** The type of checkable. */
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['checkbox', 'radio']),
   /** The underlying HTML element to use when rendering the FormCheck. */
   as: PropTypes.string,
   /** @default 'form-check' */
@@ -52,4 +56,4 @@ FormCheck.propTypes = {
   feedbackType: PropTypes.string,
 }
 
-export default FormCheck
+export default Check

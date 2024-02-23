@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormLabel as FormLabelM } from 'react-bootstrap'
-
-const FormLabel = (props) => {
-  return <FormLabelM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/overview
+ * @uxpindescription range inputs for consistent cross-browser styling and built-in customization.
+ * @uxpinnamespace Form
+ */
+const Label = (props) => {
+  return <FormM.Label {...props} />
 }
 
-FormLabel.propTypes = {
+Label.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -32,4 +36,4 @@ FormLabel.propTypes = {
   _ref: PropTypes.string,
 }
 
-export default FormLabel
+export default Label

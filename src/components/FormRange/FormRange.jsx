@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormRange as FormRangeM } from 'react-bootstrap'
-
-const FormRange = (props) => {
-  return <FormRangeM {...props} />
+import { Form as FormM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/range
+ * @uxpindescription range inputs for consistent cross-browser styling and built-in customization.
+ * @uxpinnamespace Form
+ */
+const Range = (props) => {
+  return <FormM.Range {...props} />
 }
 
-FormRange.propTypes = {
+Range.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -30,4 +34,4 @@ FormRange.propTypes = {
   id: PropTypes.string,
 }
 
-export default FormRange
+export default Range

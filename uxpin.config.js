@@ -2,12 +2,34 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'Layout',
+        name: 'LAYOUT',
         include: [
           "src/components/Container/Container.jsx",
           "src/components/Row/Row.jsx",
           "src/components/Col/Col.jsx",
           "src/components/Stack/Stack.jsx",
+        ]
+      },
+      {
+        name: 'FORMS',
+        include: [
+          "src/components/Form/Form.jsx",
+          "src/components/FormLabel/FormLabel.jsx",
+          "src/components/FormControl/FormControl.jsx",
+          "src/components/FormGroup/FormGroup.jsx",
+
+
+          "src/components/FormCheck/FormCheck.jsx",
+          "src/components/FormText/FormText.jsx",
+          "src/components/FormSelect/FormSelect.jsx",
+          "src/components/FormRange/FormRange.jsx",
+          "src/components/FormSelect/FormSelect.jsx",
+
+
+
+          // "src/components/FormCheckInput/FormCheckInput.jsx",
+          // "src/components/FormCheckLabel/FormCheckLabel.jsx",
+          // "src/components/FormFloating/FormFloating.jsx",
         ]
       },
       {
@@ -152,19 +174,20 @@ module.exports = {
           "src/components/Figure/Figure.jsx",
           "src/components/FigureCaption/FigureCaption.jsx",
           "src/components/FigureImage/FigureImage.jsx",
-          "src/components/Form/Form.jsx",
-          "src/components/FormCheckInput/FormCheckInput.jsx",
-          "src/components/FormCheck/FormCheck.jsx",
           "src/components/FloatingLabel/FloatingLabel.jsx",
-          "src/components/FormCheckLabel/FormCheckLabel.jsx",
-          "src/components/FormControl/FormControl.jsx",
-          "src/components/FormGroup/FormGroup.jsx",
-          "src/components/FormFloating/FormFloating.jsx",
-          "src/components/FormLabel/FormLabel.jsx",
-          "src/components/FormRange/FormRange.jsx",
-          "src/components/FormText/FormText.jsx",
           // "src/components/Image/Image.jsx",
-          "src/components/FormSelect/FormSelect.jsx",
+
+          // "src/components/Form/Form.jsx",
+          // "src/components/FormCheckInput/FormCheckInput.jsx",
+          // "src/components/FormCheck/FormCheck.jsx",
+          // "src/components/FormCheckLabel/FormCheckLabel.jsx",
+          // "src/components/FormControl/FormControl.jsx",
+          // "src/components/FormGroup/FormGroup.jsx",
+          // "src/components/FormFloating/FormFloating.jsx",
+          // "src/components/FormLabel/FormLabel.jsx",
+          // "src/components/FormRange/FormRange.jsx",
+          // "src/components/FormText/FormText.jsx",
+          // "src/components/FormSelect/FormSelect.jsx",
           "src/components/InputGroup/InputGroup.jsx",
           "src/components/InputGroupText/InputGroupText.jsx",
           // "src/components/ListGroup/ListGroup.jsx",
