@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { NavbarBrand as NavbarBrandM } from 'react-bootstrap'
-
-const NavbarBrand = (props) => {
-  return <NavbarBrandM {...props} />
+import { Navbar as NavbarM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/navbar
+ * @uxpindescription A powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more.
+ * @uxpinnamespace Navbar
+ */
+const Brand = (props) => {
+  return <NavbarM.Brand {...props} />
 }
 
-NavbarBrand.propTypes = {
+Brand.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -26,4 +30,4 @@ NavbarBrand.propTypes = {
   as: PropTypes.string,
 }
 
-export default NavbarBrand
+export default Brand

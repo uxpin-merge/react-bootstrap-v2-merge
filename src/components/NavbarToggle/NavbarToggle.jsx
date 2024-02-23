@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { NavbarToggle as NavbarToggleM } from 'react-bootstrap'
-
-const NavbarToggle = (props) => {
-  return <NavbarToggleM {...props} />
+import { Navbar as NavbarM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/navbar
+ * @uxpindescription A powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more.
+ * @uxpinnamespace Navbar
+ */
+const Toggle = (props) => {
+  return <NavbarM.Toggle {...props} />
 }
 
-NavbarToggle.propTypes = {
+Toggle.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -27,4 +31,4 @@ NavbarToggle.propTypes = {
   onClick: PropTypes.func,
 }
 
-export default NavbarToggle
+export default Toggle

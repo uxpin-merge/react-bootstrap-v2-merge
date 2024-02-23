@@ -1,10 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Navbar as NavbarM } from 'react-bootstrap'
+import Brand from '../NavbarBrand/NavbarBrand'
+import Collapse from '../NavbarCollapse/NavbarCollapse'
+import Toggle from '../NavbarToggle/NavbarToggle'
 
 const Navbar = (props) => {
   return <NavbarM {...props} />
 }
+Navbar.Brand = Brand
+Navbar.Collapse = Collapse
+Navbar.Toggle = Toggle
 
 Navbar.propTypes = {
   /** Content of the component */
@@ -20,12 +26,12 @@ Navbar.propTypes = {
 
   /** @default 'navbar' */
   bsPrefix: PropTypes.string,
-  /** The general visual variant a the Navbar.Use in combination with the `bg` prop, `background-color` utilities,or your own background styles. */
-  variant: PropTypes.oneOf(['light', 'dark']),
+  /** The general visual variant a the Navbar. Use in combination with the `bg` prop, `background-color` utilities,or your own background styles. */
+  variant: PropTypes.oneOf(['dark', 'light']),
   /** The breakpoint, below which, the Navbar will collapse.When `true` the Navbar will always be expanded regardless of screen size. */
   expand: PropTypes.string,
   /** A convenience prop for adding `bg-*` utility classes since they are so commonly used here.`light` and `dark` are common choices but any `bg-*` class is supported, including any custom ones you might define.Pairs nicely with the `variant` prop. */
-  bg: PropTypes.string,
+  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'white']),
   /** Create a fixed navbar along the top or bottom of the screen, that scrolls with thepage. A convenience prop for the `fixed-*` positioning classes. */
   fixed: PropTypes.string,
   /** Position the navbar at the top or bottom of the viewport, but only after scrolling past it.A convenience prop for the `sticky-*` positioning classes. */

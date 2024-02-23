@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { NavbarCollapse as NavbarCollapseM } from 'react-bootstrap'
-
-const NavbarCollapse = (props) => {
-  return <NavbarCollapseM {...props} />
+import { Navbar as NavbarM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/navbar
+ * @uxpindescription A powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more.
+ * @uxpinnamespace Navbar
+ */
+const Collapse = (props) => {
+  return <NavbarM.Collapse {...props} />
 }
 
-NavbarCollapse.propTypes = {
+Collapse.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -22,4 +26,4 @@ NavbarCollapse.propTypes = {
   bsPrefix: PropTypes.string,
 }
 
-export default NavbarCollapse
+export default Collapse

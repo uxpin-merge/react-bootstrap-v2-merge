@@ -72,6 +72,13 @@ module.exports = {
           "src/components/NavItem/NavItem.jsx",
           "src/components/NavLink/NavLink.jsx",
 
+
+          "src/components/Navbar/Navbar.jsx",
+          "src/components/NavbarCollapse/NavbarCollapse.jsx",
+          "src/components/NavbarBrand/NavbarBrand.jsx",
+          "src/components/NavbarOffcanvas/NavbarOffcanvas.jsx",
+          "src/components/NavbarToggle/NavbarToggle.jsx",
+
         ]
       },
       {
@@ -158,11 +165,11 @@ module.exports = {
           // "src/components/NavDropdown/NavDropdown.jsx",
           // "src/components/NavItem/NavItem.jsx",
           // "src/components/NavLink/NavLink.jsx",
-          "src/components/Navbar/Navbar.jsx",
-          "src/components/NavbarCollapse/NavbarCollapse.jsx",
-          "src/components/NavbarBrand/NavbarBrand.jsx",
-          "src/components/NavbarOffcanvas/NavbarOffcanvas.jsx",
-          "src/components/NavbarToggle/NavbarToggle.jsx",
+          // "src/components/Navbar/Navbar.jsx",
+          // "src/components/NavbarCollapse/NavbarCollapse.jsx",
+          // "src/components/NavbarBrand/NavbarBrand.jsx",
+          // "src/components/NavbarOffcanvas/NavbarOffcanvas.jsx",
+          // "src/components/NavbarToggle/NavbarToggle.jsx",
           "src/components/Offcanvas/Offcanvas.jsx",
           "src/components/OffcanvasBody/OffcanvasBody.jsx",
           "src/components/NavbarText/NavbarText.jsx",
