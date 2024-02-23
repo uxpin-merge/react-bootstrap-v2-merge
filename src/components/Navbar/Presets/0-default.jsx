@@ -12,15 +12,21 @@ export default (
         Navbar
       </Navbar.Brand>
       <Nav variant="pills" uxpId="nav-1">
-        <Nav.Link eventKey="1" uxpId="nav-link-1">
-          Nav Link 1
-        </Nav.Link>
-        <Nav.Link eventKey="2" title="Item" uxpId="nav-link-2">
-          Nav Link 2
-        </Nav.Link>
-        <Nav.Link eventKey="3" uxpId="nav-link-3">
-          Nav Link 3
-        </Nav.Link>
+        <Nav.Item uxpId="nav-item-1">
+          <Nav.Link eventKey="1" uxpId="nav-link-1">
+            Nav Link 1
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item uxpId="nav-item-2">
+          <Nav.Link eventKey="2" title="Item" uxpId="nav-link-2">
+            Nav Link 2
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item uxpId="nav-item-3">
+          <Nav.Link eventKey="3" uxpId="nav-link-3">
+            Nav Link 3
+          </Nav.Link>
+        </Nav.Item>
         <NavDropdown title="Dropdown" id="nav-dropdown" uxpId="nav-dropdown-1">
           <Dropdown.Header uxpId="nav-dropdown-header-1">Dropdown Header</Dropdown.Header>
           <Dropdown.Item uxpId="nav-dropdown-item-1">Dropdown Link 1</Dropdown.Item>

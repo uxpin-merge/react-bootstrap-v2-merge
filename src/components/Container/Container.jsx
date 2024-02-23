@@ -3,11 +3,9 @@ import PropTypes from 'prop-types'
 import { Container as ContainerM } from 'react-bootstrap'
 
 const Container = (props) => {
-  return (
-    <div style={{ display: 'flex' }}>
-      <ContainerM {...props} />
-    </div>
-  )
+  const { uxpinRef, ...other } = props
+
+  return <ContainerM {...other} ref={uxpinRef} />
 }
 
 Container.propTypes = {
@@ -28,6 +26,11 @@ Container.propTypes = {
   as: PropTypes.string,
   /** @default 'container' */
   bsPrefix: PropTypes.string,
+
+  /**
+   * @uxpinignoreprop
+   */
+  uxpinRef: PropTypes.any,
 }
 
 export default Container
