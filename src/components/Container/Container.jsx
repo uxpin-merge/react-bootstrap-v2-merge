@@ -3,7 +3,11 @@ import PropTypes from 'prop-types'
 import { Container as ContainerM } from 'react-bootstrap'
 
 const Container = (props) => {
-  return <ContainerM {...props} />
+  return (
+    <div style={{ display: 'flex' }}>
+      <ContainerM {...props} />
+    </div>
+  )
 }
 
 Container.propTypes = {
