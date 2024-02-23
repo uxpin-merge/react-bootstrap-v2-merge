@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Container as ContainerM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/layout/grid
+ * @uxpindescription Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.
+ */
 const Container = (props) => {
-  const { uxpinRef, ...other } = props
-
-  return <ContainerM {...other} ref={uxpinRef} />
+  return <ContainerM {...props}>{props.children}</ContainerM>
 }
 
 Container.propTypes = {
@@ -31,6 +32,10 @@ Container.propTypes = {
    * @uxpinignoreprop
    */
   uxpinRef: PropTypes.any,
+}
+
+Container.defaultProps = {
+  children: 'testing',
 }
 
 export default Container

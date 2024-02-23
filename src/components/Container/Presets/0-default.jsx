@@ -6,7 +6,8 @@ import Card from '../../Card/Card'
 
 export default (
   <Container uxpId="container-1">
-    <Row uxpId="row-1" className={'g-2'}>
+    Container
+    {/* <Row uxpId="row-1" className={'g-2'}>
       <Col uxpId="col-1" xs={3}>
         <Card body={true} uxpId="card-1">
           3 columns
@@ -32,6 +33,6 @@ export default (
           3 of 3
         </Card>
       </Col>
-    </Row>
+    </Row> */}
   </Container>
 )
