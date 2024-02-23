@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ModalHeader as ModalHeaderM } from 'react-bootstrap'
-
-const ModalHeader = (props) => {
-  return <ModalHeaderM {...props} />
+import { Modal as ModalM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/modal
+ * @uxpindescription Add dialogs to your site for lightboxes, user notifications, or completely custom content.
+ * @uxpinnamespace Modal
+ */
+const Header = (props) => {
+  return <ModalM.Header {...props} />
 }
 
-ModalHeader.propTypes = {
+Header.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -30,4 +34,4 @@ ModalHeader.propTypes = {
   onHide: PropTypes.func,
 }
 
-export default ModalHeader
+export default Header

@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ModalDialog as ModalDialogM } from 'react-bootstrap'
-
-const ModalDialog = (props) => {
-  return <ModalDialogM {...props} />
+import { Modal as ModalM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/modal
+ * @uxpindescription Add dialogs to your site for lightboxes, user notifications, or completely custom content.
+ * @uxpinnamespace Modal
+ */
+const Dialog = (props) => {
+  return <ModalM.Dialog {...props} />
 }
 
-ModalDialog.propTypes = {
+Dialog.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -32,4 +36,4 @@ ModalDialog.propTypes = {
   contentClassName: PropTypes.string,
 }
 
-export default ModalDialog
+export default Dialog

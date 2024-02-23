@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ModalFooter as ModalFooterM } from 'react-bootstrap'
-
-const ModalFooter = (props) => {
-  return <ModalFooterM {...props} />
+import { Modal as ModalM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/modal
+ * @uxpindescription Add dialogs to your site for lightboxes, user notifications, or completely custom content.
+ * @uxpinnamespace Modal
+ */
+const Footer = (props) => {
+  return <ModalM.Footer {...props} />
 }
 
-ModalFooter.propTypes = {
+Footer.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -21,4 +25,4 @@ ModalFooter.propTypes = {
   as: PropTypes.string,
 }
 
-export default ModalFooter
+export default Footer

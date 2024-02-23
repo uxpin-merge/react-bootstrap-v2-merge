@@ -60,7 +60,12 @@ module.exports = {
           "src/components/ListGroup/ListGroup.jsx",
           "src/components/ListGroupItem/ListGroupItem.jsx",
 
-
+          "src/components/Modal/Modal.jsx",
+          "src/components/ModalBody/ModalBody.jsx",
+          "src/components/ModalDialog/ModalDialog.jsx",
+          "src/components/ModalTitle/ModalTitle.jsx",
+          "src/components/ModalHeader/ModalHeader.jsx",
+          "src/components/ModalFooter/ModalFooter.jsx",
         ]
       },
       {
@@ -137,12 +142,12 @@ module.exports = {
           "src/components/InputGroupText/InputGroupText.jsx",
           // "src/components/ListGroup/ListGroup.jsx",
           // "src/components/ListGroupItem/ListGroupItem.jsx",
-          "src/components/ModalBody/ModalBody.jsx",
-          "src/components/Modal/Modal.jsx",
-          "src/components/ModalDialog/ModalDialog.jsx",
-          "src/components/ModalTitle/ModalTitle.jsx",
-          "src/components/ModalHeader/ModalHeader.jsx",
-          "src/components/ModalFooter/ModalFooter.jsx",
+          // "src/components/ModalBody/ModalBody.jsx",
+          // "src/components/Modal/Modal.jsx",
+          // "src/components/ModalDialog/ModalDialog.jsx",
+          // "src/components/ModalTitle/ModalTitle.jsx",
+          // "src/components/ModalHeader/ModalHeader.jsx",
+          // "src/components/ModalFooter/ModalFooter.jsx",
           "src/components/Nav/Nav.jsx",
           "src/components/NavDropdown/NavDropdown.jsx",
           "src/components/NavItem/NavItem.jsx",
