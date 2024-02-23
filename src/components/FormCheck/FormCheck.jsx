@@ -21,7 +21,10 @@ Check.propTypes = {
 
   /** Override styles */
   style: PropTypes.object,
-
+  /** The type of checkable. */
+  type: PropTypes.oneOf(['checkbox', 'radio']),
+  /** Label for the control. */
+  label: PropTypes.node,
   /** Groups controls horizontally with other `FormCheck`s. */
   inline: PropTypes.bool,
   /** Put your checkboxes, radios, and switches on the opposite side. */
@@ -36,8 +39,7 @@ Check.propTypes = {
   feedbackTooltip: PropTypes.bool,
   /** `title` attribute for the underlying `FormCheckLabel`. */
   title: PropTypes.string,
-  /** The type of checkable. */
-  type: PropTypes.oneOf(['checkbox', 'radio']),
+
   /** The underlying HTML element to use when rendering the FormCheck. */
   as: PropTypes.string,
   /** @default 'form-check' */
@@ -48,8 +50,7 @@ Check.propTypes = {
   _ref: PropTypes.string,
   /** A HTML id attribute, necessary for proper form accessibility.An id is recommended for allowing label clicks to toggle the check control.This is **required** when `type="switch"` due to how they are rendered. */
   id: PropTypes.string,
-  /** Label for the control. */
-  label: PropTypes.node,
+
   /** A message to display when the input is in a validation state */
   feedback: PropTypes.node,
   /** Specify whether the feedback is for valid or invalid fields */
