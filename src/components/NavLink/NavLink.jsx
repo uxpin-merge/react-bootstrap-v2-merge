@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { NavLink as NavLinkM } from 'react-bootstrap'
-
-const NavLink = (props) => {
-  return <NavLinkM {...props} />
+import { Nav as NavM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/navs
+ * @uxpindescription Documentation and examples for how to use Bootstrap’s included navigation components.
+ * @uxpinnamespace Nav
+ */
+const Link = (props) => {
+  return <NavM.Link {...props} />
 }
 
-NavLink.propTypes = {
+Link.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -34,4 +38,4 @@ NavLink.propTypes = {
   eventKey: PropTypes.string,
 }
 
-export default NavLink
+export default Link

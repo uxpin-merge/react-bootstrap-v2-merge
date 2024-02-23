@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { NavItem as NavItemM } from 'react-bootstrap'
-
-const NavItem = (props) => {
-  return <NavItemM {...props} />
+import { Nav as NavM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/navs
+ * @uxpindescription Documentation and examples for how to use Bootstrap’s included navigation components.
+ * @uxpinnamespace Nav
+ */
+const Item = (props) => {
+  return <NavM.Item {...props} />
 }
 
-NavItem.propTypes = {
+Item.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -21,4 +25,4 @@ NavItem.propTypes = {
   as: PropTypes.string,
 }
 
-export default NavItem
+export default Item

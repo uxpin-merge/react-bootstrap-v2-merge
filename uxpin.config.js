@@ -66,6 +66,12 @@ module.exports = {
           "src/components/ModalTitle/ModalTitle.jsx",
           "src/components/ModalHeader/ModalHeader.jsx",
           "src/components/ModalFooter/ModalFooter.jsx",
+
+          "src/components/Nav/Nav.jsx",
+          "src/components/NavDropdown/NavDropdown.jsx",
+          "src/components/NavItem/NavItem.jsx",
+          "src/components/NavLink/NavLink.jsx",
+
         ]
       },
       {
@@ -148,10 +154,10 @@ module.exports = {
           // "src/components/ModalTitle/ModalTitle.jsx",
           // "src/components/ModalHeader/ModalHeader.jsx",
           // "src/components/ModalFooter/ModalFooter.jsx",
-          "src/components/Nav/Nav.jsx",
-          "src/components/NavDropdown/NavDropdown.jsx",
-          "src/components/NavItem/NavItem.jsx",
-          "src/components/NavLink/NavLink.jsx",
+          // "src/components/Nav/Nav.jsx",
+          // "src/components/NavDropdown/NavDropdown.jsx",
+          // "src/components/NavItem/NavItem.jsx",
+          // "src/components/NavLink/NavLink.jsx",
           "src/components/Navbar/Navbar.jsx",
           "src/components/NavbarCollapse/NavbarCollapse.jsx",
           "src/components/NavbarBrand/NavbarBrand.jsx",
