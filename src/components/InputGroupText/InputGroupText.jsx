@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { InputGroupText as InputGroupTextM } from 'react-bootstrap'
-
-const InputGroupText = (props) => {
-  return <InputGroupTextM {...props} />
+import { InputGroup as InputGroupM } from 'react-bootstrap'
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/forms/input-group
+ * @uxpindescription Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.
+ * @uxpinnamespace InputGroup
+ */
+const Text = (props) => {
+  return <InputGroupM.Text {...props} />
 }
 
-InputGroupText.propTypes = {
+Text.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
   /** Sets the color mode */
@@ -21,4 +25,4 @@ InputGroupText.propTypes = {
   as: PropTypes.string,
 }
 
-export default InputGroupText
+export default Text
