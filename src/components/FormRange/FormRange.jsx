@@ -12,7 +12,7 @@ const Range = (props) => {
 
 Range.propTypes = {
   /** Content of the component */
-  children: PropTypes.node,
+  // children: PropTypes.node,
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
@@ -26,7 +26,9 @@ Range.propTypes = {
   bsPrefix: PropTypes.string,
   /** Make the control disabled */
   disabled: PropTypes.bool,
-  /** The `value` attribute of underlying input@controllable onChange */
+  /** The `value` attribute of underlying input@controllable onChange
+   * @uxpinbind onChange 0.target.value
+   */
   value: PropTypes.string,
   /** A callback fired when the `value` prop changes */
   onChange: PropTypes.func,
