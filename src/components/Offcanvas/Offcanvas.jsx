@@ -40,8 +40,8 @@ Offcanvas.propTypes = {
   style: PropTypes.object,
 
   /** Which side of the viewport the offcanvas will appear from. */
-  placement: PropTypes.string,
-  /** When `true` The offcanvas will show itself. */
+  placement: PropTypes.oneOf(['start', 'end', 'top', 'bottom']),
+  /** When `true` The offcanvas will show itself.*/
   show: PropTypes.bool,
   /** Include a backdrop component. Specify 'static' for a backdrop that doesn'ttrigger an "onHide" when clicked.
    *  @uxpinignoreprop
@@ -93,6 +93,8 @@ Offcanvas.propTypes = {
   onExiting: PropTypes.func,
   /** Callback fired after the offcanvas finishes transitioning out */
   onExited: PropTypes.func,
+  // onChange: PropTypes.func,
+
   /** @private
    * @uxpinignoreprop
    */
