@@ -2,6 +2,14 @@ module.exports = {
   components: {
     categories: [
       {
+        name: 'HTML',
+        include: [
+          'src/components/HtmlTag/HtmlTag.jsx',
+          'src/components/Typography/Typography.jsx',
+        ]
+      },
+
+      {
         name: 'LAYOUT',
         include: [
           "src/components/Container/Container.jsx",
@@ -30,8 +38,7 @@ module.exports = {
       {
         name: 'Completed',
         include: [
-          'src/components/HtmlTag/HtmlTag.jsx',
-          'src/components/Typography/Typography.jsx',
+
           'src/components/Accordion/Accordion.jsx',
           'src/components/AccordionBody/AccordionBody.jsx',
 
