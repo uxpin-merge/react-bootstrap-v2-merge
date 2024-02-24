@@ -25,6 +25,10 @@ Check.propTypes = {
   type: PropTypes.oneOf(['checkbox', 'radio']),
   /** Label for the control. */
   label: PropTypes.node,
+  /** If the control is selected
+   * @uxpinbind onChange 0.target.checked
+   */
+  checked: PropTypes.bool,
   /** Groups controls horizontally with other `FormCheck`s. */
   inline: PropTypes.bool,
   /** Put your checkboxes, radios, and switches on the opposite side. */
@@ -39,9 +43,10 @@ Check.propTypes = {
   feedbackTooltip: PropTypes.bool,
   /** `title` attribute for the underlying `FormCheckLabel`. */
   title: PropTypes.string,
-
   /** The underlying HTML element to use when rendering the FormCheck. */
   as: PropTypes.string,
+  /** A callback fired when the `check` prop changes */
+  onChange: PropTypes.func,
   /** @default 'form-check' */
   bsPrefix: PropTypes.string,
   /** bsPrefix override for the base switch class.@default 'form-switch' */

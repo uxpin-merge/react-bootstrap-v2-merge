@@ -34,7 +34,9 @@ Select.propTypes = {
   htmlSize: PropTypes.number,
   /** Make the control disabled */
   disabled: PropTypes.bool,
-  /** The `value` attribute of underlying input@controllable onChange */
+  /** The `value` attribute of underlying input@controllable onChange
+   * @uxpinbind onChange 0.target.value
+   */
   value: PropTypes.string,
   /** A callback fired when the `value` prop changes */
   onChange: PropTypes.func,

@@ -16,10 +16,10 @@ module.exports = {
           "src/components/Form/Form.jsx",
           "src/components/FormGroup/FormGroup.jsx",
           "src/components/FormControl/FormControl.jsx",
-          "src/components/FormText/FormText.jsx",
           "src/components/FormCheck/FormCheck.jsx",
           "src/components/FormSelect/FormSelect.jsx",
           "src/components/FormRange/FormRange.jsx",
+          "src/components/FormText/FormText.jsx",
           "src/components/FormLabel/FormLabel.jsx",
           "src/components/FormFloating/FormFloating.jsx",
 
