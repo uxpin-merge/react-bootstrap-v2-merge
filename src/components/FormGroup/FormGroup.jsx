@@ -7,7 +7,11 @@ import { Form as FormM } from 'react-bootstrap'
  * @uxpinnamespace Form
  */
 const Group = (props) => {
-  return <FormM.Group {...props} />
+  return (
+    <div style={{ display: 'inline-block' }}>
+      <FormM.Group {...props} />
+    </div>
+  )
 }
 
 Group.propTypes = {
