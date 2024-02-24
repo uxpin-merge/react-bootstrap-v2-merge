@@ -43,27 +43,37 @@ Offcanvas.propTypes = {
   placement: PropTypes.string,
   /** When `true` The offcanvas will show itself. */
   show: PropTypes.bool,
-  /** Include a backdrop component. Specify 'static' for a backdrop that doesn'ttrigger an "onHide" when clicked. */
-  backdrop: PropTypes.string,
+  /** Include a backdrop component. Specify 'static' for a backdrop that doesn'ttrigger an "onHide" when clicked.
+   *  @uxpinignoreprop
+   */
+  backdrop: PropTypes.bool,
   /** Closes the offcanvas when escape key is pressed. */
   keyboard: PropTypes.bool,
   /** Allow body scrolling while offcanvas is open. */
   scroll: PropTypes.bool,
   /** When `true` The offcanvas will automatically shift focus to itself when itopens, and replace it to the last focused element when it closes.Generally this should never be set to false as it makes the offcanvas lessaccessible to assistive technologies, like screen-readers. */
   autoFocus: PropTypes.bool,
-  /** When `true` The offcanvas will prevent focus from leaving the offcanvas whileopen. Consider leaving the default value here, as it is necessary to makethe offcanvas work well with assistive technologies, such as screen readers. */
+  /** When `true` The offcanvas will prevent focus from leaving the offcanvas whileopen. Consider leaving the default value here, as it is necessary to makethe offcanvas work well with assistive technologies, such as screen readers.
+   * @uxpinignoreprop
+   */
   enforceFocus: PropTypes.bool,
-  /** When `true` The offcanvas will restore focus to previously focused element onceoffcanvas is hidden */
+  /** When `true` The offcanvas will restore focus to previously focused element onceoffcanvas is hidden
+   * @uxpinignoreprop
+   */
   restoreFocus: PropTypes.bool,
-  /** For internal use to render static node from NavbarOffcanvas.@private */
+  /** For internal use to render static node from NavbarOffcanvas.@private
+   * @uxpinignoreprop
+   */
   renderStaticNode: PropTypes.bool,
   /** @default 'offcanvas' */
   bsPrefix: PropTypes.string,
   /** Add an optional extra class name to .offcanvas-backdrop. */
   backdropClassName: PropTypes.string,
   /** Hide content outside the viewport from a specified breakpoint and down. */
-  responsive: PropTypes.oneOf(['"sm"', '"md"', '"lg"', '"xl"', '"xxl"']),
-  /** Options passed to focus function when `restoreFocus` is set to `true`@link  https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus#Parameters */
+  responsive: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', 'xxl']),
+  /** Options passed to focus function when `restoreFocus` is set to `true`@link  https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus#Parameters
+   * @uxpinignoreprop
+   */
   restoreFocusOptions: PropTypes.shape,
   /** A callback fired when the offcanvas is opening. */
   onShow: PropTypes.func,
