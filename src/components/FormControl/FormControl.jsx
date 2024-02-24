@@ -28,9 +28,8 @@ Control.propTypes = {
   /** Add "invalid" validation styles to the control and accompanying label */
   isInvalid: PropTypes.bool,
   /** The underlying HTML element to use when rendering the FormControl.
-   * @uxpinpropname  as textarea
    */
-  as: PropTypes.oneOf(['textarea']),
+  as: PropTypes.oneOf(['input', 'textarea', 'color', 'file']),
   /**  Specifies the visible number of lines in a text area */
   rows: PropTypes.number,
   /** @default {'form-control'} */
