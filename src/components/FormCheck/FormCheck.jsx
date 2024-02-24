@@ -55,11 +55,10 @@ Check.propTypes = {
   _ref: PropTypes.string,
   /** A HTML id attribute, necessary for proper form accessibility.An id is recommended for allowing label clicks to toggle the check control.This is **required** when `type="switch"` due to how they are rendered. */
   id: PropTypes.string,
-
-  /** A message to display when the input is in a validation state */
-  feedback: PropTypes.node,
   /** Specify whether the feedback is for valid or invalid fields */
   feedbackType: PropTypes.oneOf(['valid', 'invalid']),
+  /** A message to display when the input is in a validation state */
+  feedback: PropTypes.node,
 }
 
 export default Check
