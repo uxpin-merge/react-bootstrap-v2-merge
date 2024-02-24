@@ -59,7 +59,7 @@ Check.propTypes = {
   /** A message to display when the input is in a validation state */
   feedback: PropTypes.node,
   /** Specify whether the feedback is for valid or invalid fields */
-  feedbackType: PropTypes.string,
+  feedbackType: PropTypes.oneOf(['valid', 'invalid']),
 }
 
 export default Check
