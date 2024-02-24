@@ -22,7 +22,7 @@ Check.propTypes = {
   /** Override styles */
   style: PropTypes.object,
   /** The type of checkable. */
-  type: PropTypes.oneOf(['checkbox', 'radio']),
+  type: PropTypes.oneOf(['checkbox', 'radio', 'switch']),
   /** Label for the control. */
   label: PropTypes.node,
   /** If the control is selected
