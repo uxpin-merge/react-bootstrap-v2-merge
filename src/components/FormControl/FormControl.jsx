@@ -53,7 +53,7 @@ Control.propTypes = {
   /** A callback fired when the `value` prop changes */
   onChange: PropTypes.func,
   /**  Type of the `input` element */
-  type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'date']),
+  type: PropTypes.oneOf(['text', 'password', 'email', 'number', 'date', 'color', 'file']),
 
   /**  Specifies that a text area is required/must be filled out */
   required: PropTypes.bool,
