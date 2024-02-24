@@ -29,7 +29,7 @@ Select.propTypes = {
   /** @default {'form-select'} */
   bsPrefix: PropTypes.string,
   /** Size variants */
-  size: PropTypes.oneOf(['sm', 'lg']),
+  size: PropTypes.oneOf(['sm', 'default', 'lg']),
   /** The size attribute of the underlying HTML element.Specifies the number of visible options. */
   htmlSize: PropTypes.number,
   /** Make the control disabled */
