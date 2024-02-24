@@ -10,6 +10,8 @@ const HtmlTag = (props) => {
 }
 
 HtmlTag.propTypes = {
+  /** id of the tag */
+  id: PropTypes.string,
   /** Determines the tag to be used for the component */
   tag: PropTypes.oneOf([
     'h1',
@@ -46,6 +48,9 @@ HtmlTag.propTypes = {
 
   /** Override styles */
   style: PropTypes.object,
+
+  /** Value of the tag */
+  value: PropTypes.string,
 }
 
 export default HtmlTag
