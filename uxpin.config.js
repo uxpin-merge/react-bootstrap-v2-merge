@@ -30,7 +30,7 @@ module.exports = {
       {
         name: 'Completed',
         include: [
-          'src/components/Heading/Heading.jsx',
+          'src/components/HtmlTag/HtmlTag.jsx',
           'src/components/Accordion/Accordion.jsx',
           'src/components/AccordionBody/AccordionBody.jsx',
 
