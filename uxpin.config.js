@@ -24,7 +24,6 @@ module.exports = {
           "src/components/Form/Form.jsx",
           "src/components/FormGroup/FormGroup.jsx",
           "src/components/InputGroup/InputGroup.jsx",
-          "src/components/InputGroupText/InputGroupText.jsx",
           "src/components/FormControl/FormControl.jsx",
           "src/components/FormCheck/FormCheck.jsx",
           "src/components/FormSelect/FormSelect.jsx",
@@ -32,6 +31,7 @@ module.exports = {
           "src/components/FormText/FormText.jsx",
           "src/components/FormLabel/FormLabel.jsx",
           "src/components/FormFloating/FormFloating.jsx",
+          "src/components/InputGroupText/InputGroupText.jsx",
 
 
           // "src/components/FormCheckInput/FormCheckInput.jsx",
