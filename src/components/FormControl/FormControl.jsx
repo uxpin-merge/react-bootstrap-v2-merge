@@ -29,7 +29,7 @@ Control.propTypes = {
   isInvalid: PropTypes.bool,
   /** The underlying HTML element to use when rendering the FormControl.
    */
-  as: PropTypes.oneOf(['input', 'textarea', 'color', 'file']),
+  as: PropTypes.oneOf(['input', 'textarea']),
   /**  Specifies the visible number of lines in a text area */
   rows: PropTypes.number,
   /** @default {'form-control'} */
