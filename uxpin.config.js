@@ -118,9 +118,13 @@ module.exports = {
           "src/components/NavbarBrand/NavbarBrand.jsx",
           "src/components/NavbarOffcanvas/NavbarOffcanvas.jsx",
           "src/components/NavbarToggle/NavbarToggle.jsx",
+          "src/components/NavbarText/NavbarText.jsx",
 
 
-
+          "src/components/Offcanvas/Offcanvas.jsx",
+          "src/components/OffcanvasBody/OffcanvasBody.jsx",
+          "src/components/OffcanvasHeader/OffcanvasHeader.jsx",
+          "src/components/OffcanvasTitle/OffcanvasTitle.jsx",
         ]
       },
       {
@@ -213,12 +217,14 @@ module.exports = {
           // "src/components/NavbarBrand/NavbarBrand.jsx",
           // "src/components/NavbarOffcanvas/NavbarOffcanvas.jsx",
           // "src/components/NavbarToggle/NavbarToggle.jsx",
-          "src/components/Offcanvas/Offcanvas.jsx",
-          "src/components/OffcanvasBody/OffcanvasBody.jsx",
-          "src/components/NavbarText/NavbarText.jsx",
-          "src/components/OffcanvasHeader/OffcanvasHeader.jsx",
-          "src/components/OffcanvasTitle/OffcanvasTitle.jsx",
-          "src/components/OffcanvasToggling/OffcanvasToggling.jsx",
+
+
+
+          // "src/components/Offcanvas/Offcanvas.jsx",
+          // "src/components/OffcanvasBody/OffcanvasBody.jsx",
+          // "src/components/OffcanvasHeader/OffcanvasHeader.jsx",
+          // "src/components/OffcanvasTitle/OffcanvasTitle.jsx",
+          // "src/components/OffcanvasToggling/OffcanvasToggling.jsx",
           "src/components/Overlay/Overlay.jsx",
           "src/components/OverlayTrigger/OverlayTrigger.jsx",
           "src/components/Pagination/Pagination.jsx",

@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { OffcanvasHeader as OffcanvasHeaderM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/offcanvas
+ * @uxpindescription Build hidden sidebars into your project for navigation, shopping carts, and more.
+ */
 const OffcanvasHeader = (props) => {
   return <OffcanvasHeaderM {...props} />
 }

@@ -122,7 +122,6 @@ Modal.propTypes = {
    * @uxpinignoreprop
    */
   container: PropTypes.string,
-  'data-bs-theme': PropTypes.string,
   'aria-labelledby': PropTypes.string,
   'aria-describedby': PropTypes.string,
   'aria-label': PropTypes.string,

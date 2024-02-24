@@ -1,9 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Offcanvas as OffcanvasM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/offcanvas
+ * @uxpindescription Build hidden sidebars into your project for navigation, shopping carts, and more.
+ * @uxpinuseportal
+ */
 const Offcanvas = (props) => {
-  return <OffcanvasM {...props} />
+  const containerRef = React.useRef(null)
+  const uxpContainer = document.querySelector('.uxpin-portal')
+  return (
+    <div
+      style={{
+        minWidth: '300px',
+        minHeight: '300px',
+        width: '100%',
+        height: '100%',
+        backgroundColor: uxpContainer ? 'rgb(0 0 0 / 0%)' : 'rgb(0 0 0 / 40%)',
+        visibility: props.show ? 'visible' : 'hidden',
+      }}
+    >
+      <div ref={containerRef}>
+        <OffcanvasM {...props} container={containerRef} backdrop={uxpContainer ? true : false} enforceFocus={false} />
+      </div>
+    </div>
+  )
 }
 
 Offcanvas.propTypes = {
@@ -62,7 +83,9 @@ Offcanvas.propTypes = {
   onExiting: PropTypes.func,
   /** Callback fired after the offcanvas finishes transitioning out */
   onExited: PropTypes.func,
-  /** @private */
+  /** @private
+   * @uxpinignoreprop
+   */
   container: PropTypes.string,
   'aria-labelledby': PropTypes.string,
 }
