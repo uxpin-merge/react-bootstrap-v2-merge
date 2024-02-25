@@ -17,7 +17,9 @@ export default (
     <Img src="https://picsum.photos/id/237/536/354" uxpId="card-img" />
 
     <Body uxpId="card-body">
-      <Title uxpId="card-title">Card Title</Title>
+      <Title uxpId="card-title" as="h5">
+        Card Title
+      </Title>
       <Text uxpId="card-text">
         Some quick example text to build on the card title and make up the bulk of the card content.
       </Text>
