@@ -17,7 +17,7 @@ Img.propTypes = {
   bsPrefix: PropTypes.string,
   as: PropTypes.string,
   /** Defines image position insidethe card. */
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['top', 'bottom']),
 }
 
 export default Img
