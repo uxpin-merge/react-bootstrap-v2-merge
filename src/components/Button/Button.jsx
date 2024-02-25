@@ -47,7 +47,7 @@ Button.propTypes = {
   /** Callback fired when the button is clicked. */
   onClick: PropTypes.func,
   /** Specifies a large or small button.@type ('sm'|'lg') */
-  size: PropTypes.oneOf(['default', 'sm', 'lg']),
+  size: PropTypes.oneOf(['sm', 'default', 'lg']),
   /** Providing a `href` will render an `<a>` element, _styled_ as a button. */
   href: PropTypes.string,
   /** Defines HTML button type attribute.@default 'button' */

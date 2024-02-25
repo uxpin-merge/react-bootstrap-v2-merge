@@ -24,7 +24,7 @@ Pagination.propTypes = {
   /** @default 'pagination' */
   bsPrefix: PropTypes.string,
   /** Sets the size of all PageItems. */
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'default', 'lg']),
 }
 
 export default Pagination
