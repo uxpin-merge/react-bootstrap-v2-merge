@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { ToastHeader as ToastHeaderM } from 'react-bootstrap'
 
 const ToastHeader = (props) => {
-  return <ToastHeaderM {...props} />
+  return <ToastHeaderM {...props} as="h5" />
 }
 
 ToastHeader.propTypes = {
@@ -26,5 +26,7 @@ ToastHeader.propTypes = {
   /** Specify whether the Component should contain a close button */
   closeButton: PropTypes.bool,
 }
-
+ToastHeader.defaultProps = {
+  style: { 'justify-content': 'space-between' },
+}
 export default ToastHeader
