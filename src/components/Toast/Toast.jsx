@@ -18,8 +18,14 @@ Toast.propTypes = {
   /** Override styles */
   style: PropTypes.object,
 
-  /** A `react-transition-group` Transition component used to animate the Toast on dismissal. */
+  /** A `react-transition-group` Transition component used to animate the Toast on dismissal.
+   * @uxpinignoreprop
+   */
   transition: PropTypes.string,
+
+  /** Sets Toast background */
+  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
+
   /** When `true` The toast will show itself. */
   show: PropTypes.bool,
   /** Apply a CSS fade transition to the toast */
@@ -44,8 +50,6 @@ Toast.propTypes = {
   onExiting: PropTypes.func,
   /** Transition onExited callback when animation is not `false` */
   onExited: PropTypes.func,
-  /** Sets Toast background */
-  bg: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light']),
 }
 
 export default Toast

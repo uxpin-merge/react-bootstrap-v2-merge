@@ -136,6 +136,13 @@ module.exports = {
           "src/components/Tabs/Tabs.jsx",
           "src/components/Tab/Tab.jsx",
 
+          "src/components/Toast/Toast.jsx",
+          "src/components/ToastBody/ToastBody.jsx",
+          "src/components/ToastContainer/ToastContainer.jsx",
+          "src/components/ToastFade/ToastFade.jsx",
+          "src/components/ToastHeader/ToastHeader.jsx",
+
+
           // NOT WORKING
 
           // "src/components/Tooltip/Tooltip.jsx",
@@ -266,12 +273,12 @@ module.exports = {
           "src/components/TabContainer/TabContainer.jsx",
           "src/components/Table/Table.jsx",
           "src/components/ThemeProvider/ThemeProvider.jsx",
-          "src/components/Toast/Toast.jsx",
           // "src/components/Tabs/Tabs.jsx",
-          "src/components/ToastBody/ToastBody.jsx",
-          "src/components/ToastContainer/ToastContainer.jsx",
-          "src/components/ToastFade/ToastFade.jsx",
-          "src/components/ToastHeader/ToastHeader.jsx",
+          // "src/components/Toast/Toast.jsx",
+          // "src/components/ToastBody/ToastBody.jsx",
+          // "src/components/ToastContainer/ToastContainer.jsx",
+          // "src/components/ToastFade/ToastFade.jsx",
+          // "src/components/ToastHeader/ToastHeader.jsx",
           // "src/components/Tooltip/Tooltip.jsx",
           // "src/components/ToggleButton/ToggleButton.jsx",
           // "src/components/ToggleButtonGroup/ToggleButtonGroup.jsx",
