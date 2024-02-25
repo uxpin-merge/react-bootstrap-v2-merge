@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Tabs as TabsM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/tabs
+ * @uxpindescription Dynamic tabbed interfaces
+ */
 const Tabs = (props) => {
   return <TabsM {...props} />
 }

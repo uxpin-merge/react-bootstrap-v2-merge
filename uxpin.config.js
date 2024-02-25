@@ -133,6 +133,8 @@ module.exports = {
           "src/components/Placeholder/Placeholder.jsx",
           "src/components/PlaceholderButton/PlaceholderButton.jsx",
 
+          "src/components/Tabs/Tabs.jsx",
+          "src/components/Tab/Tab.jsx",
 
           // NOT WORKING
 
@@ -265,7 +267,7 @@ module.exports = {
           "src/components/Table/Table.jsx",
           "src/components/ThemeProvider/ThemeProvider.jsx",
           "src/components/Toast/Toast.jsx",
-          "src/components/Tabs/Tabs.jsx",
+          // "src/components/Tabs/Tabs.jsx",
           "src/components/ToastBody/ToastBody.jsx",
           "src/components/ToastContainer/ToastContainer.jsx",
           "src/components/ToastFade/ToastFade.jsx",

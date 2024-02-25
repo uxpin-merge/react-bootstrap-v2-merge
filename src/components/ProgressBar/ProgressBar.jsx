@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ProgressBar as ProgressBarM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/progress
+ * @uxpindescription Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.
+ */
 const ProgressBar = (props) => {
   return <ProgressBarM {...props} />
 }
