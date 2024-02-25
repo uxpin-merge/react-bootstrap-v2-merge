@@ -130,6 +130,10 @@ module.exports = {
           "src/components/Pagination/Pagination.jsx",
           "src/components/PageItem/PageItem.jsx",
 
+          "src/components/Placeholder/Placeholder.jsx",
+          "src/components/PlaceholderButton/PlaceholderButton.jsx",
+
+
           // NOT WORKING
 
           // "src/components/Tooltip/Tooltip.jsx",
@@ -243,12 +247,11 @@ module.exports = {
           // "src/components/OverlayTrigger/OverlayTrigger.jsx",
           // "src/components/Pagination/Pagination.jsx",
           // "src/components/PageItem/PageItem.jsx",
-          "src/components/Placeholder/Placeholder.jsx",
           // "src/components/PopoverBody/PopoverBody.jsx",
           // "src/components/Popover/Popover.jsx",
           // "src/components/PopoverHeader/PopoverHeader.jsx",
-
-          "src/components/PlaceholderButton/PlaceholderButton.jsx",
+          // "src/components/Placeholder/Placeholder.jsx",
+          // "src/components/PlaceholderButton/PlaceholderButton.jsx",
           "src/components/Ratio/Ratio.jsx",
           "src/components/ProgressBar/ProgressBar.jsx",
           // "src/components/Row/Row.jsx",
