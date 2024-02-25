@@ -25,7 +25,7 @@ Tab.propTypes = {
   id: PropTypes.string,
 
   /** Sets a default animation strategy for all children <TabPane>s. */
-  transition: PropTypes.oneOfType([PropTypes.elementType, PropTypes.bool]),
+  transition: PropTypes.bool,
 
   /** Wait until the first "enter" transition to mount tabs (add them to the DOM) */
   mountOnEnter: PropTypes.bool,

@@ -21,10 +21,6 @@ Tabs.propTypes = {
   /** Override styles */
   style: PropTypes.object,
 
-  bsPrefix: PropTypes.string,
-  as: PropTypes.string,
-  navbarBsPrefix: PropTypes.string,
-  cardHeaderBsPrefix: PropTypes.string,
   /** Navigation style */
   variant: PropTypes.oneOf(['tabs', 'pills', 'underline']),
   /** The default active key that is selected on start */
@@ -33,10 +29,8 @@ Tabs.propTypes = {
   fill: PropTypes.bool,
   /** Have all `Tab`s evenly fill all available width. */
   justify: PropTypes.bool,
-  navbar: PropTypes.string,
-  navbarScroll: PropTypes.string,
   /** Sets a default animation strategy for all children `<TabPane>`s.<tbcontDefaults to `<Fade>` animation, else use `false` to disable or areact-transition-group `<Transition/>` component.@type {Transition | false}@default {Fade} */
-  transition: PropTypes.string,
+  transition: PropTypes.bool,
   /** Mark the Tab with a matching `eventKey` as active.@controllable onSelect */
   activeKey: PropTypes.string,
   /** HTML id attribute, required if no `generateChildId` propis specified.@type {string} */
