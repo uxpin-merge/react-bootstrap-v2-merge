@@ -8,7 +8,7 @@ const ProgressBar = (props) => {
 
 ProgressBar.propTypes = {
   /** Content of the component */
-  children: PropTypes.node,
+  // children: PropTypes.node,
   /** Sets the color mode */
   'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
 
