@@ -6,6 +6,6 @@ import ToastBody from '../../ToastBody/ToastBody'
 export default (
   <Toast uxpId="toast-1" show>
     <ToastHeader uxpId="toast-header-1">Toast Header</ToastHeader>
-    <ToastBody uxpId="toast-body-1">Hello, world! This is a toast message.</ToastBody>
+    <ToastBody uxpId="toast-body-1">Hello, world! This is a toast message!</ToastBody>
   </Toast>
 )
