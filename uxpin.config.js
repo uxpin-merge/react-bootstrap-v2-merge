@@ -125,6 +125,15 @@ module.exports = {
           "src/components/OffcanvasBody/OffcanvasBody.jsx",
           "src/components/OffcanvasHeader/OffcanvasHeader.jsx",
           "src/components/OffcanvasTitle/OffcanvasTitle.jsx",
+
+          // NOT WORKING
+
+          // "src/components/Tooltip/Tooltip.jsx",
+          // "src/components/PopoverBody/PopoverBody.jsx",
+          // "src/components/Popover/Popover.jsx",
+          // "src/components/PopoverHeader/PopoverHeader.jsx",
+
+
         ]
       },
       {
@@ -230,10 +239,11 @@ module.exports = {
           "src/components/Pagination/Pagination.jsx",
           "src/components/PageItem/PageItem.jsx",
           "src/components/Placeholder/Placeholder.jsx",
-          "src/components/PopoverBody/PopoverBody.jsx",
-          "src/components/Popover/Popover.jsx",
+          // "src/components/PopoverBody/PopoverBody.jsx",
+          // "src/components/Popover/Popover.jsx",
+          // "src/components/PopoverHeader/PopoverHeader.jsx",
+
           "src/components/PlaceholderButton/PlaceholderButton.jsx",
-          "src/components/PopoverHeader/PopoverHeader.jsx",
           "src/components/Ratio/Ratio.jsx",
           "src/components/ProgressBar/ProgressBar.jsx",
           // "src/components/Row/Row.jsx",
@@ -252,7 +262,7 @@ module.exports = {
           "src/components/ToastContainer/ToastContainer.jsx",
           "src/components/ToastFade/ToastFade.jsx",
           "src/components/ToastHeader/ToastHeader.jsx",
-          "src/components/Tooltip/Tooltip.jsx",
+          // "src/components/Tooltip/Tooltip.jsx",
           // "src/components/ToggleButton/ToggleButton.jsx",
           // "src/components/ToggleButtonGroup/ToggleButtonGroup.jsx",
           "src/components/TransitionWrapper/TransitionWrapper.jsx"

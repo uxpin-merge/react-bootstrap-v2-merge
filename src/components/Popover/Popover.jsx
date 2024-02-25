@@ -19,7 +19,23 @@ Popover.propTypes = {
   style: PropTypes.object,
 
   /** Sets the direction the Popover is positioned towards.> This is generally provided by the `Overlay` component positioning the popover */
-  placement: PropTypes.string,
+  placement: PropTypes.oneOf([
+    'auto-start',
+    'auto',
+    'auto-end',
+    'top-start',
+    'top',
+    'top-end',
+    'right-start',
+    'right',
+    'right-end',
+    'bottom-end',
+    'bottom',
+    'bottom-start',
+    'left-end',
+    'left',
+    'left-start',
+  ]),
   /** @default 'popover' */
   bsPrefix: PropTypes.string,
   /** An html id attribute, necessary for accessibility@type {string}@required */

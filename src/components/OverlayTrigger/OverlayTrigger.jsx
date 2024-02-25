@@ -1,9 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { OverlayTrigger as OverlayTriggerM } from 'react-bootstrap'
+import Button from '../Button/Button'
+import Tooltip from '../Tooltip/Tooltip'
 
 const OverlayTrigger = (props) => {
-  return <OverlayTriggerM {...props} />
+  return (
+    <div>
+      <OverlayTriggerM
+        placement="right"
+        overlay={
+          <Tooltip id="button-tooltip" uxpId="tooltip-1">
+            Simple tooltip
+          </Tooltip>
+        }
+      >
+        <Button variant="primary">test</Button>
+      </OverlayTriggerM>
+    </div>
+  )
 }
 
 OverlayTrigger.propTypes = {
