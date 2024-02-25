@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Pagination as PaginationM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/pagination
+ * @uxpindescription A set of presentational components for building pagination UI.
+ */
 const Pagination = (props) => {
   return <PaginationM {...props} />
 }

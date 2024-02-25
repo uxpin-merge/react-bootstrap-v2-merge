@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { PageItem as PageItemM } from 'react-bootstrap'
-/**
- * @uxpindocurl https://react-bootstrap.github.io/docs/components/pagination
- * @uxpindescription A set of presentational components for building pagination UI.
- */
+
 const PageItem = (props) => {
   return <PageItemM {...props} />
 }
