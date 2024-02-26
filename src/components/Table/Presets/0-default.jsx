@@ -1,10 +1,10 @@
 import React from 'react'
 import Table from '../Table'
-import THead from '../../THead/THead'
-import TR from '../../TR/TR'
-import TH from '../../TH/TH'
-import TD from '../../TD/TD'
-import TBody from '../../TBody/TBody'
+import THead from '../../HtmlComponents/THead/THead'
+import TR from '../../HtmlComponents/TR/TR'
+import TH from '../../HtmlComponents/TH/TH'
+import TD from '../../HtmlComponents/TD/TD'
+import TBody from '../../HtmlComponents/TBody/TBody'
 
 export default (
   <Table hover uxpId="table-1">

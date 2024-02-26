@@ -90,13 +90,14 @@ module.exports = {
       {
         name: 'HTML',
         include: [
-          'src/components/HtmlTag/HtmlTag.jsx',
-          'src/components/Typography/Typography.jsx',
-          'src/components/THead/THead.jsx',
-          'src/components/TBody/TBody.jsx',
-          'src/components/TH/TH.jsx',
-          'src/components/TR/TR.jsx',
-          'src/components/TD/TD.jsx',
+          'src/components/HtmlComponents/Heading/Heading.jsx',
+          'src/components/HtmlComponents/Text/Text.jsx',
+          'src/components/HtmlComponents/THead/THead.jsx',
+          'src/components/HtmlComponents/TBody/TBody.jsx',
+          'src/components/HtmlComponents/TH/TH.jsx',
+          'src/components/HtmlComponents/TR/TR.jsx',
+          'src/components/HtmlComponents/TD/TD.jsx',
+          'src/components/HtmlComponents/HtmlTag/HtmlTag.jsx',
         ],
       },
 

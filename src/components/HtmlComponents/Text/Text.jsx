@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Typography = ({
-  tag: Component = 'h1',
+const Text = ({
+  tag: Component = 'p',
   children,
   className,
   style,
@@ -15,6 +15,14 @@ const Typography = ({
   textDecoration,
   textTransform,
   fontFamily,
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
+  marginTop,
+  marginBottom,
+  marginLeft,
+  marginRight,
 }) => {
   // Combine the style prop with font styling properties
   const combinedStyle = {
@@ -27,6 +35,14 @@ const Typography = ({
     textDecoration,
     textTransform,
     fontFamily,
+    paddingTop,
+    paddingBottom,
+    paddingLeft,
+    paddingRight,
+    marginTop,
+    marginBottom,
+    marginLeft,
+    marginRight,
     ...style, // This ensures that any additional style props override the specific font styling if needed
   }
 
@@ -37,21 +53,17 @@ const Typography = ({
   )
 }
 
-Typography.propTypes = {
+Text.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
+  /** Sets the color mode */
+  'data-bs-theme': PropTypes.oneOf(['dark', 'light']),
   /** Add Bootstrap classes */
   className: PropTypes.string,
   /** Override styles */
   style: PropTypes.object,
   /** Dynamically change the component's tag */
   tag: PropTypes.oneOf([
-    'h1',
-    'h2',
-    'h3',
-    'h4',
-    'h5',
-    'h6', // Headings
     'p',
     'span',
     'div', // Basic text containers
@@ -79,14 +91,13 @@ Typography.propTypes = {
   ]),
   /** Font color
    * @uxpincontroltype color
-   */
-  color: PropTypes.string,
+   */ color: PropTypes.string,
   /** Font size */
   fontSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** Font weight */
   fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** Text alignment */
-  textAlign: PropTypes.string,
+  textAlign: PropTypes.oneOf(['left', 'right', 'center', 'justify', 'initial', 'inherit']),
   /** Line height */
   lineHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** Letter spacing */
@@ -94,8 +105,24 @@ Typography.propTypes = {
   /** Text decoration */
   textDecoration: PropTypes.string,
   /** Text transform */
-  textTransform: PropTypes.string,
+  textTransform: PropTypes.oneOf(['none', 'capitalize', 'uppercase', 'lowercase', 'initial', 'inherit']),
   /** Font family */
   fontFamily: PropTypes.string,
+  /** Padding Top */
+  paddingTop: PropTypes.number,
+  /** Padding Bottom */
+  paddingBottom: PropTypes.number,
+  /** Padding Left */
+  paddingLeft: PropTypes.number,
+  /** Padding Right */
+  paddingRight: PropTypes.number,
+  /** Margin Top */
+  marginTop: PropTypes.number,
+  /** Margin Bottom */
+  marginBottom: PropTypes.number,
+  /** Margin Left */
+  marginLeft: PropTypes.number,
+  /** Margin Right */
+  marginRight: PropTypes.number,
 }
-export default Typography
+export default Text
