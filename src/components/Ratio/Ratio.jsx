@@ -19,7 +19,7 @@ Ratio.propTypes = {
   style: PropTypes.object,
 
   /** Set the aspect ratio of the embed. A fraction or a percentage can alsobe used to create custom aspect ratios. */
-  aspectRatio: PropTypes.string,
+  aspectRatio: PropTypes.oneOf(['1x1', '4x3', '16x9', '21x9']),
   /** @default 'ratio' */
   bsPrefix: PropTypes.string,
 }
