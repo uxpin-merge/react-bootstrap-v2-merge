@@ -6,6 +6,11 @@ module.exports = {
         include: [
           'src/components/HtmlTag/HtmlTag.jsx',
           'src/components/Typography/Typography.jsx',
+          'src/components/THead/THead.jsx',
+          'src/components/TBody/TBody.jsx',
+          'src/components/TH/TH.jsx',
+          'src/components/TR/TR.jsx',
+          'src/components/TD/TD.jsx',
         ]
       },
 
