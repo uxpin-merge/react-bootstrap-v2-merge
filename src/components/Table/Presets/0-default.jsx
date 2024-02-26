@@ -7,7 +7,7 @@ import TD from '../../TD/TD'
 import TBody from '../../TBody/TBody'
 
 export default (
-  <Table striped hover bordered uxpId="table-1">
+  <Table hover uxpId="table-1">
     <THead uxpId="THead-1">
       <TR uxpId="TR-1">
         <TH uxpId="TH-1">#</TH>
