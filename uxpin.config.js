@@ -145,6 +145,9 @@ module.exports = {
           "src/components/ToastFade/ToastFade.jsx",
           "src/components/ToastHeader/ToastHeader.jsx",
 
+          "src/components/Collapse/Collapse.jsx",
+          "src/components/Fade/Fade.jsx",
+
 
           // NOT WORKING
 
@@ -197,7 +200,8 @@ module.exports = {
           // "src/components/CarouselCaption/CarouselCaption.jsx",
           // "src/components/CarouselItem/CarouselItem.jsx",
           // "src/components/CloseButton/CloseButton.jsx",
-          "src/components/Collapse/Collapse.jsx",
+          // "src/components/Collapse/Collapse.jsx",
+          // "src/components/Fade/Fade.jsx",
           // "src/components/Col/Col.jsx",
           // "src/components/Container/Container.jsx",
           // "src/components/DropdownHeader/DropdownHeader.jsx",
@@ -209,7 +213,7 @@ module.exports = {
           // "src/components/DropdownMenu/DropdownMenu.jsx",
           // "src/components/DropdownToggle/DropdownToggle.jsx",
           // "src/components/map/map.jsx",
-          "src/components/Fade/Fade.jsx",
+          // "src/components/Fade/Fade.jsx",
           "src/components/Feedback/Feedback.jsx",
           "src/components/Figure/Figure.jsx",
           "src/components/FigureCaption/FigureCaption.jsx",

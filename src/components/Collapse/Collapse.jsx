@@ -18,8 +18,8 @@ Collapse.propTypes = {
   /** Override styles */
   style: PropTypes.object,
 
-  /** The dimension used when collapsing, or a function that returns thedimension */
-  dimension: PropTypes.string,
+  /** The dimension used when collapsing, or a function that returns thedimension*/
+  dimension: PropTypes.oneOf(['width', 'height']),
   /** Show the component; triggers the expand or collapse animation */
   in: PropTypes.bool,
   /** Duration of the collapse animation in milliseconds, to ensure thatfinishing callbacks are fired even if the original browser transition endevents are canceled */
