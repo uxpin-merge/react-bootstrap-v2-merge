@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @uxpindocurl https://react-bootstrap.github.io/docs/components/table
+ * @uxpindocurl
  * @uxpinhtmloutput
  */
 

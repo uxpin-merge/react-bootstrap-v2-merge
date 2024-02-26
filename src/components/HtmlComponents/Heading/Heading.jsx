@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * @uxpindocurl https://react-bootstrap.github.io/docs/components/table
+ * @uxpindescription Use this component to add and style HTML headings (h1-h6)
  * @uxpinhtmloutput
  */
 

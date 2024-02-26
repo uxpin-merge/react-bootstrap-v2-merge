@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * @uxpindescription Use this component to add and style HTML text.
+ * @uxpinhtmloutput
+ */
+
 const Text = ({
   tag: Component = 'p',
   children,
