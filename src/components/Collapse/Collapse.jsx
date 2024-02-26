@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Collapse as CollapseM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/utilities/transitions
+ * @uxpindescription Add a collapse toggle animation to an element or component.
+ */
 const Collapse = (props) => {
   return <CollapseM {...props} />
 }

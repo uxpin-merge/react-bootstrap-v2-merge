@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Fade as FadeM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/utilities/transitions
+ * @uxpindescription Add a fade animation to a child element or component.
+ */
 const Fade = (props) => {
   return <FadeM {...props} />
 }

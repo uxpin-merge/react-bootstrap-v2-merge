@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { CloseButton as CloseButtonM } from 'react-bootstrap'
-
+/**
+ * @uxpindocurl https://react-bootstrap.github.io/docs/components/close-button
+ * @uxpindescription A generic close button for dismissing content such as modals and alerts.
+ */
 const CloseButton = (props) => {
   return <CloseButtonM {...props} />
 }
