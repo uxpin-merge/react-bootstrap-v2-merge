@@ -148,6 +148,9 @@ module.exports = {
           "src/components/Collapse/Collapse.jsx",
           "src/components/Fade/Fade.jsx",
 
+          "src/components/Figure/Figure.jsx",
+          "src/components/FigureCaption/FigureCaption.jsx",
+          "src/components/FigureImage/FigureImage.jsx",
 
           // NOT WORKING
 
@@ -215,9 +218,9 @@ module.exports = {
           // "src/components/map/map.jsx",
           // "src/components/Fade/Fade.jsx",
           "src/components/Feedback/Feedback.jsx",
-          "src/components/Figure/Figure.jsx",
-          "src/components/FigureCaption/FigureCaption.jsx",
-          "src/components/FigureImage/FigureImage.jsx",
+          // "src/components/Figure/Figure.jsx",
+          // "src/components/FigureCaption/FigureCaption.jsx",
+          // "src/components/FigureImage/FigureImage.jsx",
           "src/components/FloatingLabel/FloatingLabel.jsx",
           // "src/components/Image/Image.jsx",
 

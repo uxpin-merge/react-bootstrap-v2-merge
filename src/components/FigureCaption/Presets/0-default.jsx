@@ -1,8 +1,4 @@
-import React from 'react';
-import FigureCaption from '../FigureCaption';
+import React from 'react'
+import FigureCaption from '../FigureCaption'
 
-export default (
-  <FigureCaption uxpId='figurecaption-1'>
-    Content here
-  </FigureCaption>
-);
+export default <FigureCaption uxpId="figurecaption-1">figure caption</FigureCaption>
