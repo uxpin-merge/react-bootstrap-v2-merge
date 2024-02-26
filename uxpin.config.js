@@ -65,6 +65,8 @@ module.exports = {
           "src/components/ToggleButton/ToggleButton.jsx",
           "src/components/ToggleButtonGroup/ToggleButtonGroup.jsx",
 
+          "src/components/CloseButton/CloseButton.jsx",
+
           "src/components/Card/Card.jsx",
           "src/components/CardBody/CardBody.jsx",
           "src/components/CardFooter/CardFooter.jsx",
@@ -87,6 +89,7 @@ module.exports = {
 
           "src/components/DropdownButton/DropdownButton.jsx",
           "src/components/SplitButton/SplitButton.jsx",
+          "src/components/CloseButton/CloseButton.jsx",
 
           "src/components/Dropdown/Dropdown.jsx",
           "src/components/DropdownHeader/DropdownHeader.jsx",
@@ -193,7 +196,7 @@ module.exports = {
           // "src/components/Carousel/Carousel.jsx",
           // "src/components/CarouselCaption/CarouselCaption.jsx",
           // "src/components/CarouselItem/CarouselItem.jsx",
-          "src/components/CloseButton/CloseButton.jsx",
+          // "src/components/CloseButton/CloseButton.jsx",
           "src/components/Collapse/Collapse.jsx",
           // "src/components/Col/Col.jsx",
           // "src/components/Container/Container.jsx",

@@ -1,8 +1,4 @@
-import React from 'react';
-import CloseButton from '../CloseButton';
+import React from 'react'
+import CloseButton from '../CloseButton'
 
-export default (
-  <CloseButton uxpId='closebutton-1'>
-    Content here
-  </CloseButton>
-);
+export default <CloseButton uxpId="closebutton-1" />
