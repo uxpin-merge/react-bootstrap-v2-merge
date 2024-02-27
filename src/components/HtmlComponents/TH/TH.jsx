@@ -15,7 +15,7 @@ TH.propTypes = {
   children: PropTypes.node,
 
   // /** Add Bootstrap classes */
-  className: PropTypes.object,
+  className: PropTypes.string,
 
   // /** Override styles */
   style: PropTypes.object,
