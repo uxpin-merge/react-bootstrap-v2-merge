@@ -1,6 +1,6 @@
 import React from 'react'
 import FormSelect from '../FormSelect'
-import HtmlTag from '../../HtmlComponents/HtmlTag/HtmlTag'
+import HtmlTag from '../../UXPinProvided/HtmlComponents/HtmlTag/HtmlTag'
 
 export default (
   <FormSelect uxpId="formselect-1">
