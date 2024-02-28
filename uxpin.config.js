@@ -86,21 +86,33 @@ module.exports = {
         name: 'TRANSITIONS',
         include: ['src/components/Collapse/Collapse.jsx', 'src/components/Fade/Fade.jsx'],
       },
-
       {
         name: 'HTML',
         include: [
-          'src/components/HtmlComponents/Heading/Heading.jsx',
-          'src/components/HtmlComponents/Text/Text.jsx',
-          'src/components/HtmlComponents/THead/THead.jsx',
-          'src/components/HtmlComponents/TBody/TBody.jsx',
-          'src/components/HtmlComponents/TH/TH.jsx',
-          'src/components/HtmlComponents/TR/TR.jsx',
-          'src/components/HtmlComponents/TD/TD.jsx',
-          'src/components/HtmlComponents/HtmlTag/HtmlTag.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlHeading/HtmlHeading.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlText/HtmlText.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlDiv/HtmlDiv.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlList/HtmlList.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlListItem/HtmlListItem.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTable/HtmlTable.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableHead/HtmlTableHead.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableBody/HtmlTableBody.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableHeading/HtmlTableHeading.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableRow/HtmlTableRow.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTableCell/HtmlTableCell.jsx',
+          'src/components/UXPinProvided/HtmlComponents/HtmlTag/HtmlTag.jsx',
         ],
       },
-
+      {
+        name: 'MUI-X CHARTS',
+        include: [
+          'src/components/UXPinProvided/MuiXCharts/BarChart/BarChart.js',
+          'src/components/UXPinProvided/MuiXCharts/LineChart/LineChart.js',
+          'src/components/UXPinProvided/MuiXCharts/PieChart/PieChart.js',
+          'src/components/UXPinProvided/MuiXCharts/ScatterChart/ScatterChart.js',
+          'src/components/UXPinProvided/MuiXCharts/SparkLineChart/SparkLineChart.js',
+        ],
+      },
       {
         name: 'CHILDREN (Parts)',
         include: [

@@ -1,13 +1,13 @@
 import React from 'react'
-import Table from '../Table'
-import HtmlTableHeading from '../../UXPinProvided/HtmlComponents/HtmlTableHeading/HtmlTableHeading'
-import HtmlTableBody from '../../UXPinProvided/HtmlComponents/HtmlTableBody/HtmlTableBody'
-import HtmlTableHead from '../../UXPinProvided/HtmlComponents/HtmlTableHead/HtmlTableHead'
-import HtmlTableRow from '../../UXPinProvided/HtmlComponents/HtmlTableRow/HtmlTableRow'
-import HtmlTableCell from '../../UXPinProvided/HtmlComponents/HtmlTableCell/HtmlTableCell'
+import HtmlTable from '../HtmlTable'
+import HtmlTableHeading from '../../HtmlTableHeading/HtmlTableHeading'
+import HtmlTableBody from '../../HtmlTableBody/HtmlTableBody'
+import HtmlTableHead from '../../HtmlTableHead/HtmlTableHead'
+import HtmlTableRow from '../../HtmlTableRow/HtmlTableRow'
+import HtmlTableCell from '../../HtmlTableCell/HtmlTableCell'
 
 export default (
-  <Table hover uxpId="table-1">
+  <HtmlTable uxpId="HtmlTable" width="100%">
     <HtmlTableHead uxpId="THead-1">
       <HtmlTableRow uxpId="TR-1">
         <HtmlTableHeading uxpId="TH-1">#</HtmlTableHeading>
@@ -37,5 +37,5 @@ export default (
         <HtmlTableCell uxpId="TD-11">@twitter</HtmlTableCell>
       </HtmlTableRow>
     </HtmlTableBody>
-  </Table>
+  </HtmlTable>
 )
