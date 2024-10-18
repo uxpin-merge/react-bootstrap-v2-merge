@@ -18,7 +18,10 @@ OffcanvasBody.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   as: PropTypes.string,

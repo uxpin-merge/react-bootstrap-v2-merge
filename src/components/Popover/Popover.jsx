@@ -15,7 +15,10 @@ Popover.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Sets the direction the Popover is positioned towards.> This is generally provided by the `Overlay` component positioning the popover */

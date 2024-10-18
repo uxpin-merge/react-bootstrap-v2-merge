@@ -19,7 +19,10 @@ Stack.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
   /** Direction of the layout. */
   direction: PropTypes.oneOf(['horizontal', 'vertical']),

@@ -18,7 +18,10 @@ Tab.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** HTML id attribute, required if no generateChildId prop is specified. */

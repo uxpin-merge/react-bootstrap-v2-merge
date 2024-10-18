@@ -15,7 +15,10 @@ TabContainer.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Sets a default animation strategy for all children `<TabPane>`s.Defaults to `<Fade>` animation; else, use `false` to disable, or acustom react-transition-group `<Transition/>` component.@type {{Transition | false}}@default {Fade} */

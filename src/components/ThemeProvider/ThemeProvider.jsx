@@ -15,7 +15,10 @@ ThemeProvider.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** An object mapping of Bootstrap component classes thatmap to a custom class.**Note: Changing prefixes is an escape hatch and generallyshouldn't be used.**For more information, see [here](/getting-started/theming/#prefixing-components). */

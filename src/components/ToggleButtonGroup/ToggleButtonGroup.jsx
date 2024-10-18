@@ -18,7 +18,10 @@ ToggleButtonGroup.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** An HTML `<input>` name for each child button.__Required if `type` is set to `'radio'`__ */

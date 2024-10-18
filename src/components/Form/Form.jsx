@@ -32,7 +32,10 @@ Form.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
   /** Mark a form as having been validated. Setting it to `true` willtoggle any validation styles on the forms elements. */
   validated: PropTypes.bool,

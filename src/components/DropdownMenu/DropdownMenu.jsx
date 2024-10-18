@@ -19,7 +19,10 @@ Menu.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Have the dropdown switch to it's opposite placement when necessary to stay on screen. */

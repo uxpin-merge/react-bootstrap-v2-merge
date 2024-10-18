@@ -30,7 +30,10 @@ OverlayTrigger.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Specify which action or actions trigger Overlay visibilityThe `click` trigger ignores the configured `delay`.@type {'hover' | 'click' |'focus' | Array<'hover' | 'click' |'focus'>} */

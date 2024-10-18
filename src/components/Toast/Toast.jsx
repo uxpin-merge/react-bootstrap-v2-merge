@@ -15,7 +15,10 @@ Toast.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** A `react-transition-group` Transition component used to animate the Toast on dismissal.

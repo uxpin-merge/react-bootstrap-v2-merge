@@ -16,10 +16,13 @@ HtmlTableHead.propTypes = {
   /** Content of the component */
   children: PropTypes.node,
 
-  // /** Add Bootstrap classes */
+  /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  // /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** A callback function for when this component is clicked. */

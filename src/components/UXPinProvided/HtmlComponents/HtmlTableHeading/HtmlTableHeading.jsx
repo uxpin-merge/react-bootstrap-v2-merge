@@ -125,7 +125,7 @@ HtmlTableHeading.propTypes = {
   /** Specifies the width of the table border. */
   borderWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
-  // /** Add Bootstrap classes */
+  /** Add Bootstrap classes */
   className: PropTypes.string,
 
   /** Specifies the color of the table.
@@ -204,7 +204,10 @@ HtmlTableHeading.propTypes = {
   /** Specifies whether a header cell is a header for a column, row, or group of columns or rows */
   scope: PropTypes.oneOf(['col', 'colgroup', 'row', 'rowgroup']),
 
-  // /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Specifies the text alignment in the table. */

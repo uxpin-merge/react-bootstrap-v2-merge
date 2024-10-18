@@ -50,7 +50,10 @@ Modal.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** A Component type that provides the modal content Markup. This is a usefulprop when you want to use your own styles and markup to create a custommodal component.
