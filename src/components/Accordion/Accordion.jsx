@@ -13,7 +13,6 @@ import AccordionItem from '../AccordionItem/AccordionItem'
  */
 
 const Accordion = (props) => {
-  console.log('kurwa',props);
   return <AccordionM {...props} />
 }
 
