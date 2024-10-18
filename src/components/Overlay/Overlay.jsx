@@ -15,7 +15,10 @@ Overlay.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Animate the entering and exiting of the Overlay. `true` will use the `<Fade>` transition,or a custom react-transition-group `<Transition>` component can be provided. */

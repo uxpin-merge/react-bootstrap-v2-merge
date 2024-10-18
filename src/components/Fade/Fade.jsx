@@ -18,7 +18,10 @@ Fade.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Applies additional specified classes during the transition. Takes an objectwhere the keys correspond to the Transition status */

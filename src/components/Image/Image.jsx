@@ -18,7 +18,10 @@ Image.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
   /**
    * `src` - The URL of the image to display. If `undefined`, no image will be displayed.

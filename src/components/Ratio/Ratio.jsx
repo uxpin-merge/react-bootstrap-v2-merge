@@ -15,7 +15,10 @@ Ratio.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Set the aspect ratio of the embed. A fraction or a percentage can alsobe used to create custom aspect ratios. */

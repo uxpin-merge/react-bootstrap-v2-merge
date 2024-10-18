@@ -15,7 +15,10 @@ ButtonToolbar.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** The ARIA role describing the button toolbar. Generally the default"toolbar" role is correct. An `aria-label` or `aria-labelledby`prop is also recommended. */

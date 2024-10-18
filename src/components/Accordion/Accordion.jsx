@@ -13,6 +13,7 @@ import AccordionItem from '../AccordionItem/AccordionItem'
  */
 
 const Accordion = (props) => {
+  console.log('kurwa',props);
   return <AccordionM {...props} />
 }
 
@@ -25,7 +26,10 @@ Accordion.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** Set a custom element for this component */

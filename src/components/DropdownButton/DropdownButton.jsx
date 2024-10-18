@@ -18,7 +18,10 @@ DropdownButton.propTypes = {
   /** Add Bootstrap classes */
   className: PropTypes.string,
 
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
 
   /** An html id attribute for the Toggle button, necessary for assistive technologies, such as screen readers.@type {string} */

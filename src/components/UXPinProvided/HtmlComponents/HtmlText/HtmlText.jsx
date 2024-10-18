@@ -66,7 +66,10 @@ HtmlText.propTypes = {
 
   /** Add Bootstrap classes */
   className: PropTypes.string,
-  /** Override styles */
+  /** Override styles
+   *  @uxpincontroltype css
+   *
+   * */
   style: PropTypes.object,
   /** Dynamically change the component's tag */
   tag: PropTypes.oneOf([
